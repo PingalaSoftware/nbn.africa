@@ -1,0 +1,34 @@
+/* Hero Section Styles */
+.hero-section {
+    height: 100vh; /* Full viewport height */
+    background-size: cover; /* Make background cover the entire section */
+    background-position: center; /* Center the background image */
+    display: flex; /* Enable flexbox */
+    align-items: center; /* Vertically center */
+    justify-content: center; /* Horizontally center */
+}
+
+.hero-content {
+    max-width: 700px;
+    text-align: center; /* Center text inside the content */
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+}
+
+.btn-success {
+    background-color: #00ff00;
+    color: #000;
+}
+
+.btn-success:hover {
+    background-color: #fff;
+    color: #000;
+}

@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-poppins: Poppins;
+  --font-sf-pro-display: "SF Pro Display";
+  --font-futura: Futura;
+  --font-myriadpro-regular: MyriadPro-Regular;
+  --font-myriadpro-bold: MyriadPro-Bold;
+  --font-futura-bold: Futura-Bold;
+
+  /* font sizes */
+  --font-size-lg: 18px;
+  --font-size-5xl: 24px;
+  --font-size-mini: 15px;
+  --font-size-base: 16px;
+  --font-size-7xl: 26px;
+  --font-size-mid: 17px;
+  --font-size-12xl: 31px;
+  --font-size-3xl: 22px;
+  --font-size-sm: 14px;
+  --font-size-xl: 20px;
+  --font-size-40xl: 59px;
+  --font-size-77xl: 96px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-gray-100: #7e7e7e;
+  --color-gray-200: #2a2a2a;
+  --color-gray-300: #111;
+  --color-gray-400: rgba(0, 0, 0, 0);
+  --color-black: #000;
+  --color-mediumseagreen: #35ba64;
+  --color-whitesmoke-100: #eee;
+  --color-whitesmoke-200: #ededed;
+  --color-dimgray-100: #707070;
+  --color-darkgray: #acacac;
+  --color-lightgray: #d1d1d1;
+
+  /* Border radiuses */
+  --br-11xl: 30px;
+  --br-16xl: 35px;
+  --br-xl: 20px;
+}

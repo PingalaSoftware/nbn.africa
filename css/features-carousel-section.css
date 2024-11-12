@@ -1,0 +1,59 @@
+.features-carousel-section {
+    background-color: #121212;
+}
+
+.feature-card {
+    background-color: #222;
+    border-radius: 8px;
+    padding: 2rem;
+    height: 100%;
+    transition: transform 0.3s;
+}
+
+.feature-icon {
+    font-size: 50px;
+    color: #00ff00;
+}
+
+.feature-card h4 {
+    font-weight: bold;
+    color: #00ff00;
+    margin-top: 1rem;
+}
+
+.feature-card p {
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+.feature-card .btn-success {
+    background-color: #00ff00;
+    color: #000;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.feature-card .btn-success:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.carousel-inner .carousel-item {
+    display: flex;
+}
+
+.carousel-inner .carousel-item .col-md-4 {
+    flex: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #00ff00;
+    border-radius: 50%;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: #fff;
+    color: #00ff00;
+}

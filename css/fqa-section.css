@@ -1,0 +1,24 @@
+.fqa-section {
+    background-color: #fff;
+}
+
+.faq-category {
+    margin-top: 2rem;
+}
+
+.faq-item {
+    padding: 1rem 0;
+    border-top: 1px solid #e0e0e0;
+    cursor: pointer;
+    color: #333;
+    font-size: 1rem;
+}
+
+.faq-item:hover {
+    background-color: #fff;
+}
+
+.material-icons {
+    color: #333;
+    font-size: 1.5rem;
+}

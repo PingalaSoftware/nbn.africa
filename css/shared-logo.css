@@ -1,0 +1,19 @@
+/* Shared Logo Styles */
+.logo-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    background-color: black;
+
+    /* Adjust the height to match the top bar + navbar height */
+    height: 120px; /* Total height of top bar (60px) + navbar (60px) */
+    padding: 10px 20px; /* Optional: adds vertical padding for centering */
+}
+
+.shared-logo {
+    height: 80px; /* Adjust logo height to fit within the logo container */
+    width: auto;
+}

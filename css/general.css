@@ -1,0 +1,24 @@
+/* css/general.css */
+
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Right-aligned Icons Styling (Common for Top Bar and Navbar) */
+.material-icons {
+    font-size: 20px;
+    vertical-align: middle;
+    color: #ffffff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar-brand {
+        margin: auto;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+}

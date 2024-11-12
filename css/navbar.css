@@ -1,0 +1,24 @@
+/* Navbar Styles */
+.navbar {
+    background-color: #ffffff !important; /* White background for navbar */
+    padding-left: 180px; /* Padding aligns content with logo */
+    border-bottom: 1px solid #e5e5e5;
+    height: 60px; /* Adjusted height for navbar */
+}
+
+.navbar-nav .nav-link {
+    font-size: 14px;
+    color: #333333 !important; /* Dark text for contrast */
+    margin-right: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #00ff00 !important; /* Highlight on hover */
+    cursor: pointer;
+}
+
+.navbar .material-icons {
+    font-size: 20px;
+    vertical-align: middle;
+    color: #333333;
+}

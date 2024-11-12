@@ -1,0 +1,85 @@
+.features-section {
+    background-color: #000000; /* Dark background */
+    padding: 60px 0;
+}
+
+.features-section h2 {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.feature-image-background {
+    margin-bottom: 0; /* Remove bottom margin from the feature image background */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-card {
+    min-height: 100%;
+    max-width: 350px;
+    width: 299px;
+    height: 349px;
+    opacity: 1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    background-color: #2a2a2a;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 32px; /* Icon size adjusted for consistency */
+    color: #ffffff;
+}
+
+.card-title {
+    font-size: 1rem; /* Title font size */
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.card-text {
+    font-size: 0.875rem; /* Content font size */
+    color: #cccccc;
+}
+
+.btn-outline-light {
+    color: #ffffff;
+    border-color: #ffffff;
+    font-size: 0.875rem; /* Button font size */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.feature-image-container {
+    background-color: white;
+    border-radius: 50%;
+    padding: 15px;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto; /* Center the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Center-align second row */
+.justify-content-center {
+    justify-content: center;
+}

@@ -1,0 +1,23 @@
+/* Top Bar Styles */
+.top-bar {
+    background-color: #343a40; /* Dark background for top bar */
+    color: #ffffff;
+    font-size: 14px;
+    padding-left: 180px; /* Padding aligns content with logo */
+    height: 60px; /* Adjusted height for top bar */
+}
+
+.top-bar .contact-info {
+    color: #ffffff;
+}
+
+.top-bar .social-icons a {
+    color: #ffffff;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.top-bar .social-icons a .material-icons {
+    vertical-align: middle;
+    font-size: 18px;
+}
