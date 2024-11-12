@@ -35,9 +35,9 @@
     flex-direction: column;
 }
 
-.feature-card:hover {
+/* .feature-card:hover {
     transform: translateY(-5px);
-}
+} */
 
 .feature-icon {
     font-size: 32px; /* Icon size adjusted for consistency */
