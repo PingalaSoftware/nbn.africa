@@ -217,6 +217,10 @@
     margin-left: auto;
 }
 
+.footer-links:hover {
+    cursor: pointer;
+}
+
 @media (max-width: 768px) {
     .footer-links {
         background: #ffffff1a;
