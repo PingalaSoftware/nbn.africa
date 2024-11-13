@@ -1,18 +1,26 @@
 .features-carousel-section {
-    background-color: #121212;
+    background-color: #000000 !important;
 }
 
 .features-carousel-section .feature-card {
-    background-color: #222;
-    border-radius: 8px;
-    padding: 2rem;
-    height: 100%;
+    min-height: 100%;
+    max-width: 350px;
+    height: 349px;
+    opacity: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
+    background-color: #000000;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.features-carousel-section .feature-icon {
-    font-size: 50px;
-    color: #00ff00;
+.features-carousel-section .white {
+    background-color: #ffffff;
+    color: #000000 !important;
 }
 
 .features-carousel-section .feature-card h4 {
@@ -23,7 +31,14 @@
 
 .features-carousel-section .feature-card p {
     color: #ccc;
-    font-size: 0.9rem;
+    font-size: 12px;
+    text-align: center;
+}
+
+.features-carousel-section .feature-card img {
+    width: 50px;
+    height: auto;
+    object-fit: contain;
 }
 
 .features-carousel-section .feature-card .btn-success {
@@ -38,22 +53,54 @@
     color: #000;
 }
 
-.features-carousel-section .carousel-inner .carousel-item {
-    display: flex;
-}
-
-.features-carousel-section .carousel-inner .carousel-item .col-md-4 {
-    flex: 1;
-}
-
 .features-carousel-section .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: #00ff00;
     border-radius: 50%;
 }
 
-.features-carousel-section .carousel-control-prev-icon:hover,
-.carousel-control-next-icon:hover {
+.features-carousel-section .cards-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.features-carousel-section .card img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.features-carousel-section .card {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+    border-radius: 0;
+}
+.features-carousel-section .carousel-inner {
+    padding: 1em;
+}
+.features-carousel-section .carousel-control-prev,
+.carousel-control-next {
+    background-color: #e1e1e1;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    top: 50%;
+}
+
+.features-carousel-section .carousel-control-prev {
+    left: 2em;
+}
+.features-carousel-section .carousel-control-next {
+    right: 2em;
+}
+
+.features-carousel-section .carousel-control-prev:hover,
+.carousel-control-next:hover {
     background-color: #fff;
-    color: #00ff00;
+}
+@media (min-width: 768px) {
+    .features-carousel-section .card img {
+        height: 11em;
+    }
+}
+
+.features-carousel-section .carouselExampleControls {
+    padding: 5%;
 }
