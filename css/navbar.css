@@ -3,7 +3,7 @@
     background-color: #ffffff !important; /* White background for navbar */
     padding-left: 180px; /* Padding aligns content with logo */
     border-bottom: 1px solid #e5e5e5;
-    height: 60px; /* Adjusted height for navbar */
+    height: 70px; /* Adjusted height for navbar */
 }
 
 .navbar-nav .nav-link {

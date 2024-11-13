@@ -9,7 +9,7 @@
     background-color: black;
 
     /* Adjust the height to match the top bar + navbar height */
-    height: 120px; /* Total height of top bar (60px) + navbar (60px) */
+    height: 110px; /* Total height of top bar (60px) + navbar (60px) */
     padding: 10px 20px; /* Optional: adds vertical padding for centering */
 }
 

@@ -2,23 +2,35 @@
     background-color: #fff;
 }
 
-.faq-category {
+.fqa-section .faq-category {
     margin-top: 2rem;
 }
 
-.faq-item {
+.fqa-section .faq-item {
     padding: 1rem 0;
     border-top: 1px solid #e0e0e0;
     cursor: pointer;
     color: #333;
     font-size: 1rem;
+    position: relative;
 }
 
-.faq-item:hover {
-    background-color: #fff;
+.fqa-section .faq-item:hover {
+    background-color: #f9f9f9;
 }
 
-.material-icons {
+.fqa-section .material-icons {
     color: #333;
     font-size: 1.5rem;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.fqa-section .faq-content {
+    display: none;
+    padding-top: 0.5rem;
+    color: #666;
+    font-size: 0.9rem;
 }

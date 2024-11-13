@@ -12,6 +12,16 @@ body {
     color: #ffffff;
 }
 
+.btn-success {
+    background-color: #00ff00;
+    color: #000;
+}
+
+.btn-success:hover {
+    background-color: #fff;
+    color: #000;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .navbar-brand {
