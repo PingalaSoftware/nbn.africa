@@ -1,39 +1,39 @@
-.features-carousel-section {
+.use-case-carousel-section {
     background-color: #000000 !important;
 }
 
-.feature-card {
+.use-case-card {
     background-color: #222;
     border-radius: 8px;
     height: 100%;
 }
 
-.feature-card h4 {
+.use-case-card h4 {
     font-weight: bold;
     color: #00ff00;
     margin-top: 1rem;
 }
 
-.feature-card p {
+.use-case-card p {
     color: #ccc;
     font-size: 12px;
     text-align: center;
 }
 
-.feature-card img {
+.use-case-card img {
     width: 50px;
     height: auto;
     object-fit: contain;
 }
 
-.feature-card .btn-success {
+.use-case-card .btn-success {
     background-color: #00ff00;
     color: #000;
     font-weight: bold;
     margin-top: 1rem;
 }
 
-.feature-card .btn-success:hover {
+.use-case-card .btn-success:hover {
     background-color: #fff;
     color: #000;
 }

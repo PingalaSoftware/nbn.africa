@@ -20,13 +20,11 @@
 .feature-card {
     min-height: 100%;
     max-width: 350px;
-    width: 299px;
     height: 349px;
     opacity: 1;
-    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
-    background-color: #2a2a2a;
+    background-color: #000000;
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -35,13 +33,9 @@
     flex-direction: column;
 }
 
-/* .feature-card:hover {
-    transform: translateY(-5px);
-} */
-
-.feature-icon {
-    font-size: 32px; /* Icon size adjusted for consistency */
-    color: #ffffff;
+.white {
+    background-color: #ffffff;
+    color: #000000 !important;
 }
 
 .card-title {
