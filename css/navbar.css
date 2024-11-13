@@ -22,3 +22,9 @@
     vertical-align: middle;
     color: #333333;
 }
+
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+}

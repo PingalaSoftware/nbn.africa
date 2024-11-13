@@ -22,6 +22,10 @@
     justify-content: center;
 }
 
+.newsletter-section .newsletter-form {
+    width: 100%;
+}
+
 .newsletter-section .newsletter-form input[type='text'],
 .newsletter-form input[type='email'] {
     border-radius: 5px;
@@ -35,4 +39,9 @@
     background-color: #000;
     color: #fff;
     border: none;
+    width: 100%;
+}
+
+.form-control {
+    width: 100%;
 }

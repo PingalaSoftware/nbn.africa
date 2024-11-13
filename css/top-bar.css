@@ -13,7 +13,8 @@
     color: white;
 }
 
-/* .top-bar .social-icons a .material-icons {
-    vertical-align: middle;
-    font-size: 18px;
-} */
+@media (max-width: 768px) {
+    .top-bar {
+        height: 100%;
+    }
+}

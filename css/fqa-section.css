@@ -19,6 +19,17 @@
     background-color: #f9f9f9;
 }
 
+.fqa-section .faq-q,
+.fqa-section .faq-content {
+    padding-right: 1.5rem;
+    width: 100%;
+    display: block;
+}
+
+.faq-content {
+    text-align: justify;
+}
+
 .fqa-section .material-icons {
     color: #333;
     font-size: 1.5rem;
@@ -26,7 +37,6 @@
     right: 1.5rem;
     top: 50%;
     transform: translateY(-50%);
-    padding-left: 0.5rem;
 }
 
 .fqa-section .faq-content {
@@ -34,37 +44,4 @@
     padding-top: 0.5rem;
     color: #666;
     font-size: 0.9rem;
-}
-.fqa-section .faq-item {
-    padding: 1rem 0;
-    border-top: 1px solid #e0e0e0;
-    cursor: pointer;
-    color: #333;
-    font-size: 1rem;
-    position: relative;
-}
-.fqa-section .faq-item {
-    padding: 1rem 1.5rem; /* Add padding to give more space around the item content */
-    border-top: 1px solid #e0e0e0;
-    cursor: pointer;
-    color: #333;
-    font-size: 1rem;
-    position: relative;
-}
-.fqa-section .material-icons {
-    color: #333;
-    font-size: 1.5rem;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.fqa-section .material-icons {
-    color: #333;
-    font-size: 1.5rem;
-    position: absolute;
-    right: 1.5rem; /* Add padding from the right */
-    top: 50%;
-    transform: translateY(-50%);
-    padding-left: 0.5rem; /* Adjust padding around icon as needed */
 }
