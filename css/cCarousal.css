@@ -8,14 +8,6 @@
     background-color: #000000 !important;
 }
 
-.features-carousel-section body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: #222;
-}
-
 .features-carousel-section #cCarousel {
     position: relative;
     max-width: 900px;

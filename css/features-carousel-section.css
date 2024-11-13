@@ -3,9 +3,24 @@
 }
 
 .features-carousel-section .feature-card {
-    background-color: #222;
-    border-radius: 8px;
-    height: 100%;
+    min-height: 100%;
+    max-width: 350px;
+    height: 349px;
+    opacity: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    background-color: #000000;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.features-carousel-section .white {
+    background-color: #ffffff;
+    color: #000000 !important;
 }
 
 .features-carousel-section .feature-card h4 {
