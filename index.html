@@ -42,7 +42,7 @@
             </a>
 
             <!-- Top Bar Section -->
-            <div class="top-bar py-2">
+            <div class="top-bar">
                 <div
                     class="container d-flex justify-content-between align-items-center"
                 >
@@ -57,26 +57,29 @@
                             target="_blank"
                             ><img src="./assets/" alt="Twitter"
                         /></a> -->
-                        <a class="mx-2"
-                            ><img
-                                src="./assets/Icon awesome-facebook-f.png"
-                                alt="facebook"
-                        /></a>
-                        <a class="mx-2"
-                            ><img
-                                src="./assets/Icon awesome-youtube.png"
-                                alt="youtube"
-                        /></a>
-                        <a class="mx-2"
-                            ><img
-                                src="./assets/Icon awesome-google-plus-g.png"
-                                alt="google"
-                        /></a>
-                        <a class="mx-2"
-                            ><img
-                                src="./assets/Icon awesome-instagram.png"
-                                alt="instagram"
-                        /></a>
+                        <a
+                            class="mx-2"
+                            href="https://www.linkedin.com/company/zanzibar-national-blockchain-network/"
+                            target="_blank"
+                        >
+                            <img
+                                src="./assets/linkedin-logo.png"
+                                alt="linkedin"
+                                class="topbar-logo-image"
+                            />
+                        </a>
+
+                        <a
+                            class="mx-2"
+                            href="https://t.me/+2CGt_4mvIHk0NWJl"
+                            target="_blank"
+                        >
+                            <img
+                                src="./assets/telegram.png"
+                                alt="telegram"
+                                class="topbar-logo-image"
+                            />
+                        </a>
                     </div>
                 </div>
             </div>
@@ -108,9 +111,9 @@
                                 >KEY FEATURES</a
                             >
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link" id="nav-use-cases">USE CASES</a>
-                        </li>
+                        </li> -->
                         <!-- <li class="nav-item">
                             <a class="nav-link" id="nav-about">BENEFITS</a>
                         </li> -->
@@ -380,9 +383,9 @@
                                             class="btn btn-success btn-sm scroll-btn"
                                         >
                                             READ MORE
-                                            <span class="material-icons"
-                                                >arrow_forward</span
-                                            >
+                                            <span class="material-icons">
+                                                arrow_forward
+                                            </span>
                                         </button>
                                     </div>
                                 </div>
@@ -404,9 +407,9 @@
                                             class="btn btn-success btn-sm scroll-btn"
                                         >
                                             READ MORE
-                                            <span class="material-icons"
-                                                >arrow_forward</span
-                                            >
+                                            <span class="material-icons">
+                                                arrow_forward
+                                            </span>
                                         </button>
                                     </div>
                                 </div>
@@ -450,21 +453,87 @@
             >
                 <div class="about-text col-md-6 text-left">
                     <h2>About Us</h2>
-                    <p>
+                    <p class="text-justify">
                         The National Blockchain Network is at the forefront of
-                        Africa’s digital transformation, pioneering a secure,
-                        efficient, and transparent ecosystem for government and
-                        business operations across the continent. Designed to
-                        unify and streamline public services, this
+                        Africa&lsquo;s digital transformation, pioneering a
+                        secure, efficient, and transparent ecosystem for
+                        government and business operations across the continent.
+                        Designed to unify and streamline public services, this
                         Blockchain-powered network serves as an integrated
                         digital hub, connecting government departments,
                         industries, and citizens with advanced solutions that
                         foster trust, collaboration, and innovation.
                     </p>
-                    <a href="#" class="btn btn-success"
-                        >READ MORE
-                        <span class="material-icons">arrow_forward</span></a
+                    <a
+                        data-bs-toggle="modal"
+                        data-bs-target="#about-read-more"
+                        class="btn btn-success"
                     >
+                        READ MORE
+                        <span class="material-icons">arrow_forward</span>
+                    </a>
+
+                    <div
+                        class="modal fade"
+                        id="about-read-more"
+                        data-bs-backdrop="static"
+                        data-bs-keyboard="false"
+                        tabindex="-1"
+                        aria-labelledby="about-read-more-label"
+                        aria-hidden="true"
+                    >
+                        <div
+                            class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                        >
+                            <div class="modal-content about-model">
+                                <div
+                                    class="modal-body about-model-body text-justify"
+                                >
+                                    <button
+                                        type="button"
+                                        class="btn-close close"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"
+                                    >
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    Originating in Zanzibar, we are committed to
+                                    serving and leading the entire African
+                                    region. As it&lsquo;s an Africa&lsquo;s
+                                    leading Blockchain initiative, we&lsquo;re
+                                    empowering startups, entrepreneurs, and
+                                    established businesses to transform ideas
+                                    into reality. Through our unique Innovation
+                                    Center Program and Sandbox Environment, we
+                                    offer a dedicated space for experimenting,
+                                    testing, and refining new Blockchain use
+                                    cases. This sandbox-to-main-network model
+                                    supports developers and organizations in
+                                    deploying applications from pilot stages to
+                                    full-scale implementations, accelerating the
+                                    path from concept to market-ready solutions.
+                                    Additionally, our resources, training, and
+                                    collaborative support boost the
+                                    region&lsquo;s startup community,
+                                    positioning Africa as a global leader in
+                                    Blockchain technology. Through incubation
+                                    and acceleration opportunities, Blockchain
+                                    education, and R&D initiatives, the National
+                                    Blockchain Network is building a stronger,
+                                    more inclusive digital economy for Africa.
+                                </div>
+                                <!-- <div class="modal-footer">
+                                    <button
+                                        type="button"
+                                        class="btn btn-secondary"
+                                        data-bs-dismiss="modal"
+                                    >
+                                        Close
+                                    </button>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="about-image col-md-5">
                     <img
@@ -658,21 +727,21 @@
                             <strong>Operates</strong>
                         </h3>
                     </div>
-                    <p class="text-black">
+                    <p class="text-black text-justify">
                         <strong>Data Collection & Storage</strong> – Secure data
                         entry and storage on the Blockchain.
                     </p>
-                    <p class="text-black">
+                    <p class="text-black text-justify">
                         <strong>Verification & Encryption</strong> – Encryption
                         protects sensitive data, while decentralized
                         verification ensures trust.
                     </p>
-                    <p class="text-black">
+                    <p class="text-black text-justify">
                         <strong>Smart Contract Execution</strong> – Contracts
                         automatically execute under predefined conditions,
                         ensuring seamless services.
                     </p>
-                    <p class="text-black">
+                    <p class="text-black text-justify">
                         <strong>Transparency & Access</strong> – Stakeholders
                         access verified information, enabling transparency and
                         accountability.
@@ -801,17 +870,17 @@
                             <strong>& APPLY</strong>
                         </h3>
                     </div>
-                    <p class="text-white">
+                    <p class="text-white text-justify">
                         <strong>For Startups or Entrepreneurs: </strong>
                         "Sign up to show your interest and share ideas you want
                         to experiment."
                     </p>
-                    <p class="text-white">
+                    <p class="text-white text-justify">
                         <strong>For Businesses: </strong>"Partner with us to
                         integrate Blockchain solutions in document verification,
                         finance, supply chain, and other areas."
                     </p>
-                    <p class="text-white">
+                    <p class="text-white text-justify">
                         <strong>For Blockchain Developers: </strong>
                         "Contribute to our Blockchain ecosystem and help drive
                         innovation across sectors."
@@ -856,7 +925,9 @@
                         <h6 class="section-subheading text-white">
                             Expanding Blockchain in Africa
                         </h6>
-                        <p class="section-subheading mb-5 text-white">
+                        <p
+                            class="section-subheading mb-5 text-white text-justify"
+                        >
                             As Africa’s central blockchain hub, the National
                             Blockchain Network is dedicated to fostering growth,
                             education, and innovation across the continent. Our
@@ -1395,7 +1466,7 @@
                 <div class="newsletter-text col-md-6">
                     <h2>LETS START!</h2>
                     <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
-                    <p>
+                    <p class="text-justify">
                         It is a long established fact that a reader will be
                         distracted by the readable content of a page when
                         looking at its layout.
@@ -1411,13 +1482,11 @@
                             type="text"
                             placeholder="Name"
                             class="form-control mb-3"
-                            style="max-width: 200px"
                         />
                         <input
                             type="email"
                             placeholder="Email"
                             class="form-control mb-3"
-                            style="max-width: 200px"
                         />
                         <button type="submit" class="btn">SUBSCRIBE</button>
                     </form>
@@ -1469,8 +1538,11 @@
                             class="shared-logo mb-4"
                         />
                     </a>
-                    <!-- <p>463 Round Table Drive, Norwood, OH, Ohio</p>
-                    <p>+123456789</p> -->
+                    <p>
+                        eGovernment Authority Zanzibar (eGaz), 7th Floor, Sheria
+                        House Building, Mazizini Zanzibar
+                    </p>
+                    <!-- <p>+123456789</p> -->
                     <div class="social-icons d-flex justify-content-start">
                         <!-- <a class="mx-2" href="#"
                             ><img
@@ -1503,7 +1575,7 @@
                             >KEY FEATURES</a
                         >
                     </p>
-                    <p><a class="footer" id="footer-use-cases">USE CASES</a></p>
+                    <!-- <p><a class="footer" id="footer-use-cases">USE CASES</a></p> -->
                     <p>
                         <a class="footer" id="footer-global-hub">GLOBAL HUB</a>
                     </p>
@@ -1531,14 +1603,35 @@
                     class="footer-info d-flex align-items-center justify-content-center"
                 >
                     <img
-                        src="assets/zanzibar-govt.png"
+                        src="assets/EGAZ-LOGO.png"
                         alt="govt"
                         class="footer-logo-image"
                     />
-                    <p class="footer-text">
+
+                    <span class="main-text">
                         eGAZ - Digital Transformation Office (DTO) | Office of
                         The President
-                    </p>
+                    </span>
+                </div>
+                <div
+                    class="footer-text d-flex align-items-center justify-content-center"
+                >
+                    <span class="powered-by d-flex align-items-center">
+                        Powered by
+                        <img
+                            src="assets/ledgerfi-logo.png"
+                            alt="LedgerFi logo"
+                            title="LedgerFi"
+                            class="logo-image"
+                        />
+                        Built on
+                        <img
+                            src="assets/xdc-network-logo.png"
+                            alt="XDC network logo"
+                            title="XDC Network"
+                            class="logo-image"
+                        />
+                    </span>
                 </div>
             </div>
         </footer>

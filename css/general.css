@@ -5,6 +5,10 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.text-justify {
+    text-align: justify;
+}
+
 /* Right-aligned Icons Styling (Common for Top Bar and Navbar) */
 .material-icons {
     font-size: 20px;

@@ -2,10 +2,15 @@
 .top-bar {
     background-color: black;
     color: #ffffff;
-    left: auto;
     font-size: 14px;
     /* left: 280px; */
-    /* height: 60px;  */
+    height: 30px;
+}
+
+.topbar-logo-image {
+    max-width: 20px;
+    height: auto;
+    color: white;
 }
 
 /* .top-bar .social-icons a .material-icons {
