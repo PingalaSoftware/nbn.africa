@@ -50,7 +50,7 @@
     margin-top: 10px;
 }
 
-.features-section .card-text {
+.features-section .card-footer {
     font-size: 0.875rem; /* Content font size */
     color: #cccccc;
 }
@@ -66,8 +66,8 @@
     background-color: white;
     border-radius: 50%;
     padding: 15px;
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     margin: 0 auto; /* Center the image */
     display: flex;
     justify-content: center;

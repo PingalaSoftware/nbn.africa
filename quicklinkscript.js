@@ -12,11 +12,23 @@ document
             .scrollIntoView({ behavior: 'smooth' });
     });
 
+document.getElementById('nav-use-cases').addEventListener('click', function () {
+    document.getElementById('use-cases').scrollIntoView({ behavior: 'smooth' });
+});
+
 document
-    .getElementById('nav-hOW-it-works')
+    .getElementById('nav-global-hub')
     .addEventListener('click', function () {
         document
-            .getElementById('hOW-it-works-section')
+            .getElementById('global-hub')
+            .scrollIntoView({ behavior: 'smooth' });
+    });
+
+document
+    .getElementById('nav-how-it-works')
+    .addEventListener('click', function () {
+        document
+            .getElementById('how-it-works-section')
             .scrollIntoView({ behavior: 'smooth' });
     });
 
@@ -39,3 +51,69 @@ document.getElementById('nav-contact').addEventListener('click', function () {
         .getElementById('contact-section')
         .scrollIntoView({ behavior: 'smooth' });
 });
+
+document.getElementById('lets-explore').addEventListener('click', function () {
+    document
+        .getElementById('key-features-section')
+        .scrollIntoView({ behavior: 'smooth' });
+});
+
+document.getElementById('footer-about').addEventListener('click', function () {
+    document
+        .getElementById('about-section')
+        .scrollIntoView({ behavior: 'smooth' });
+});
+
+document
+    .getElementById('footer-key-features')
+    .addEventListener('click', function () {
+        document
+            .getElementById('key-features-section')
+            .scrollIntoView({ behavior: 'smooth' });
+    });
+
+document
+    .getElementById('footer-use-cases')
+    .addEventListener('click', function () {
+        document
+            .getElementById('use-cases')
+            .scrollIntoView({ behavior: 'smooth' });
+    });
+
+document
+    .getElementById('footer-global-hub')
+    .addEventListener('click', function () {
+        document
+            .getElementById('global-hub')
+            .scrollIntoView({ behavior: 'smooth' });
+    });
+
+document
+    .getElementById('footer-how-it-works')
+    .addEventListener('click', function () {
+        document
+            .getElementById('how-it-works-section')
+            .scrollIntoView({ behavior: 'smooth' });
+    });
+
+document
+    .getElementById('footer-get-involved')
+    .addEventListener('click', function () {
+        document
+            .getElementById('get-involved-section')
+            .scrollIntoView({ behavior: 'smooth' });
+    });
+
+document.getElementById('footer-faq').addEventListener('click', function () {
+    document
+        .getElementById('faq-section')
+        .scrollIntoView({ behavior: 'smooth' });
+});
+
+document
+    .getElementById('footer-contact')
+    .addEventListener('click', function () {
+        document
+            .getElementById('contact-section')
+            .scrollIntoView({ behavior: 'smooth' });
+    });
