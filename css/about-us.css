@@ -30,7 +30,29 @@
     color: #000;
 }
 
-.about-image img {
+/* .about-image img {
     max-width: 100%;
     border-radius: 10px;
+} */
+
+.about-model-body {
+    padding: 20px 40px;
+    position: relative;
+}
+
+.about-model {
+    width: 650px;
+    max-width: 90vw;
+}
+
+.about-model-body .btn-close {
+    position: absolute;
+    background: transparent;
+    right: 5px;
+    top: 5px;
+    border: none;
+}
+
+.img-fluid {
+    max-width: 350px;
 }

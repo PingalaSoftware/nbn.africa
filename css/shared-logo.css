@@ -1,19 +1,24 @@
 /* Shared Logo Styles */
 .logo-container {
-    position: absolute;
-    top: 0;
-    left: 0;
     z-index: 10;
-    display: flex;
-    align-items: center;
     background-color: black;
+    height: 110px;
+    padding: 10px 20px;
+}
 
-    /* Adjust the height to match the top bar + navbar height */
-    height: 120px; /* Total height of top bar (60px) + navbar (60px) */
-    padding: 10px 20px; /* Optional: adds vertical padding for centering */
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    min-width: 60px;
 }
 
 .shared-logo {
-    height: 80px; /* Adjust logo height to fit within the logo container */
+    height: 80px;
     width: auto;
+}
+
+@media (max-width: 768px) {
+    .social-icons {
+        width: 100%;
+    }
 }

@@ -1,24 +1,76 @@
-/* css/general.css */
-
-/* General Page Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins';
 }
 
-/* Right-aligned Icons Styling (Common for Top Bar and Navbar) */
+.text-justify {
+    text-align: justify;
+}
+
+.z-1 {
+    position: relative;
+    z-index: 1;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.title-design {
+    font-size: 4rem;
+}
+
+.title-design-img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: 0;
+}
+
 .material-icons {
     font-size: 20px;
     vertical-align: middle;
     color: #ffffff;
 }
 
+.btn-success {
+    background-color: #00ff00;
+    color: #000;
+}
+
+.btn-success:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.mobile-only {
+    display: none;
+}
+
+.pc-only {
+    display: block;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
+    .title-design {
+        font-size: 2rem;
+    }
+
     .navbar-brand {
         margin: auto;
     }
 
     .navbar-nav {
         text-align: center;
+    }
+
+    .pc-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: block;
     }
 }

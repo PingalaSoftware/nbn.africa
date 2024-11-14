@@ -16,23 +16,32 @@
     color: #e5e5e5;
 }
 
-.newsletter-form-container {
+.newsletter-section .newsletter-form-container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.newsletter-form input[type='text'],
+.newsletter-section .newsletter-form {
+    width: 100%;
+}
+
+.newsletter-section .newsletter-form input[type='text'],
 .newsletter-form input[type='email'] {
     border-radius: 5px;
     padding: 10px;
     border: none;
 }
 
-.newsletter-form button {
+.newsletter-section .newsletter-form button {
     padding: 10px 20px;
     border-radius: 5px;
     background-color: #000;
     color: #fff;
     border: none;
+    width: 100%;
+}
+
+.form-control {
+    width: 100%;
 }
