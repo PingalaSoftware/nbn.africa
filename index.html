@@ -20,6 +20,11 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"></script>
 
         <!-- Separate CSS Files for Each Section -->
+        <link
+            href="https://fonts.googleapis.com/css?family=Poppins"
+            rel="stylesheet"
+        />
+
         <link rel="stylesheet" href="css/general.css" />
         <link rel="stylesheet" href="css/top-bar.css" />
         <link rel="stylesheet" href="css/navbar.css" />
@@ -34,6 +39,7 @@
         <link rel="stylesheet" href="css/newsletter-section.css" />
         <link rel="stylesheet" href="css/footer-section.css" />
         <link rel="stylesheet" href="css/cCarousal.css" />
+        <link rel="stylesheet" href="css/use-cases.css" />
     </head>
     <body>
         <!-- Hero Section -->
@@ -133,13 +139,21 @@
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav ml-auto">
                                 <li class="nav-item">
-                                    <a class="nav-link" id="nav-about">
+                                    <a
+                                        class="nav-link"
+                                        id="nav-about"
+                                        onclick="scrollToElement('about-section')"
+                                    >
                                         <i class="fa-solid fa-house"></i>
                                         ABOUT
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" id="nav-key-features">
+                                    <a
+                                        class="nav-link"
+                                        id="nav-key-features"
+                                        onclick="scrollToElement('key-features-section')"
+                                    >
                                         KEY FEATURES
                                     </a>
                                 </li>
@@ -150,27 +164,58 @@
                             <a class="nav-link" id="nav-about">BENEFITS</a>
                         </li> -->
                                 <li class="nav-item">
-                                    <a class="nav-link" id="nav-global-hub">
+                                    <a
+                                        class="nav-link"
+                                        id="nav-global-hub"
+                                        onclick="scrollToElement('global-hub-section')"
+                                    >
                                         GLOBAL HUB
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" id="nav-how-it-works">
+                                    <a
+                                        class="nav-link"
+                                        id="nav-how-it-works"
+                                        onclick="scrollToElement('how-it-works-section')"
+                                    >
                                         HOW IT WORKS
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" id="nav-get-involved">
+                                    <a
+                                        class="nav-link"
+                                        id="nav-use-cases"
+                                        onclick="scrollToElement('use-cases-section')"
+                                    >
+                                        USE CASES
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link"
+                                        id="nav-get-involved"
+                                        onclick="scrollToElement('get-involved-section')"
+                                    >
                                         GET INVOLVED & APPLY
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" id="nav-faq">FAQ</a>
+                                    <a
+                                        class="nav-link"
+                                        id="nav-faq"
+                                        onclick="scrollToElement('faq-section')"
+                                    >
+                                        FAQ
+                                    </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" id="nav-contact"
-                                        >CONTACT</a
+                                    <a
+                                        class="nav-link"
+                                        id="nav-contact"
+                                        onclick="scrollToElement('contact-section')"
                                     >
+                                        CONTACT
+                                    </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link">BLOG</a>
@@ -193,7 +238,7 @@
                 </div>
             </header>
             <div
-                id="hero-section"
+                id="home-section"
                 class="hero-main position-relative flex-grow-1"
             >
                 <canvas class="hero-canvas"> </canvas>
@@ -787,6 +832,189 @@
             </div>
         </section>
 
+        <!-- Use Cases Carousel Section-->
+        <section id="use-cases-section" class="use-cases-carousel-section py-5">
+            <div class="use-cases-container">
+                <div class="use-cases-image-background">
+                    <h2
+                        class="title-design section-heading text-center position-relative"
+                    >
+                        <span class="z-1">
+                            <strong> USE CASES </strong>
+                        </span>
+                    </h2>
+                    <div class="underline"></div>
+                    <div class="subtitle-text">
+                        Real World Applications of Our Blockchain network
+                    </div>
+                </div>
+            </div>
+            <div id="useCaseCarousel" class="container">
+                <div class="arrow" id="useCasePrev">
+                    <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                    ></span>
+                </div>
+                <div class="arrow" id="useCaseNext">
+                    <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                    ></span>
+                </div>
+
+                <div id="useCaseCarousel-vp">
+                    <div id="useCaseCarousel-inner">
+                        <article class="useCaseCarousel-item">
+                            <!-- Feature Card 1 -->
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <img
+                                        src="assets/use-case-1.png"
+                                        alt="Document Verification"
+                                    />
+                                </div>
+                                <div style="">
+                                    <h4 class="">Document Verification</h4>
+                                </div>
+                                <div class="use-cases-text-field">
+                                    <p>
+                                        Reliable, tamper-proof verification of
+                                        important documents such as identity
+                                        proofs and licenses.
+                                    </p>
+                                </div>
+                                <!-- <button
+                                    class="btn btn-success btn-sm scroll-btn"
+                                >
+                                    READ MORE
+                                    <span class="material-icons"
+                                        >arrow_forward</span
+                                    >
+                                </button> -->
+                            </div>
+                        </article>
+
+                        <article class="useCaseCarousel-item">
+                            <!-- Feature Card 2 -->
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <img
+                                        src="assets/use-case-2.png"
+                                        alt="Financial Sector"
+                                    />
+                                </div>
+                                <div class="">
+                                    <h4>Financial Sector</h4>
+                                </div>
+                                <div class="use-cases-text-field">
+                                    <p>
+                                        Secure, transparent, and efficient
+                                        payment and transaction systems.
+                                    </p>
+                                </div>
+                                <!-- <button
+                                    class="btn btn-success btn-sm scroll-btn"
+                                >
+                                    READ MORE
+                                    <span class="material-icons"
+                                        >arrow_forward</span
+                                    >
+                                </button> -->
+                            </div>
+                        </article>
+
+                        <article class="useCaseCarousel-item">
+                            <!-- Feature Card 3 -->
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <img
+                                        src="assets/use-case-3.png"
+                                        alt="healthcare records"
+                                    />
+                                </div>
+
+                                <div class="">
+                                    <h4 class="">Healthcare Records</h4>
+                                </div>
+                                <div class="use-cases-text-field">
+                                    <p>
+                                        Immutable, accessible health records for
+                                        improved patient care
+                                    </p>
+                                </div>
+                                <!-- <button
+                                    class="btn btn-success btn-sm scroll-btn"
+                                >
+                                    READ MORE
+                                    <span class="material-icons"
+                                        >arrow_forward</span
+                                    >
+                                </button> -->
+                            </div>
+                        </article>
+
+                        <article class="useCaseCarousel-item">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <img
+                                        src="assets/use-case-4.png"
+                                        alt="Supply Chain Management"
+                                    />
+                                </div>
+                                <div class="">
+                                    <h4>Supply Chain Management</h4>
+                                </div>
+                                <div class="use-cases-text-field">
+                                    <p class="">
+                                        End-to-end tracking and verification of
+                                        goods for trade and commerce.
+                                    </p>
+                                </div>
+                                <!-- <button
+                                    class="btn btn-success btn-sm scroll-btn"
+                                >
+                                    READ MORE
+                                    <span class="material-icons"
+                                        >arrow_forward</span
+                                    >
+                                </button> -->
+                            </div>
+                        </article>
+
+                        <article class="useCaseCarousel-item">
+                            <!-- Feature Card 5 -->
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <img
+                                        src="assets/use-case-5.png"
+                                        alt="Legal Agreements"
+                                    />
+                                </div>
+                                <div class="">
+                                    <h4>Legal Agreements</h4>
+                                </div>
+                                <div class="use-cases-text-field">
+                                    <p>
+                                        Smart Contracts for transparent,
+                                        enforceable public and private
+                                        agreements
+                                    </p>
+                                </div>
+                                <!-- <button
+                                    class="btn btn-success btn-sm scroll-btn"
+                                >
+                                    READ MORE
+                                    <span class="material-icons"
+                                        >arrow_forward</span
+                                    >
+                                </button> -->
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- global hub Section -->
         <section id="global-hub-section" class="global-hub-section py-5">
             <div class="container">
@@ -1339,7 +1567,7 @@
         </section>
 
         <!-- Newsletter Section -->
-        <div id="contact-section" class="newsletter-section mt-4">
+        <div id="contact-section" class="newsletter-section py-5">
             <div class="container">
                 <div class="row">
                     <div class="newsletter-text col-md-6">
@@ -1371,40 +1599,7 @@
             </div>
         </div>
 
-        <!-- Footer -->
-        <!-- <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 footer-logo">
-                        <h4>ZANZIBAR NATIONAL BLOCKCHAIN NETWORK</h4>
-                        <p>463 Round Table Drive, Norwood, OH, Ohio</p>
-                        <p>+123456789</p>
-                        <div class="social-icons">
-                            <a href="#"><i class="bi bi-linkedin"></i></a>
-                            <a href="#"><i class="bi bi-twitter"></i></a>
-                            <a href="#"><i class="bi bi-facebook"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 footer-links">
-                        <h5>Category</h5>
-                        <a href="#">First Link</a><br />
-                        <a href="#">Second Long Link</a><br />
-                        <a href="#">Third Link</a><br />
-                        <a href="#">Fourth long Link</a><br />
-                    </div>
-                    <div class="col-md-4 footer-links">
-                        <h5>Category</h5>
-                        <a href="#">First Link</a><br />
-                        <a href="#">Second Long Link</a><br />
-                        <a href="#">Third Link</a><br />
-                        <a href="#">Fourth long Link</a><br />
-                    </div>
-                </div>
-                <div class="text-center mt-4">
-                    <p>&copy; 2020 - All rights reserved</p>
-                </div>
-            </div>
-        </footer> -->
+        <!-- Footer section -->
         <footer id="footer-section" class="footer-section">
             <div class="container">
                 <div class="row">
@@ -1445,13 +1640,21 @@
                         <h3>Quick Links</h3>
                         <div class="row">
                             <div class="col-6 mb-2">
-                                <a class="footer-links" id="footer-home">
+                                <a
+                                    class="footer-links"
+                                    id="footer-home"
+                                    onclick="scrollToElement('home-section')"
+                                >
                                     <i class="fa-solid fa-house"></i>
                                     HOME
                                 </a>
                             </div>
                             <div class="col-6 mb-2">
-                                <a class="footer-links" id="footer-about">
+                                <a
+                                    class="footer-links"
+                                    id="footer-about"
+                                    onclick="scrollToElement('about-section')"
+                                >
                                     <i class="fa-solid fa-house"></i>
                                     ABOUT
                                 </a>
@@ -1460,21 +1663,27 @@
                                 <a
                                     class="footer-links"
                                     id="footer-key-features"
+                                    onclick="scrollToElement('key-features-section')"
                                 >
                                     KEY FEATURES
                                 </a>
                             </div>
-                            <!-- <div class="col-6 mb-2">
-    <a class="footer-links" id="footer-use-cases">USE CASES</a>
-</div> -->
                             <div class="col-6 mb-2">
-                                <a class="footer-links" id="footer-use-cases"
-                                    >USE CASES
+                                <a
+                                    class="footer-links"
+                                    id="footer-use-cases"
+                                    onclick="scrollToElement('use-cases-section')"
+                                >
+                                    USE CASES
                                 </a>
                             </div>
                             <div class="col-6 mb-2">
-                                <a class="footer-links" id="footer-global-hub"
-                                    >GLOBAL HUB
+                                <a
+                                    class="footer-links"
+                                    id="footer-global-hub"
+                                    onclick="scrollToElement('global-hub-section')"
+                                >
+                                    GLOBAL HUB
                                 </a>
                             </div>
 
@@ -1482,6 +1691,7 @@
                                 <a
                                     class="footer-links"
                                     id="footer-how-it-works"
+                                    onclick="scrollToElement('how-it-works-section')"
                                 >
                                     HOW IT WORKS
                                 </a>
@@ -1490,12 +1700,19 @@
                                 <a
                                     class="footer-links"
                                     id="footer-get-involved"
+                                    onclick="scrollToElement('get-involved-section')"
                                 >
                                     GET INVOLVED & APPLY
                                 </a>
                             </div>
                             <div class="col-6 mb-2">
-                                <a class="footer-links" id="footer-faq">FAQ</a>
+                                <a
+                                    class="footer-links"
+                                    id="footer-faq"
+                                    onclick="scrollToElement('faq-section')"
+                                >
+                                    FAQ
+                                </a>
                             </div>
                         </div>
                     </div>
