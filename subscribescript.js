@@ -41,18 +41,15 @@ document
     subscribeButton.textContent = "Subscribing...";
 
     try {
-      const response = await fetch(
-        `${devUrl}/edua/public/api/v1/auth/subscribe`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: "edua-public",
-            Origin: originUrl, // Dynamically set the Origin header
-          },
-          body: JSON.stringify({ name, email }),
-        }
-      );
+      const response = await fetch(`${devUrl}/edua/nbn/api/v1/auth/subscribe`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: "edua-public",
+          Origin: originUrl, // Dynamically set the Origin header
+        },
+        body: JSON.stringify({ name, email }),
+      });
 
       const result = await response.json();
 
