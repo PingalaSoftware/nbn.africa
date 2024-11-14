@@ -9,6 +9,7 @@ body {
 .z-1 {
     position: relative;
     z-index: 1;
+    background: black !important;
 }
 
 .position-relative {
