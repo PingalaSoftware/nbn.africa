@@ -3,8 +3,10 @@ document
   .addEventListener("submit", async function (e) {
     e.preventDefault(); // Prevent form from submitting normally
 
-    const devUrl = "http://localhost:4040";
+    const devUrl = "http://localhost:4042";
     // const prodUrl = "";
+    const originUrl = window.location.origin; // Gets the current origin dynamically
+    console.log(originUrl);
 
     const nameField = document.getElementById("name");
     const emailField = document.getElementById("email");
@@ -45,6 +47,8 @@ document
           method: "POST",
           headers: {
             "Content-Type": "application/json",
+            Authorization: "edua-public",
+            Origin: originUrl, // Dynamically set the Origin header
           },
           body: JSON.stringify({ name, email }),
         }
