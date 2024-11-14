@@ -1,3 +1,7 @@
+function scrollToElement(eleId) {
+    document.getElementById(eleId).scrollIntoView({ behavior: 'smooth' });
+}
+
 document.getElementById('nav-about').addEventListener('click', function () {
     document
         .getElementById('about-section')
