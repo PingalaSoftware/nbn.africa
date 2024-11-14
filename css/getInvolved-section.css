@@ -1,3 +1,7 @@
 .get-involved-section {
     background-color: black;
 }
+
+.img-fluid {
+    max-width: 300px;
+}

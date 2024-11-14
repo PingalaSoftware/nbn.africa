@@ -1,3 +1,7 @@
+function scrollToElement(eleId) {
+    document.getElementById(eleId).scrollIntoView({ behavior: 'smooth' });
+}
+
 document.getElementById('nav-about').addEventListener('click', function () {
     document
         .getElementById('about-section')
@@ -12,15 +16,11 @@ document
             .scrollIntoView({ behavior: 'smooth' });
     });
 
-document.getElementById('nav-use-cases').addEventListener('click', function () {
-    document.getElementById('use-cases').scrollIntoView({ behavior: 'smooth' });
-});
-
 document
     .getElementById('nav-global-hub')
     .addEventListener('click', function () {
         document
-            .getElementById('global-hub')
+            .getElementById('global-hub-section')
             .scrollIntoView({ behavior: 'smooth' });
     });
 
@@ -52,12 +52,6 @@ document.getElementById('nav-contact').addEventListener('click', function () {
         .scrollIntoView({ behavior: 'smooth' });
 });
 
-document.getElementById('lets-explore').addEventListener('click', function () {
-    document
-        .getElementById('key-features-section')
-        .scrollIntoView({ behavior: 'smooth' });
-});
-
 document.getElementById('footer-about').addEventListener('click', function () {
     document
         .getElementById('about-section')
@@ -73,18 +67,10 @@ document
     });
 
 document
-    .getElementById('footer-use-cases')
-    .addEventListener('click', function () {
-        document
-            .getElementById('use-cases')
-            .scrollIntoView({ behavior: 'smooth' });
-    });
-
-document
     .getElementById('footer-global-hub')
     .addEventListener('click', function () {
         document
-            .getElementById('global-hub')
+            .getElementById('global-hub-section')
             .scrollIntoView({ behavior: 'smooth' });
     });
 

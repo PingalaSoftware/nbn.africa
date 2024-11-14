@@ -2,13 +2,19 @@
 .top-bar {
     background-color: black;
     color: #ffffff;
-    left: auto;
     font-size: 14px;
     /* left: 280px; */
-    /* height: 60px;  */
+    height: 30px;
 }
 
-/* .top-bar .social-icons a .material-icons {
-    vertical-align: middle;
-    font-size: 18px;
-} */
+.topbar-logo-image {
+    max-width: 20px;
+    height: auto;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .top-bar {
+        height: 100%;
+    }
+}
