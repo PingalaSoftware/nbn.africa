@@ -52,6 +52,12 @@ document.getElementById('nav-contact').addEventListener('click', function () {
         .scrollIntoView({ behavior: 'smooth' });
 });
 
+document.getElementById('footer-home').addEventListener('click', function () {
+    document
+        .getElementById('hero-section')
+        .scrollIntoView({ behavior: 'smooth' });
+});
+
 document.getElementById('footer-about').addEventListener('click', function () {
     document
         .getElementById('about-section')
