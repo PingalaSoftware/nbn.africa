@@ -1,76 +1,76 @@
 document
-    .getElementById('newsletter-form')
-    .addEventListener('submit', async function (e) {
-        e.preventDefault(); // Prevent form from submitting normally
+  .getElementById("newsletter-form")
+  .addEventListener("submit", async function (e) {
+    e.preventDefault(); // Prevent form from submitting normally
 
-        const devUrl = 'https://edua-admin.ledgermail.io';
-        // const prodUrl = "";
-        const originUrl = window.location.origin; // Gets the current origin dynamically
-        console.log(originUrl);
+    //prod url
+    const url = "https://edua-admin.ledgermail.io";
 
-        const nameField = document.getElementById('name');
-        const emailField = document.getElementById('email');
-        const subscribeButton = document.getElementById('subscribe-button');
-        const responseMessage = document.getElementById('response-message');
+    // dev url
+    // const url = "http://localhost:4042";
+    const originUrl = window.location.origin;
+    console.log(originUrl);
 
-        const name = nameField.value;
-        const email = emailField.value;
+    const nameField = document.getElementById("name");
+    const emailField = document.getElementById("email");
+    const subscribeButton = document.getElementById("subscribe-button");
+    const responseMessage = document.getElementById("response-message");
 
-        // Email validation regex pattern
-        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const name = nameField.value;
+    const email = emailField.value;
 
-        // Input validation
-        if (!name && !email) {
-            responseMessage.textContent = 'Please enter the details.';
-            responseMessage.style.color = 'red';
-            return;
-        }
-        if (!name) {
-            responseMessage.textContent = 'Please enter your name';
-            responseMessage.style.color = 'red';
-            return;
-        } else if (!emailPattern.test(email)) {
-            responseMessage.textContent = 'Please enter a valid email address.';
-            responseMessage.style.color = 'red';
-            return;
-        }
+    // Email validation regex pattern
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-        // Show loading state
-        responseMessage.textContent = ''; // Clear any previous messages
-        subscribeButton.disabled = true;
-        subscribeButton.textContent = 'Subscribing...';
+    // Input validation
+    if (!name && !email) {
+      responseMessage.textContent = "Please enter the details.";
+      responseMessage.style.color = "red";
+      return;
+    }
+    if (!name) {
+      responseMessage.textContent = "Please enter your name";
+      responseMessage.style.color = "red";
+      return;
+    } else if (!emailPattern.test(email)) {
+      responseMessage.textContent = "Please enter a valid email address.";
+      responseMessage.style.color = "red";
+      return;
+    }
 
-        try {
-            const response = await fetch(
-                `${devUrl}/edua/nbn/api/v1/subscribe`,
-                {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        Authorization: 'edua-public',
-                        Origin: originUrl, // Dynamically set the Origin header
-                    },
-                    body: JSON.stringify({ name, email }),
-                }
-            );
+    // Show loading state
+    responseMessage.textContent = ""; // Clear any previous messages
+    subscribeButton.disabled = true;
+    subscribeButton.textContent = "Subscribing...";
 
-            const result = await response.json();
+    try {
+      const response = await fetch(`${url}/edua/nbn/api/v1/subscribe`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: "edua-public",
+          Origin: originUrl, // Dynamically set the Origin header
+        },
+        body: JSON.stringify({ name, email }),
+      });
 
-            if (response.ok && result.error === false) {
-                // Success
-                subscribeButton.textContent = 'Subscribed';
+      const result = await response.json();
 
-                // Clear name and email fields
-                nameField.value = '';
-                emailField.value = '';
-            } else {
-                // Error from server
-                throw new Error(result.message || 'Failed to subscribe');
-            }
-        } catch (error) {
-            responseMessage.textContent = error.message;
-            responseMessage.style.color = 'red';
-            subscribeButton.disabled = false; // Re-enable button on error
-            subscribeButton.textContent = 'SUBSCRIBE';
-        }
-    });
+      if (response.ok && result.error === false) {
+        // Success
+        subscribeButton.textContent = "Subscribed";
+
+        // Clear name and email fields
+        nameField.value = "";
+        emailField.value = "";
+      } else {
+        // Error from server
+        throw new Error(result.message || "Failed to subscribe");
+      }
+    } catch (error) {
+      responseMessage.textContent = error.message;
+      responseMessage.style.color = "red";
+      subscribeButton.disabled = false; // Re-enable button on error
+      subscribeButton.textContent = "SUBSCRIBE";
+    }
+  });
