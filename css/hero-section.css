@@ -1,5 +1,5 @@
 /* Hero Section Styles */
-.hero-section {
+.header-section {
     /* height: 90vh; */
     height: 100vh;
     position: relative;
@@ -33,22 +33,22 @@
     align-items: center;
 }
 
-.hero-section .hero-content {
+.hero-content {
     text-align: center;
     padding: 20px;
 }
 
-.hero-section .hero-content h1 {
+.hero-content h1 {
     font-size: 2.5em;
     margin-bottom: 15px;
     font-weight: 700;
 }
 
-.hero-section .hero-content h1 span {
+.hero-content h1 span {
     color: #00ff00;
 }
 
-.hero-section .hero-content p {
+.hero-content p {
     font-size: 1.2em;
 }
 
