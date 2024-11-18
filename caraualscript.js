@@ -1,137 +1,115 @@
-//carousel for features
+function setupInfiniteCarousel({
+    prevButtonId,
+    nextButtonId,
+    carouselVpId,
+    carouselInnerId,
+    itemClass
+}) {
+    const prevButton = document.querySelector(prevButtonId);
+    const nextButton = document.querySelector(nextButtonId);
+    const carouselVp = document.querySelector(carouselVpId);
+    const carouselInner = document.querySelector(carouselInnerId);
 
-const prev = document.querySelector('#prev');
-const next = document.querySelector('#next');
+    let items = document.querySelectorAll(itemClass);
+    const itemWidth =
+        items[0].getBoundingClientRect().width +
+        parseFloat(
+            window.getComputedStyle(carouselInner).getPropertyValue('gap'),
+            10
+        );
 
-let carouselVp = document.querySelector('#carousel-vp');
+    let currentIndex = items.length; // Start at the first original item (after prepended clones)
 
-let cCarouselInner = document.querySelector('#cCarousel-inner');
-let carouselInnerWidth = cCarouselInner.getBoundingClientRect().width;
+    // Clone all items and append/prepend them for infinite looping
+    items.forEach((item) => {
+        const clone = item.cloneNode(true);
+        carouselInner.appendChild(clone); // Append clones to the end
+    });
 
-let leftValue = 0;
+    items.forEach((item) => {
+        const clone = item.cloneNode(true);
+        carouselInner.insertBefore(clone, items[0]); // Prepend clones to the beginning
+    });
 
-// Variable used to set the carousel movement value (card's width + gap)
-const totalMovementSize =
-    parseFloat(
-        document.querySelector('.cCarousel-item').getBoundingClientRect().width,
-        10
-    ) +
-    parseFloat(
-        window.getComputedStyle(cCarouselInner).getPropertyValue('gap'),
-        10
-    );
+    // Update items after cloning
+    items = document.querySelectorAll(itemClass);
 
-prev.addEventListener('click', () => {
-    if (!leftValue == 0) {
-        leftValue -= -totalMovementSize;
-        cCarouselInner.style.left = leftValue + 'px';
-    }
-});
+    // Adjust the initial position to show the first original set
+    carouselInner.style.transition = 'none';
+    carouselInner.style.transform = `translateX(-${
+        currentIndex * itemWidth
+    }px)`;
 
-next.addEventListener('click', () => {
-    const carouselVpWidth = carouselVp.getBoundingClientRect().width;
-    if (carouselInnerWidth - Math.abs(leftValue) > carouselVpWidth) {
-        leftValue -= totalMovementSize;
-        cCarouselInner.style.left = leftValue + 'px';
-    }
-});
+    // Handle next button click
+    nextButton.addEventListener('click', () => {
+        currentIndex++;
+        carouselInner.style.transition = 'transform 0.5s ease-in-out';
+        carouselInner.style.transform = `translateX(-${
+            currentIndex * itemWidth
+        }px)`;
 
-const mediaQuery510 = window.matchMedia('(max-width: 510px)');
-const mediaQuery770 = window.matchMedia('(max-width: 770px)');
+        // Loop back to the original items
+        setTimeout(() => {
+            if (currentIndex >= items.length - items.length / 3) {
+                currentIndex = items.length / 3;
+                carouselInner.style.transition = 'none';
+                carouselInner.style.transform = `translateX(-${
+                    currentIndex * itemWidth
+                }px)`;
+            }
+        }, 500);
+    });
 
-mediaQuery510.addEventListener('change', mediaManagement);
-mediaQuery770.addEventListener('change', mediaManagement);
+    // Handle prev button click
+    prevButton.addEventListener('click', () => {
+        currentIndex--;
+        carouselInner.style.transition = 'transform 0.5s ease-in-out';
+        carouselInner.style.transform = `translateX(-${
+            currentIndex * itemWidth
+        }px)`;
 
-let oldViewportWidth = window.innerWidth;
+        // Loop back to the original items
+        setTimeout(() => {
+            if (currentIndex < items.length / 3) {
+                currentIndex = items.length - items.length / 3 - 1;
+                carouselInner.style.transition = 'none';
+                carouselInner.style.transform = `translateX(-${
+                    currentIndex * itemWidth
+                }px)`;
+            }
+        }, 500);
+    });
 
-function mediaManagement() {
-    const newViewportWidth = window.innerWidth;
+    // Handle window resize
+    window.addEventListener('resize', () => {
+        const newItemWidth =
+            items[0].getBoundingClientRect().width +
+            parseFloat(
+                window.getComputedStyle(carouselInner).getPropertyValue('gap'),
+                10
+            );
 
-    if (
-        leftValue <= -totalMovementSize &&
-        oldViewportWidth < newViewportWidth
-    ) {
-        leftValue += totalMovementSize;
-        cCarouselInner.style.left = leftValue + 'px';
-        oldViewportWidth = newViewportWidth;
-    } else if (
-        leftValue <= -totalMovementSize &&
-        oldViewportWidth > newViewportWidth
-    ) {
-        leftValue -= totalMovementSize;
-        cCarouselInner.style.left = leftValue + 'px';
-        oldViewportWidth = newViewportWidth;
-    }
+        currentIndex = items.length / 3;
+        carouselInner.style.transition = 'none';
+        carouselInner.style.transform = `translateX(-${
+            currentIndex * newItemWidth
+        }px)`;
+    });
 }
 
-//carousel for use-case
-
-const useCasePrev = document.querySelector('#useCasePrev');
-const useCaseNext = document.querySelector('#useCaseNext');
-
-let useCaseCarouselVp = document.querySelector('#useCaseCarousel-vp');
-
-let useCaseCarouselInner = document.querySelector('#useCaseCarousel-inner');
-let useCaseCarouselInnerWidth =
-    useCaseCarouselInner.getBoundingClientRect().width;
-
-let useCaseLeftValue = 0;
-
-// Variable used to set the carousel movement value (card's width + gap)
-const useCaseTotalMovementSize =
-    parseFloat(
-        document.querySelector('.useCaseCarousel-item').getBoundingClientRect()
-            .width,
-        10
-    ) +
-    parseFloat(
-        window.getComputedStyle(useCaseCarouselInner).getPropertyValue('gap'),
-        10
-    );
-
-useCasePrev.addEventListener('click', () => {
-    if (!useCaseLeftValue == 0) {
-        useCaseLeftValue -= -useCaseTotalMovementSize;
-        useCaseCarouselInner.style.left = useCaseLeftValue + 'px';
-    }
+// Set up carousels
+setupInfiniteCarousel({
+    prevButtonId: '#prev',
+    nextButtonId: '#next',
+    carouselVpId: '#carousel-vp',
+    carouselInnerId: '#cCarousel-inner',
+    itemClass: '.cCarousel-item'
 });
 
-useCaseNext.addEventListener('click', () => {
-    const useCaseCarouselVpWidth =
-        useCaseCarouselVp.getBoundingClientRect().width;
-    if (
-        carouselInnerWidth - Math.abs(useCaseLeftValue) >
-        useCaseCarouselVpWidth
-    ) {
-        useCaseLeftValue -= useCaseTotalMovementSize;
-        useCaseCarouselInner.style.left = useCaseLeftValue + 'px';
-    }
+setupInfiniteCarousel({
+    prevButtonId: '#useCasePrev',
+    nextButtonId: '#useCaseNext',
+    carouselVpId: '#useCaseCarousel-vp',
+    carouselInnerId: '#useCaseCarousel-inner',
+    itemClass: '.useCaseCarousel-item'
 });
-
-const useCaseMediaQuery510 = window.matchMedia('(max-width: 510px)');
-const useCaseMediaQuery770 = window.matchMedia('(max-width: 770px)');
-
-useCaseMediaQuery510.addEventListener('change', mediaManagement);
-useCaseMediaQuery770.addEventListener('change', mediaManagement);
-
-let useCaseOldViewportWidth = window.innerWidth;
-
-function mediaManagement() {
-    const useCaseNewViewportWidth = window.innerWidth;
-
-    if (
-        useCasePrev <= -useCaseTotalMovementSize &&
-        useCaseOldViewportWidth < useCaseNewViewportWidth
-    ) {
-        useCasePrev += useCaseTotalMovementSize;
-        useCaseCarouselInner.style.left = useCasePrev + 'px';
-        useCaseOldViewportWidth = useCaseNewViewportWidth;
-    } else if (
-        useCasePrev <= -useCaseTotalMovementSize &&
-        useCaseOldViewportWidth > useCaseNewViewportWidth
-    ) {
-        useCasePrev -= useCaseTotalMovementSize;
-        useCaseCarouselInner.style.left = useCasePrev + 'px';
-        useCaseOldViewportWidth = useCaseNewViewportWidth;
-    }
-}
