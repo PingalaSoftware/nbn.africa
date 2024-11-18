@@ -253,7 +253,7 @@
             class="hero-main position-relative flex-grow-1"
             onmouseenter="trackSectionView('home-section')"
         >
-            <canvas class="hero-canvas"> </canvas>
+            <canvas class="hero-canvas"></canvas>
             <div class="hero-content-wrapper">
                 <div
                     class="hero-content text-center text-white p-4 bg-opacity-75 rounded"
@@ -266,16 +266,31 @@
                         Enabling Africa's Digital Transformation with Trust and
                         Innovation
                     </p>
-                    <a
-                        id="lets-explore"
-                        onclick="scrollToElement('key-features-section')"
-                        class="btn btn-success btn-lg mt-3"
-                    >
-                        Let's Explore
-                    </a>
+                    <div class="hero-buttons">
+                        <a href="#events" class="btn-custom btn-events">
+                            <span>Events</span>
+                            <span class="circle-arrow">
+                                <span class="material-icons"
+                                    >arrow_forward</span
+                                >
+                            </span>
+                        </a>
+                        <a
+                            href="./upcoming-training/index.html"
+                            class="btn-custom btn-training"
+                        >
+                            <span>Training</span>
+                            <span class="circle-arrow">
+                                <span class="material-icons"
+                                    >arrow_forward</span
+                                >
+                            </span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
+
         <!-- </section> -->
 
         <!-- Features Section with Multi-Item Carousel -->

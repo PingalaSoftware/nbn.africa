@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dynamic Calendar</title>
+
+        <link rel="stylesheet" href="../css/top-bar.css" />
+        <link rel="stylesheet" href="../css/navbar.css" />
+        <link rel="stylesheet" href="../css/shared-logo.css" />
+        <link rel="stylesheet" href="../global.css" />
+        <link rel="stylesheet" href="../css/general.css" />
+        <link rel="stylesheet" href="css/upcoming-training.css" />
+        <link
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header
+            style="height: 110px"
+            class="d-flex sticky-header"
+            id="header-section"
+        >
+            <!-- Logo shared between top bar and navbar -->
+            <a href="#" class="logo-container">
+                <img src="../assets/logo.svg" alt="Logo" class="shared-logo" />
+            </a>
+
+            <div class="nav-info w-100">
+                <!-- Top Bar Section -->
+                <div class="top-bar">
+                    <div
+                        class="d-flex justify-content-between align-items-center h-100 container-fluid"
+                    >
+                        <div class="contact-info pc-only">
+                            <span>
+                                <a href="mailto:nbn@egaz.go.tz"
+                                    >nbn@egaz.go.tz
+                                </a></span
+                            >
+                        </div>
+                        <div class="social-icons">
+                            <a
+                                class="mobile-only mx-2"
+                                href="mailto:nbn@egaz.go.tz/"
+                                target="_blank"
+                            >
+                                <img
+                                    src="../assets/email.png"
+                                    alt="linkedin"
+                                    class="topbar-logo-image"
+                                />
+                            </a>
+
+                            <a
+                                class="mx-2"
+                                href="https://www.linkedin.com/company/zanzibar-national-blockchain-network/"
+                                target="_blank"
+                            >
+                                <img
+                                    src="../assets/linkedin-logo.png"
+                                    alt="linkedin"
+                                    class="topbar-logo-image"
+                                />
+                            </a>
+
+                            <a
+                                class="mx-2"
+                                href="https://x.com/ZanzibarNBN"
+                                target="_blank"
+                            >
+                                <img
+                                    src="../assets/twitter.png"
+                                    alt="telegram"
+                                    class="topbar-logo-image"
+                                />
+                            </a>
+
+                            <a
+                                class="mx-2"
+                                href="https://t.me/+2CGt_4mvIHk0NWJl"
+                                target="_blank"
+                            >
+                                <img
+                                    src="../assets/telegram.png"
+                                    alt="telegram"
+                                    class="topbar-logo-image"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navbar Section -->
+                <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    id="nav-about"
+                                    href="../index.html"
+                                >
+                                    <i class="fa-solid fa-house"></i>
+                                    HOME
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="nav-about">
+                                    <i class="fa-solid fa-house"></i>
+                                    EVENTS
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section class="upcoming-trainings-section">
+            <div class="container upcoming-title">
+                <span class="upcoming-text">Upcoming</span>
+                <span class="trainings-text">Trainings</span>
+            </div>
+            <div id="calendars-container">
+                <!-- Calendars will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <script src="js/calendarscript.js"></script>
+    </body>
+</html>

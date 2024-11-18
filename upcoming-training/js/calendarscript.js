@@ -13,52 +13,35 @@ const months = [
     'December'
 ];
 
-const year = 2024; // Start year
-const monthsToDisplay = [10, 11, 0]; // Indices of months to display (November, December, January)
-
-// Example events
-const events = {
-    '2024-11-09': {
-        title: 'Online Seminar',
-        time: '11:00 AM - 3:30 PM',
-        description: 'Topic: Advanced Web Technologies'
-    },
-    '2024-11-11': {
-        title: 'Online Seminar',
-        time: '11:00 AM - 3:30 PM',
-        description: 'Topic: Advanced Web Technologies'
-    },
-    '2024-11-16': {
-        title: 'Online Seminar',
-        time: '11:00 AM - 3:30 PM',
-        description: 'Topic: Advanced Web Technologies'
-    },
-    '2024-11-21': {
-        title: 'Online Seminar',
-        time: '11:00 AM - 3:30 PM',
-        description: 'Topic: Advanced Web Technologies'
-    },
-    '2024-11-26': {
-        title: 'Online Seminar',
-        time: '11:00 AM - 3:30 PM',
-        description: 'Topic: Advanced Web Technologies'
-    },
-    '2024-12-09': {
-        title: 'Fundamentals of WEB 3.0',
-        time: '11:00 AM - 3:00 PM'
-    },
-    '2024-12-16': {
-        title: 'Fundamentals of NFT',
-        time: '11:00 AM - 3:00 PM'
-    },
-    '2025-01-16': {
-        title: 'Fundamentals of NFT',
-        time: '11:00 AM - 3:00 PM'
-    }
-};
+const year = new Date().getFullYear();
+const currentMonth = new Date().getMonth();
+const monthsToDisplay = [
+    currentMonth,
+    (currentMonth + 1) % 12,
+    (currentMonth + 2) % 12
+];
 
 // Colors for special events
 const specialColors = ['#35B1BA', '#BA8035', '#6535BA', '#BA3535', '#BA3580'];
+
+// Fetch events from JSON
+let events = {};
+fetch('./events.json')
+    .then((response) => response.json())
+    .then((data) => {
+        events = data;
+
+        // Generate calendars after events are loaded
+        const calendarsContainer = document.getElementById(
+            'calendars-container'
+        );
+        monthsToDisplay.forEach((monthIndex) => {
+            const adjustedYear = monthIndex < currentMonth ? year + 1 : year; // Adjust year for next January
+            calendarsContainer.appendChild(
+                createCalendar(monthIndex, adjustedYear)
+            );
+        });
+    });
 
 function createCalendar(month, year) {
     const calendar = document.createElement('div');
@@ -89,16 +72,16 @@ function createCalendar(month, year) {
 function generateMonthDates(month, year) {
     const date = new Date(year, month, 1);
     let html = '';
-    let colorIndex = 0; // To cycle through special colors
+    let colorIndex = 0;
 
     while (date.getMonth() === month) {
         const week = [];
 
-        // Determine the day of the week for the first day of the month
+        // Adjust Sunday (0) to 7 for Monday-start weeks
         const firstDayOfMonth = new Date(year, month, 1).getDay();
-        const adjustedFirstDay = firstDayOfMonth === 0 ? 7 : firstDayOfMonth; // Adjust Sunday (0) to 7
+        const adjustedFirstDay = firstDayOfMonth === 0 ? 7 : firstDayOfMonth;
 
-        // Fill empty cells for the days before the first day of the month
+        // Add empty cells before the first day of the month
         if (date.getDate() === 1 && adjustedFirstDay !== 1) {
             for (let i = 1; i < adjustedFirstDay; i++) {
                 week.push('<div class="col"></div>');
@@ -110,12 +93,12 @@ function generateMonthDates(month, year) {
             const dateKey = `${date.getFullYear()}-${String(
                 date.getMonth() + 1
             ).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
-            const event = events[dateKey]; // Check if there are events for this date
+            const event = events[dateKey];
 
             if (event) {
                 const bgColor =
-                    specialColors[colorIndex % specialColors.length]; // Cycle through colors
-                colorIndex++; // Increment color index for next event
+                    specialColors[colorIndex % specialColors.length];
+                colorIndex++;
                 week.push(
                     `<div class="col">
                         <span class="date special" style="background-color: ${bgColor}">
@@ -137,7 +120,7 @@ function generateMonthDates(month, year) {
             date.setDate(date.getDate() + 1);
         }
 
-        // Fill empty cells for the end of the week
+        // Fill remaining cells
         while (week.length < 7) {
             week.push('<div class="col"></div>');
         }
@@ -147,10 +130,3 @@ function generateMonthDates(month, year) {
 
     return html;
 }
-
-// Adjust year dynamically when crossing December
-const calendarsContainer = document.getElementById('calendars-container');
-monthsToDisplay.forEach((monthIndex) => {
-    const adjustedYear = monthIndex < 10 ? year + 1 : year; // If month is January or later, increment year
-    calendarsContainer.appendChild(createCalendar(monthIndex, adjustedYear));
-});
