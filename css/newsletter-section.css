@@ -45,3 +45,7 @@
 .form-control {
     width: 100%;
 }
+
+.newsletter-section .newsletter-text {
+    background-image: url('../assets/subscribeFormBg.png');
+}

@@ -7,7 +7,7 @@
 }
 
 .navbar-nav .nav-link {
-    font-size: 14px;
+    font-size: 12px;
     color: #333333 !important; /* Dark text for contrast */
     margin-right: 15px;
 }
@@ -21,6 +21,11 @@
     font-size: 20px;
     vertical-align: middle;
     color: #333333;
+}
+
+.navbar-nav .nav-link.active {
+    color: #00ff00 !important;
+    font-weight: bold;
 }
 
 @media (max-width: 768px) {
