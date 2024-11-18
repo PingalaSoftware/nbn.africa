@@ -1,0 +1,102 @@
+/* Base Calendar Styles */
+.calendar {
+    background-color: black;
+    padding: 10px; /* Reduced padding for smaller height */
+    color: white;
+}
+
+.container h2 {
+    font-size: 20px; /* Smaller font size for the title */
+    font-weight: bold;
+    margin-bottom: 10px; /* Reduced margin for compact layout */
+    color: white;
+}
+
+.date-container .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px; /* Reduced margin between rows */
+}
+
+.row .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% / 7); /* Equal width for 7 days */
+    height: 100px; /* Reduced height for rows */
+    padding: 3px; /* Reduced padding for compact spacing */
+    box-sizing: border-box;
+    color: #707070;
+    font-size: 16px; /* Adjusted font size */
+}
+
+/* Regular Date */
+.date {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 8px; /* Reduced padding for compact layout */
+    width: 90%;
+    height: 100%;
+    border: 1px solid #707070;
+    background-color: transparent;
+    color: #707070;
+    border-radius: 5px; /* Reduced border radius */
+    box-sizing: border-box;
+    overflow: hidden;
+    font-size: 14px; /* Smaller font size for text */
+}
+
+.date span.date-number {
+    font-size: 18px; /* Smaller font size for numbers */
+    font-weight: bold;
+    color: #707070;
+}
+
+.date span.event-time {
+    font-size: 12px; /* Smaller font size for event time */
+    font-weight: 500;
+    color: white;
+    line-height: 1.2;
+}
+
+.date span.event-title {
+    font-size: 12px; /* Smaller font size for event title */
+    font-weight: 600;
+    color: white;
+    word-wrap: break-word;
+    line-height: 1.2;
+    text-align: left;
+}
+
+/* Special Event Styling */
+.date.special {
+    color: white;
+    overflow: hidden;
+    border-radius: 5px; /* Reduced border radius */
+}
+
+.date.special:hover {
+    opacity: 0.9;
+}
+
+/* Responsive Adjustments for Smaller Screens */
+@media (max-height: 768px) {
+    .row .col {
+        height: 80px; /* Further reduced height for smaller screens */
+    }
+
+    .date {
+        padding: 6px; /* Further reduce padding */
+    }
+
+    .date span.date-number {
+        font-size: 16px; /* Smaller number font */
+    }
+
+    .date span.event-time,
+    .date span.event-title {
+        font-size: 10px; /* Adjust font sizes for text */
+    }
+}
