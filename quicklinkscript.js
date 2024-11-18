@@ -3,36 +3,33 @@ function scrollToElement(eleId) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    const sections = document.querySelectorAll('section'); // All sections
-    const navLinks = document.querySelectorAll('.navbar-nav .nav-link'); // Navbar links
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
 
     const observerOptions = {
-        root: null, // Observes in the viewport
+        root: null,
         rootMargin: '0px',
-        threshold: 0.6 // 60% of the section needs to be visible
+        threshold: 0.6
     };
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
-                // Get the ID of the section in view
                 const activeId = entry.target.id;
 
-                // Update active class on navbar links
                 navLinks.forEach((link) => {
-                    link.classList.remove('active'); // Remove active class from all
+                    link.classList.remove('active');
                     if (
                         link.getAttribute('onclick') ===
                         `scrollToElement('${activeId}')`
                     ) {
-                        link.classList.add('active'); // Add active class to the matching link
+                        link.classList.add('active');
                     }
                 });
             }
         });
     }, observerOptions);
 
-    // Observe each section
     sections.forEach((section) => {
         observer.observe(section);
     });
