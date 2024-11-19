@@ -3,14 +3,14 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Upcoming Trainings</title>
+        <title>Upcoming Events</title>
 
         <link rel="stylesheet" href="../css/top-bar.css" />
         <link rel="stylesheet" href="../css/navbar.css" />
         <link rel="stylesheet" href="../css/shared-logo.css" />
         <link rel="stylesheet" href="../global.css" />
         <link rel="stylesheet" href="../css/general.css" />
-        <link rel="stylesheet" href="css/upcoming-training.css" />
+        <link rel="stylesheet" href="./css/upcoming-events.css" />
         <link
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
             rel="stylesheet"
@@ -112,27 +112,56 @@
                                     HOME
                                 </a>
                             </li>
-                            <!-- <li class="nav-item">
+                            <li class="nav-item">
                                 <a
                                     class="nav-link"
                                     id="nav-about"
-                                    href="../upcoming-events/index.html"
+                                    href="../upcoming-training/index.html"
                                 >
                                     <i class="fa-solid fa-house"></i>
-                                    EVENTS
+                                    TRAINING
                                 </a>
-                            </li> -->
+                            </li>
                         </ul>
                     </div>
                 </nav>
             </div>
         </header>
-        <section class="upcoming-trainings-section">
+        <section class="upcoming-events-section">
             <div class="container upcoming-title">
                 <span class="upcoming-text">Upcoming</span>
-                <span class="trainings-text">Trainings</span>
+                <span class="events-text">Events</span>
             </div>
-            <div id="calendars-container"></div>
+            <div id="container">
+                <div class="row">
+                    <div class="card bg-transparent" style="width: 18rem">
+                        <img
+                            class="card-img-top"
+                            src="../assets/abstract-blockchain.png"
+                            alt="Card image cap"
+                        />
+                        <div class="card-body">
+                            <h4>BLOCKCHAIN BASICS</h4>
+                            <p class="card-text">
+                                Reliable, tamper-proof verification of important
+                                documents such as identity proofs, licenses, and
+                                certificates, ensuring authenticity and reducing
+                                fraud
+                            </p>
+                        </div>
+                        <div class="card-footer justify-content-between">
+                            <a
+                                class="btn btn-success d-flex align-items-center justify-content-between"
+                            >
+                                <span class="btn-text">READ MORE</span>
+                                <span class="material-icons arrow-icon"
+                                    >arrow_forward</span
+                                >
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <script src="js/calendarscript.js"></script>
