@@ -15,11 +15,7 @@ const months = [
 
 const year = new Date().getFullYear();
 const currentMonth = new Date().getMonth();
-const monthsToDisplay = [
-    currentMonth,
-    (currentMonth + 1) % 12,
-    (currentMonth + 2) % 12
-];
+const monthsToDisplay = [currentMonth, (currentMonth + 1) % 12];
 
 // Colors for special events
 const specialColors = ['#35B1BA', '#BA8035', '#6535BA', '#BA3535', '#BA3580'];
@@ -41,6 +37,9 @@ fetch('./events.json')
                 createCalendar(monthIndex, adjustedYear)
             );
         });
+
+        // Attach functionality for mobile view toggle
+        attachMobileViewToggle();
     });
 
 function createCalendar(month, year) {
@@ -103,8 +102,12 @@ function generateMonthDates(month, year) {
                     `<div class="col">
                         <span class="date special" style="background-color: ${bgColor}">
                             <span class="date-number">${date.getDate()}</span>
-                            <span class="event-time">${event.time}</span>
-                            <span class="event-title">${event.title}</span>
+                            <span class="event-title link" data-link="${
+                                event.link
+                            }">${event.title}</span>
+                            <span class="event-sub-title link" data-link="${
+                                event.link
+                            }">${event.title2}</span>
                         </span>
                     </div>`
                 );
@@ -129,4 +132,35 @@ function generateMonthDates(month, year) {
     }
 
     return html;
+}
+
+function attachMobileViewToggle() {
+    const specialDates = document.querySelectorAll('.date.special');
+
+    specialDates.forEach((dateElement) => {
+        // Create and append the info icon
+        const infoIcon = document.createElement('i');
+        infoIcon.className = 'info-icon material-icons mobile-only';
+        infoIcon.textContent = 'info';
+        dateElement.appendChild(infoIcon);
+
+        // Add click event to expand/collapse the date element
+        dateElement.addEventListener('click', (event) => {
+            if (!event.target.classList.contains('link')) {
+                // Toggle the expanded state
+                dateElement.classList.toggle('expanded');
+            }
+        });
+
+        // Add click event to open link in a new tab
+        dateElement.querySelectorAll('.link').forEach((linkElement) => {
+            linkElement.addEventListener('click', (e) => {
+                e.stopPropagation(); // Prevent toggling the expanded state
+                const link = linkElement.dataset.link;
+                if (link) {
+                    window.open(link, '_blank');
+                }
+            });
+        });
+    });
 }

@@ -83,7 +83,7 @@ section {
     }
 
     .pc-only {
-        display: none;
+        display: none !important;
     }
 
     .mobile-only {

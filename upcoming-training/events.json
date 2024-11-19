@@ -1,48 +1,7 @@
 {
-    "2024-11-09": {
-        "title": "Online Seminar",
-        "time": "11:00 AM - 3:30 PM",
-        "description": "Topic: Advanced Web Technologies"
-    },
-    "2024-11-19": {
-        "title": "Online Seminar",
-        "time": "11:00 AM - 3:30 PM",
-        "description": "Topic: Advanced Web Technologies"
-    },
-    "2024-11-11": {
-        "title": "Online Seminar",
-        "time": "11:00 AM - 3:30 PM",
-        "description": "Topic: Advanced Web Technologies"
-    },
-    "2024-11-30": {
-        "title": "Online Seminar",
-        "time": "11:00 AM - 3:30 PM",
-        "description": "Topic: Advanced Web Technologies"
-    },
-    "2024-11-21": {
-        "title": "Online Seminar",
-        "time": "11:00 AM - 3:30 PM",
-        "description": "Topic: Advanced Web Technologies"
-    },
-    "2024-11-26": {
-        "title": "Online Seminar",
-        "time": "11:00 AM - 3:30 PM",
-        "description": "Topic: Advanced Web Technologies"
-    },
-    "2024-12-09": {
-        "title": "Fundamentals of WEB 3.0",
-        "time": "11:00 AM - 3:00 PM"
-    },
-    "2024-12-16": {
-        "title": "Fundamentals of NFT",
-        "time": "11:00 AM - 3:00 PM"
-    },
-    "2024-12-26": {
-        "title": "Fundamentals of NFT",
-        "time": "11:00 AM - 3:00 PM"
-    },
-    "2025-01-16": {
-        "title": "Fundamentals of NFT",
-        "time": "11:00 AM - 3:00 PM"
+    "2024-11-25": {
+        "title": "Online Training",
+        "title2": "Week 1 Day 1",
+        "link": "https://forms.gle/SjAZWwxh9rPxa8XM8"
     }
 }

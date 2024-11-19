@@ -113,3 +113,25 @@ setupInfiniteCarousel({
     carouselInnerId: '#useCaseCarousel-inner',
     itemClass: '.useCaseCarousel-item'
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Find all .date.special elements
+    const specialDates = document.querySelectorAll('.date.special');
+
+    specialDates.forEach((dateElement) => {
+        // Create and append the info icon
+        const infoIcon = document.createElement('i');
+        infoIcon.className = 'info-icon material-icons';
+        infoIcon.textContent = 'info';
+        dateElement.appendChild(infoIcon);
+
+        // Add click event to expand/collapse the date element
+        dateElement.addEventListener('click', (event) => {
+            // Prevent toggle when clicking on the icon
+            if (event.target.classList.contains('info-icon')) return;
+
+            // Toggle the expanded state
+            dateElement.classList.toggle('expanded');
+        });
+    });
+});
