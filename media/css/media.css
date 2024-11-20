@@ -1,24 +1,28 @@
-/* Media Section */
-.media-section {
-    padding: 40px 20px;
+/* Styling for Upcoming media Section */
+.image-section,
+.digital-media-coverage,
+.upcoming-media-section {
     background-color: black;
     color: white;
 }
 
-/* Media Title */
-.media-title {
-    text-align: left;
-    margin-bottom: 40px;
+.upcoming-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
-.Media-text {
+.upcoming-title .upcoming-text {
     font-size: 40px;
     font-weight: bold;
     color: #35ba53;
+    margin-bottom: 5px;
     line-height: 1.2;
 }
 
-.Coverage-text {
+.upcoming-title .media-text {
     font-size: 40px;
     font-weight: bold;
     color: white;
@@ -28,60 +32,16 @@
     line-height: 1.2;
 }
 
-/* Media Gallery */
-.media-gallery {
-    display: flex;
-    flex-direction: column;
-    gap: 40px; /* Space between rows */
-}
-
-/* Individual Media Item */
-.media-item {
-    max-width: 100%;
-    padding: 20px;
-    background-color: #1a1a1a;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-.media-heading {
-    font-size: 24px;
-    font-weight: bold;
-    color: #ffa500;
-    margin-bottom: 20px;
-}
-
-.media-image {
-    width: 80%; /* Increase size */
-    height: auto;
-    margin-bottom: 20px;
-    border: 3px solid #35ba53;
-    border-radius: 15px;
-}
-
-.media-description {
+.digital-media-coverage .media-links {
     font-size: 18px;
-    color: #d3d3d3;
 }
 
-/* Media Links */
-.media-links {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 20px;
-}
-
-.media-links li {
-    margin-bottom: 10px;
-}
-
-.media-links a {
-    font-size: 16px;
+.digital-media-coverage .media-links .link {
     color: #35ba53;
-    text-decoration: none;
-}
-
-.media-links a:hover {
     text-decoration: underline;
 }
+
+.digital-media-coverage .media-links .link-title {
+    font-weight: bold;
+}
+

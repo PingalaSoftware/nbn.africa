@@ -1,274 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>
-            Zanzibar National Blockchain Network - serving and leading entire
-            Africa region
-        </title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Zanzibar National Blockchain Network - serving and leading entire Africa
+      region
+    </title>
 
-        <meta
-            property="og:title"
-            content="National Blockchain Network Africa"
-        />
+    <meta property="og:title" content="National Blockchain Network Africa" />
 
-        <!-- Bootstrap CSS -->
-        <link
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-            rel="stylesheet"
-        />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-        <!-- Material Icons for MUI-style Icons -->
-        <link
-            href="https://fonts.googleapis.com/icon?family=Material+Icons"
-            rel="stylesheet"
-        />
+    <!-- Material Icons for MUI-style Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"></script>
 
-        <!-- Separate CSS Files for Each Section -->
-        <link
-            href="https://fonts.googleapis.com/css?family=Poppins"
-            rel="stylesheet"
-        />
+    <!-- Separate CSS Files for Each Section -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
 
-        <link rel="stylesheet" href="./global.css" />
-        <link rel="stylesheet" href="css/general.css" />
-        <link rel="stylesheet" href="css/top-bar.css" />
-        <link rel="stylesheet" href="css/navbar.css" />
-        <link rel="stylesheet" href="css/hero-section.css" />
-        <link rel="stylesheet" href="css/features-carousel-section.css" />
-        <link rel="stylesheet" href="css/about-us.css" />
-        <link rel="stylesheet" href="css/shared-logo.css" />
-        <link rel="stylesheet" href="css/features-section.css" />
-        <link rel="stylesheet" href="css/getInvolved-section.css" />
-        <link rel="stylesheet" href="css/global-hub-section.css" />
-        <link rel="stylesheet" href="css/fqa-section.css" />
-        <link rel="stylesheet" href="css/newsletter-section.css" />
-        <link rel="stylesheet" href="css/footer-section.css" />
-        <link rel="stylesheet" href="css/cCarousal.css" />
-        <link rel="stylesheet" href="css/use-cases.css" />
-        <link rel="stylesheet" href="css/media-section.css" />
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/top-bar.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/hero-section.css" />
+    <link rel="stylesheet" href="css/features-carousel-section.css" />
+    <link rel="stylesheet" href="css/about-us.css" />
+    <link rel="stylesheet" href="css/shared-logo.css" />
+    <link rel="stylesheet" href="css/features-section.css" />
+    <link rel="stylesheet" href="css/getInvolved-section.css" />
+    <link rel="stylesheet" href="css/global-hub-section.css" />
+    <link rel="stylesheet" href="css/fqa-section.css" />
+    <link rel="stylesheet" href="css/newsletter-section.css" />
+    <link rel="stylesheet" href="css/footer-section.css" />
+    <link rel="stylesheet" href="css/cCarousal.css" />
+    <link rel="stylesheet" href="css/use-cases.css" />
+    <link rel="stylesheet" href="css/media-section.css" />
 
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-KD81WDR899"
-        ></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-KD81WDR899"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-            gtag('config', 'G-KD81WDR899');
+      gtag("config", "G-KD81WDR899");
 
-            // Custom function to send events
-            function trackSectionView(sectionName) {
-                gtag('event', 'section_view', {
-                    section: sectionName
-                });
-            }
-        </script>
-    </head>
-    <body>
-        <!-- Hero Section -->
-        <!-- <section class="hero-section"> -->
-        <header
-            style="height: 110px"
-            class="d-flex sticky-header"
-            id="header-section"
-            onmouseenter="trackSectionView('header-section')"
-        >
-            <!-- Logo shared between top bar and navbar -->
-            <a href="/" class="logo-container">
-                <img src="assets/logo.svg" alt="Logo" class="shared-logo" />
-            </a>
+      // Custom function to send events
+      function trackSectionView(sectionName) {
+        gtag("event", "section_view", {
+          section: sectionName,
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <!-- <section class="hero-section"> -->
+    <header
+      style="height: 110px"
+      class="d-flex sticky-header"
+      id="header-section"
+      onmouseenter="trackSectionView('header-section')"
+    >
+      <!-- Logo shared between top bar and navbar -->
+      <a href="/" class="logo-container">
+        <img src="assets/logo.svg" alt="Logo" class="shared-logo" />
+      </a>
 
-            <div class="nav-info w-100">
-                <!-- Top Bar Section -->
-                <div class="top-bar">
-                    <div
-                        class="d-flex justify-content-between align-items-center h-100 container-fluid"
-                    >
-                        <div class="contact-info pc-only">
-                            <span>
-                                <a href="mailto:nbn@egaz.go.tz"
-                                    >nbn@egaz.go.tz
-                                </a></span
-                            >
-                        </div>
-                        <div class="social-icons">
-                            <a
-                                class="mobile-only mx-2"
-                                href="mailto:nbn@egaz.go.tz/"
-                                target="_blank"
-                            >
-                                <img
-                                    src="./assets/email.png"
-                                    alt="linkedin"
-                                    class="topbar-logo-image"
-                                />
-                            </a>
-
-                            <a
-                                class="mx-2"
-                                href="https://www.linkedin.com/company/zanzibar-national-blockchain-network/"
-                                target="_blank"
-                            >
-                                <img
-                                    src="./assets/linkedin-logo.png"
-                                    alt="linkedin"
-                                    class="topbar-logo-image"
-                                />
-                            </a>
-
-                            <a
-                                class="mx-2"
-                                href="https://x.com/ZanzibarNBN"
-                                target="_blank"
-                            >
-                                <img
-                                    src="./assets/twitter.png"
-                                    alt="telegram"
-                                    class="topbar-logo-image"
-                                />
-                            </a>
-
-                            <a
-                                class="mx-2"
-                                href="https://t.me/+2CGt_4mvIHk0NWJl"
-                                target="_blank"
-                            >
-                                <img
-                                    src="./assets/telegram.png"
-                                    alt="telegram"
-                                    class="topbar-logo-image"
-                                />
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Navbar Section -->
-                <nav class="navbar navbar-expand-lg navbar-light bg-white">
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a
-                                    class="nav-link"
-                                    id="nav-about"
-                                    onclick="scrollToElement('home-section')"
-                                >
-                                    <i class="fa-solid fa-house"></i>
-                                    HOME
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a
-                                    class="nav-link"
-                                    id="nav-about"
-                                    onclick="scrollToElement('about-section')"
-                                >
-                                    <i class="fa-solid fa-house"></i>
-                                    ABOUT
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a
-                                    class="nav-link"
-                                    id="nav-key-features"
-                                    onclick="scrollToElement('key-features-section')"
-                                >
-                                    KEY FEATURES
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a
-                                    class="nav-link"
-                                    id="nav-how-it-works"
-                                    onclick="scrollToElement('how-it-works-section')"
-                                >
-                                    HOW IT WORKS
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a
-                                    class="nav-link"
-                                    id="nav-get-involved"
-                                    onclick="scrollToElement('get-involved-section')"
-                                >
-                                    GET INVOLVED & APPLY
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a
-                                    class="nav-link"
-                                    id="nav-use-cases"
-                                    onclick="scrollToElement('use-cases-section')"
-                                >
-                                    USE CASES
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a
-                                    class="nav-link"
-                                    id="nav-global-hub"
-                                    onclick="scrollToElement('global-hub-section')"
-                                >
-                                    GLOBAL HUB
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a
-                                    class="nav-link"
-                                    id="nav-faq"
-                                    onclick="scrollToElement('faq-section')"
-                                >
-                                    FAQ
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a
-                                    class="nav-link"
-                                    id="nav-contact"
-                                    onclick="scrollToElement('contact-section')"
-                                >
-                                    CONTACT
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link">BLOG</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link">MEDIA</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+      <div class="nav-info w-100">
+        <!-- Top Bar Section -->
+        <div class="top-bar">
+          <div
+            class="d-flex justify-content-between align-items-center h-100 container-fluid"
+          >
+            <div class="contact-info pc-only">
+              <span> <a href="mailto:nbn@egaz.go.tz">nbn@egaz.go.tz </a></span>
             </div>
-        </header>
-        <section
-            id="home-section"
-            class="hero-main position-relative flex-grow-1"
-            onmouseenter="trackSectionView('home-section')"
-        >
-            <canvas class="hero-canvas"></canvas>
-            <div class="hero-content-wrapper">
-                <div
-                    class="hero-content text-center text-white p-4 bg-opacity-75 rounded"
+            <div class="social-icons">
+              <a
+                class="mobile-only mx-2"
+                href="mailto:nbn@egaz.go.tz/"
+                target="_blank"
+              >
+                <img
+                  src="./assets/email.png"
+                  alt="linkedin"
+                  class="topbar-logo-image"
+                />
+              </a>
+
+              <a
+                class="mx-2"
+                href="https://www.linkedin.com/company/zanzibar-national-blockchain-network/"
+                target="_blank"
+              >
+                <img
+                  src="./assets/linkedin-logo.png"
+                  alt="linkedin"
+                  class="topbar-logo-image"
+                />
+              </a>
+
+              <a class="mx-2" href="https://x.com/ZanzibarNBN" target="_blank">
+                <img
+                  src="./assets/twitter.png"
+                  alt="telegram"
+                  class="topbar-logo-image"
+                />
+              </a>
+
+              <a
+                class="mx-2"
+                href="https://t.me/+2CGt_4mvIHk0NWJl"
+                target="_blank"
+              >
+                <img
+                  src="./assets/telegram.png"
+                  alt="telegram"
+                  class="topbar-logo-image"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navbar Section -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="nav-about"
+                  onclick="scrollToElement('home-section')"
                 >
-                    <h1 class="display-4">
-                        EMPOWERING <span>TRUST</span>, <br />
-                        SECURING THE <span>FUTURE</span>
-                    </h1>
-                    <p class="lead">
-                        Enabling Africa's Digital Transformation with Trust and
-                        Innovation
-                    </p>
-                    <div class="hero-buttons">
-                        <!-- <a
+                  <i class="fa-solid fa-house"></i>
+                  HOME
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="nav-about"
+                  onclick="scrollToElement('about-section')"
+                >
+                  <i class="fa-solid fa-house"></i>
+                  ABOUT
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="nav-key-features"
+                  onclick="scrollToElement('key-features-section')"
+                >
+                  KEY FEATURES
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="nav-how-it-works"
+                  onclick="scrollToElement('how-it-works-section')"
+                >
+                  HOW IT WORKS
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="nav-get-involved"
+                  onclick="scrollToElement('get-involved-section')"
+                >
+                  GET INVOLVED & APPLY
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="nav-use-cases"
+                  onclick="scrollToElement('use-cases-section')"
+                >
+                  USE CASES
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="nav-global-hub"
+                  onclick="scrollToElement('global-hub-section')"
+                >
+                  GLOBAL HUB
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="nav-faq"
+                  onclick="scrollToElement('faq-section')"
+                >
+                  FAQ
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="nav-contact"
+                  onclick="scrollToElement('contact-section')"
+                >
+                  CONTACT
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">BLOG</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">MEDIA</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section
+      id="home-section"
+      class="hero-main position-relative flex-grow-1"
+      onmouseenter="trackSectionView('home-section')"
+    >
+      <canvas class="hero-canvas"></canvas>
+      <div class="hero-content-wrapper">
+        <div
+          class="hero-content text-center text-white p-4 bg-opacity-75 rounded"
+        >
+          <h1 class="display-4">
+            EMPOWERING <span>TRUST</span>, <br />
+            SECURING THE <span>FUTURE</span>
+          </h1>
+          <p class="lead">
+            Enabling Africa's Digital Transformation with Trust and Innovation
+          </p>
+          <div class="hero-buttons">
+            <!-- <a
                             href="./upcoming-events/index.html"
                             class="btn-custom btn-events"
                         >
@@ -279,1609 +267,1418 @@
                                 >
                             </span>
                         </a> -->
-                        <a
-                            href="./upcoming-training/index.html"
-                            class="btn-custom btn-training"
-                        >
-                            <span>Training</span>
-                            <span class="circle-arrow">
-                                <span class="material-icons"
-                                    >arrow_forward</span
-                                >
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- </section> -->
-
-        <!-- Features Section with Multi-Item Carousel -->
-        <section class="features-carousel-section">
-            <div id="cCarousel" class="container">
-                <div class="arrow" id="prev">
-                    <span
-                        class="carousel-control-prev-icon"
-                        aria-hidden="true"
-                    ></span>
-                </div>
-                <div class="arrow" id="next">
-                    <span
-                        class="carousel-control-next-icon"
-                        aria-hidden="true"
-                    ></span>
-                </div>
-
-                <div id="carousel-vp">
-                    <div id="cCarousel-inner">
-                        <article class="cCarousel-item">
-                            <!-- Feature Card 1 -->
-                            <div class="feature-card p-4">
-                                <div class="feature-icon card-header no-bg">
-                                    <img
-                                        src="assets/blockchain-icon.png"
-                                        alt="blockchain-icon"
-                                        style="
-                                            width: 50px;
-                                            height: auto;
-                                            object-fit: contain;
-                                            margin: -50px 10px;
-                                        "
-                                    />
-                                </div>
-                                <div class="card-title text-center">
-                                    <h4 class="mt-3">BLOCKCHAIN</h4>
-                                </div>
-                                <div class="card-body">
-                                    <p>
-                                        The NBN offers a secure, decentralized
-                                        foundation for building transparent and
-                                        tamper-proof applications.
-                                    </p>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="cCarousel-item">
-                            <!-- Feature Card 2 -->
-                            <div class="feature-card white p-4">
-                                <div class="feature-icon card-header no-bg">
-                                    <img
-                                        src="assets/web-3-browser-icon.png"
-                                        alt="web3-icon"
-                                        style="
-                                            width: 50px;
-                                            height: auto;
-                                            object-fit: contain;
-                                            margin: -50px 10px;
-                                        "
-                                    />
-                                </div>
-                                <div class="card-title text-center">
-                                    <h4>WEB 3.0</h4>
-                                </div>
-                                <div class="card-body">
-                                    <p class="white">
-                                        Harness the power of Web 3.0 with NBN to
-                                        build next-generation applications that
-                                        prioritize user privacy, data ownership,
-                                        and more.
-                                    </p>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="cCarousel-item">
-                            <!-- Feature Card 3 -->
-                            <div class="feature-card p-4">
-                                <div class="feature-icon card-header no-bg">
-                                    <img
-                                        src="assets/nft-icon.png"
-                                        alt="nft-icon"
-                                        style="
-                                            width: 50px;
-                                            height: auto;
-                                            object-fit: contain;
-                                            margin: -50px 10px;
-                                        "
-                                    />
-                                </div>
-
-                                <div class="card-title text-center">
-                                    <h4 class="mb-4">NFTS</h4>
-                                </div>
-                                <div class="card-body">
-                                    <p>
-                                        Explore the potential of NFTs on NBN to
-                                        create digital assets with unique
-                                        ownership and provenance.
-                                    </p>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="cCarousel-item">
-                            <div class="feature-card white p-4">
-                                <div class="feature-icon card-header no-bg">
-                                    <img
-                                        src="assets/Group 294.png"
-                                        alt="nft-icon"
-                                        style="
-                                            width: 50px;
-                                            height: auto;
-                                            object-fit: contain;
-                                            margin: -50px 10px;
-                                        "
-                                    />
-                                </div>
-                                <div class="card-title text-center">
-                                    <h4>REAL WORLD ASSETS(RWA)</h4>
-                                </div>
-                                <div class="card-body">
-                                    <p class="white">
-                                        NBN enables the tokenization of
-                                        real-world assets (RWA), allowing
-                                        secure, fractional ownership, and
-                                        streamlined transactions.
-                                    </p>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="cCarousel-item">
-                            <!-- Feature Card 5 -->
-                            <div class="feature-card p-4">
-                                <div class="feature-icon card-header no-bg">
-                                    <img
-                                        src="assets/metaverse-virtual-reality-icon-1.png"
-                                        alt="nft-icon"
-                                        style="
-                                            width: 50px;
-                                            height: auto;
-                                            object-fit: contain;
-                                            margin: -50px 10px;
-                                        "
-                                    />
-                                </div>
-                                <div class="card-title text-center">
-                                    <h4>METAVERSE</h4>
-                                </div>
-                                <div class="card-body">
-                                    <p>
-                                        With NBN's scalable and decentralized
-                                        infrastructure, explore the
-                                        possibilities of creating immersive
-                                        digital environments.
-                                    </p>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Us Section -->
-        <section
-            id="about-section"
-            class="about-us-section py-5 text-center"
-            onmouseenter="trackSectionView('about-section')"
-        >
-            <div class="container">
-                <div class="row">
-                    <div class="about-text col-12 col-md-6 text-left">
-                        <h2>About Us</h2>
-                        <p class="text-justify">
-                            The National Blockchain Network is at the forefront
-                            of Africa&lsquo;s digital transformation, pioneering
-                            a secure, efficient, and transparent ecosystem for
-                            government and business operations across the
-                            continent. Designed to unify and streamline public
-                            services, this Blockchain-powered network serves as
-                            an integrated digital hub, connecting government
-                            departments, industries, and citizens with advanced
-                            solutions that foster trust, collaboration, and
-                            innovation.
-                        </p>
-                        <a
-                            data-bs-toggle="modal"
-                            data-bs-target="#about-read-more"
-                            class="btn btn-success"
-                        >
-                            READ MORE
-                            <span class="material-icons">arrow_forward</span>
-                        </a>
-
-                        <div
-                            class="modal fade"
-                            id="about-read-more"
-                            data-bs-backdrop="static"
-                            data-bs-keyboard="false"
-                            tabindex="-1"
-                            aria-labelledby="about-read-more-label"
-                            aria-hidden="true"
-                        >
-                            <div
-                                class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
-                            >
-                                <div class="modal-content about-model">
-                                    <div
-                                        class="modal-body about-model-body text-justify"
-                                    >
-                                        <button
-                                            type="button"
-                                            class="btn-close close"
-                                            data-bs-dismiss="modal"
-                                            aria-label="Close"
-                                        >
-                                            <span aria-hidden="true"
-                                                >&times;</span
-                                            >
-                                        </button>
-                                        Originating in Zanzibar, we are
-                                        committed to serving and leading the
-                                        entire African region. As it&lsquo;s an
-                                        Africa&lsquo;s leading Blockchain
-                                        initiative, we&lsquo;re empowering
-                                        startups, entrepreneurs, and established
-                                        businesses to transform ideas into
-                                        reality. Through our unique Innovation
-                                        Center Program and Sandbox Environment,
-                                        we offer a dedicated space for
-                                        experimenting, testing, and refining new
-                                        Blockchain use cases. This
-                                        sandbox-to-main-network model supports
-                                        developers and organizations in
-                                        deploying applications from pilot stages
-                                        to full-scale implementations,
-                                        accelerating the path from concept to
-                                        market-ready solutions. Additionally,
-                                        our resources, training, and
-                                        collaborative support boost the
-                                        region&lsquo;s startup community,
-                                        positioning Africa as a global leader in
-                                        Blockchain technology. Through
-                                        incubation and acceleration
-                                        opportunities, Blockchain education, and
-                                        R&D initiatives, the National Blockchain
-                                        Network is building a stronger, more
-                                        inclusive digital economy for Africa.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about-image col-md-6 pc-only">
-                        <img
-                            src="assets/blockchain.png"
-                            alt="About Us Image"
-                            class="img-fluid"
-                        />
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- features Section -->
-        <section id="key-features-section" class="features-section py-5">
-            <div class="container">
-                <div class="features-container mb-5">
-                    <div class="feature-image-background">
-                        <h2
-                            class="title-design section-heading text-center position-relative"
-                        >
-                            <img
-                                src="assets/FEATURES.png"
-                                alt="extra"
-                                class="title-design-img"
-                            />
-                            <span class="z-1">Key Features</span>
-                        </h2>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-4 mb-4 d-flex justify-content-center">
-                        <div class="card feature-card text-center">
-                            <div class="d-flex flex-column">
-                                <h5 class="card-title">
-                                    <strong> DECENTRALIZED & SECURE </strong>
-                                </h5>
-                                <div class="card-body feature-image-container">
-                                    <img
-                                        src="assets/shield-icon.png"
-                                        alt="DECENTRALIZED & SECURE"
-                                        class="feature-image"
-                                    />
-                                </div>
-                                <p class="card-footer">
-                                    Ensures data integrity and security through
-                                    a decentralized ledger, reducing risks of
-                                    fraud and tampering.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 mb-4 d-flex justify-content-center">
-                        <div class="card feature-card text-center">
-                            <div class="d-flex flex-column">
-                                <h5 class="card-title">
-                                    <strong>SMART CONTRACTS </strong>
-                                </h5>
-                                <div class="card-body feature-image-container">
-                                    <img
-                                        src="assets/Icon ion-document-attach-sharp.png"
-                                        alt="SMART CONTRACTS"
-                                        class="feature-image"
-                                    />
-                                </div>
-                                <p class="card-footer">
-                                    Automates and enforces agreements, ensuring
-                                    transparent and efficient operations
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 mb-4 d-flex justify-content-center">
-                        <div class="card feature-card text-center">
-                            <div class="d-flex flex-column">
-                                <h5 class="card-title">
-                                    <strong> IMMUTABILITY </strong>
-                                </h5>
-                                <div class="card-body feature-image-container">
-                                    <img
-                                        src="assets/quality-badge-checkmark-icon.png"
-                                        alt="IMMUTABILITY"
-                                        class="feature-image"
-                                    />
-                                </div>
-                                <p class="card-footer">
-                                    Provides a permanent, tamper-proof record of
-                                    all transactions, fostering transparency and
-                                    trust across all interactions
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-2 pc-only"></div>
-
-                    <div class="col-md-4 mb-4 d-flex justify-content-center">
-                        <div class="card feature-card text-center">
-                            <div class="d-flex flex-column">
-                                <h5 class="card-title">
-                                    <strong>INTEROPERABILITY </strong>
-                                </h5>
-                                <div class="card-body feature-image-container">
-                                    <img
-                                        src="assets/managed-hosting-icon.png"
-                                        alt="INTEROPERABILITY"
-                                        class="feature-image"
-                                    />
-                                </div>
-                                <p class="card-footer">
-                                    Seamlessly connects with existing systems,
-                                    allowing smooth data flow and collaboration
-                                    across sectors.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 mb-4 d-flex justify-content-center">
-                        <div class="card feature-card text-center">
-                            <div class="d-flex flex-column">
-                                <h5 class="card-title">
-                                    <strong>SCALABILITY </strong>
-                                </h5>
-                                <div class="card-body feature-image-container">
-                                    <img
-                                        src="assets/expand-scale-arrow-icon.png"
-                                        alt="SCALABILITY"
-                                        class="feature-image"
-                                    />
-                                </div>
-                                <p class="card-footer">
-                                    Built to handle large volumes and adapt as
-                                    services grow and expand.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- operate Section -->
-        <section
-            id="how-it-works-section"
-            class="operate-section py-5 text-center"
-            onmouseenter="trackSectionView('how-it-works-section')"
-        >
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-12 text-left">
-                        <div class="mb-4">
-                            <p class="text-uppercase text-grey">
-                                <strong>How</strong>
-                            </p>
-                            <h3 class="text-uppercase text-success">
-                                <strong>NBN</strong>
-                            </h3>
-                            <h3 class="text-uppercase text-black">
-                                <strong>Operates</strong>
-                            </h3>
-                        </div>
-                        <p class="text-black text-justify">
-                            <strong>Data Collection & Storage</strong> – Secure
-                            data entry and storage on the Blockchain.
-                        </p>
-                        <p class="text-black text-justify">
-                            <strong>Verification & Encryption</strong> –
-                            Encryption protects sensitive data, while
-                            decentralized verification ensures trust.
-                        </p>
-                        <p class="text-black text-justify">
-                            <strong>Smart Contract Execution</strong> –
-                            Contracts automatically execute under predefined
-                            conditions, ensuring seamless services.
-                        </p>
-                        <p class="text-black text-justify">
-                            <strong>Transparency & Access</strong> –
-                            Stakeholders access verified information, enabling
-                            transparency and accountability.
-                        </p>
-                    </div>
-                    <div class="col-md-6 col-12">
-                        <img
-                            src="assets/STEPS.png"
-                            alt="About Us Image"
-                            class="img-fluid"
-                        />
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Get Involved Section -->
-        <section
-            id="get-involved-section"
-            class="get-involved-section py-5 text-center"
-            onmouseenter="trackSectionView('get-involved-section')"
-        >
-            <div
-                class="container d-flex align-items-center justify-content-between"
+            <a
+              href="./upcoming-training/index.html"
+              class="btn-custom btn-training"
             >
-                <div class="col-md-6 text-left">
-                    <div class="mb-4">
-                        <p class="text-uppercase text-white">
-                            <strong>GET</strong>
-                        </p>
-                        <h3 class="text-uppercase text-success">
-                            <strong>INVOLVED</strong>
-                        </h3>
-                        <h3 class="text-uppercase text-white">
-                            <strong>& APPLY</strong>
-                        </h3>
-                    </div>
-                    <p class="text-white text-justify">
-                        <strong>For Startups or Entrepreneurs: </strong>
-                        "Sign up to show your interest and share ideas you want
-                        to experiment."
-                    </p>
-                    <p class="text-white text-justify">
-                        <strong>For Businesses: </strong>"Partner with us to
-                        integrate Blockchain solutions in document verification,
-                        finance, supply chain, and other areas."
-                    </p>
-                    <p class="text-white text-justify">
-                        <strong>For Blockchain Developers: </strong>
-                        "Contribute to our Blockchain ecosystem and help drive
-                        innovation across sectors."
-                    </p>
-                    <a
-                        href="https://forms.gle/wM8CVMxHhVhz2VKW7"
-                        target="_blank"
-                        class="btn btn-success"
-                    >
-                        APPLY NOW
-                        <span class="material-icons">arrow_forward</span>
-                    </a>
-                </div>
-                <div class="col-md-6 pc-only">
-                    <img
-                        src="assets/application-form.png"
-                        alt="About Us Image"
-                        class="img-fluid"
-                    />
-                </div>
-            </div>
-        </section>
-
-        <!-- Use Cases Carousel Section-->
-        <section id="use-cases-section" class="use-cases-carousel-section py-5">
-            <div class="use-cases-container">
-                <div class="use-cases-image-background">
-                    <h2
-                        class="title-design section-heading text-center position-relative"
-                    >
-                        <span class="z-1">
-                            <strong> USE CASES </strong>
-                        </span>
-                    </h2>
-                    <div class="underline"></div>
-                    <div class="subtitle-text">
-                        Real World Applications of Our Blockchain network
-                    </div>
-                </div>
-            </div>
-            <div id="useCaseCarousel" class="container">
-                <div class="arrow" id="useCasePrev">
-                    <span
-                        class="carousel-control-prev-icon"
-                        aria-hidden="true"
-                    ></span>
-                </div>
-                <div class="arrow" id="useCaseNext">
-                    <span
-                        class="carousel-control-next-icon"
-                        aria-hidden="true"
-                    ></span>
-                </div>
-
-                <div id="useCaseCarousel-vp">
-                    <div id="useCaseCarousel-inner">
-                        <article class="useCaseCarousel-item">
-                            <!-- Feature Card 1 -->
-                            <div class="feature-card">
-                                <div class="feature-icon">
-                                    <img
-                                        src="assets/use-case-1.png"
-                                        alt="Document Verification"
-                                    />
-                                </div>
-                                <div>
-                                    <h4 class="">Document Verification</h4>
-                                </div>
-                                <div class="use-cases-text-field">
-                                    <p>
-                                        Reliable, tamper-proof verification of
-                                        important documents such as identity
-                                        proofs and licenses.
-                                    </p>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="useCaseCarousel-item">
-                            <!-- Feature Card 2 -->
-                            <div class="feature-card">
-                                <div class="feature-icon">
-                                    <img
-                                        src="assets/use-case-2.png"
-                                        alt="Financial Sector"
-                                    />
-                                </div>
-                                <div class="">
-                                    <h4>Financial Sector</h4>
-                                </div>
-                                <div class="use-cases-text-field">
-                                    <p>
-                                        Secure, transparent, and efficient
-                                        payment and transaction systems.
-                                    </p>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="useCaseCarousel-item">
-                            <!-- Feature Card 3 -->
-                            <div class="feature-card">
-                                <div class="feature-icon">
-                                    <img
-                                        src="assets/use-case-3.png"
-                                        alt="healthcare records"
-                                    />
-                                </div>
-
-                                <div class="">
-                                    <h4 class="">Healthcare Records</h4>
-                                </div>
-                                <div class="use-cases-text-field">
-                                    <p>
-                                        Immutable, accessible health records for
-                                        improved patient care
-                                    </p>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="useCaseCarousel-item">
-                            <div class="feature-card">
-                                <div class="feature-icon">
-                                    <img
-                                        src="assets/use-case-4.png"
-                                        alt="Supply Chain Management"
-                                    />
-                                </div>
-                                <div class="">
-                                    <h4>Supply Chain Management</h4>
-                                </div>
-                                <div class="use-cases-text-field">
-                                    <p class="">
-                                        End-to-end tracking and verification of
-                                        goods for trade and commerce.
-                                    </p>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="useCaseCarousel-item">
-                            <!-- Feature Card 5 -->
-                            <div class="feature-card">
-                                <div class="feature-icon">
-                                    <img
-                                        src="assets/use-case-5.png"
-                                        alt="Legal Agreements"
-                                    />
-                                </div>
-                                <div class="">
-                                    <h4>Legal Agreements</h4>
-                                </div>
-                                <div class="use-cases-text-field">
-                                    <p>
-                                        Smart Contracts for transparent,
-                                        enforceable public and private
-                                        agreements
-                                    </p>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- global hub Section -->
-        <section id="global-hub-section" class="global-hub-section py-5">
-            <div class="container">
-                <div class="global-hub-container">
-                    <div class="global-hub-image-background text-center">
-                        <h2
-                            class="title-design section-heading text-center position-relative"
-                        >
-                            <span class="z-1">Global Hub</span>
-                        </h2>
-                        <h6 class="section-subheading text-white mb-4 z-1">
-                            Expanding Blockchain in Africa
-                        </h6>
-                        <p
-                            class="section-subheading mb-5 text-white text-justify z-1"
-                        >
-                            As Africa&lsquo;s central blockchain hub, the
-                            National Blockchain Network is dedicated to
-                            fostering growth, education, and innovation across
-                            the continent. Our programs empower blockchain
-                            businesses, nurture startups, and fuel advancements
-                            in blockchain technology. We provide support and
-                            opportunities to individuals, startups, and
-                            organizations to strengthen Africa&lsquo;s position
-                            in the global blockchain ecosystem.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <!-- First Row: 2 Cards -->
-                    <div
-                        class="col-md-6 mb-2 d-flex align-items-stretch justify-content-center"
-                    >
-                        <div class="card global-hub-card text-center">
-                            <div class="d-flex flex-column">
-                                <div
-                                    class="card-title global-hub-image-container"
-                                >
-                                    <img
-                                        src="assets/globe-network-icon.png"
-                                        alt="BLOCKCHAIN COMPANIES"
-                                        class="global-hub-image"
-                                    />
-                                </div>
-                                <h5 class="card-body">
-                                    <strong>
-                                        GLOBAL HUB FOR BLOCKCHAIN COMPANIES
-                                    </strong>
-                                </h5>
-                                <p class="card-footer">
-                                    A thriving ecosystem for Blockchain
-                                    businesses to collaborate, innovate, and
-                                    scale within the African market and beyond.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div
-                        class="col-md-6 mb-2 d-flex align-items-stretch justify-content-center"
-                    >
-                        <div class="card global-hub-card text-center">
-                            <div class="d-flex flex-column">
-                                <div
-                                    class="card-title global-hub-image-container"
-                                >
-                                    <img
-                                        src="assets/online-education-icon.png"
-                                        alt="BLOCKCHAIN EDUCATION AND TRAINING"
-                                        class="global-hub-image"
-                                    />
-                                </div>
-                                <h5 class="card-body">
-                                    <strong>
-                                        BLOCKCHAIN EDUCATION AND TRAINING
-                                    </strong>
-                                </h5>
-                                <p class="card-footer">
-                                    Offering courses, workshops, and
-                                    certifications to educate citizens,
-                                    developers, and businesses on Blockchain
-                                    technology and its applications.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Second Row: 2 Cards -->
-                    <div
-                        class="col-md-6 mb-2 d-flex align-items-stretch justify-content-center"
-                    >
-                        <div class="card global-hub-card text-center">
-                            <div class="d-flex flex-column">
-                                <div
-                                    class="card-title global-hub-image-container"
-                                >
-                                    <img
-                                        src="assets/hand-money-income-note-icon.png"
-                                        alt="INCUBATION AND ACCELERATION"
-                                        class="global-hub-image"
-                                    />
-                                </div>
-                                <h5 class="card-body">
-                                    <strong>
-                                        INCUBATION AND ACCELERATION PROGRAMS
-                                    </strong>
-                                </h5>
-                                <p class="card-footer">
-                                    Supporting early-stage startups with
-                                    resources, mentorship, and funding to
-                                    accelerate their growth and impact
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div
-                        class="col-md-6 mb-2 d-flex align-items-stretch justify-content-center"
-                    >
-                        <div class="card global-hub-card text-center">
-                            <div class="card-title d-flex flex-column">
-                                <div
-                                    class="card-title global-hub-image-container"
-                                >
-                                    <img
-                                        src="assets/research-and-development-icon.png"
-                                        alt="RESEARCH AND DEVELOPMENT"
-                                        class="global-hub-image"
-                                    />
-                                </div>
-                                <h5 class="card-body">
-                                    <strong>
-                                        RESEARCH AND DEVELOPMENT SUPPORT
-                                    </strong>
-                                </h5>
-                                <p class="card-footer">
-                                    Facilitating research initiatives and
-                                    partnerships that push the boundaries of
-                                    Blockchain technology for real-world impact
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- FAQ Section -->
-        <section id="faq-section" class="fqa-section py-5 text-center">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-10">
-                        <!-- Left-aligned text block -->
-                        <div class="text-left mb-4">
-                            <h3 class="text-uppercase text-success">
-                                Zanzibar <br />National Blockchain <br />Network
-                            </h3>
-                            <h1 class="faq-title"><strong>FAQ</strong></h1>
-                            <h3 class="text-uppercase text-white">
-                                <strong>& APPLY</strong>
-                            </h3>
-                        </div>
-
-                        <div>
-                            <!-- General FAQs with Two Columns -->
-                            <div class="faq-category text-left">
-                                <h4><strong>General FAQs</strong></h4>
-                                <div class="row">
-                                    <div class="col-md-6 mx-auto">
-                                        <div
-                                            class="faq-item"
-                                            onclick="toggleAccordion(this)"
-                                        >
-                                            <span class="faq-q">
-                                                1. What is the Zanzibar National
-                                                Blockchain Network (NBN)?
-                                            </span>
-                                            <span class="material-icons">
-                                                expand_more
-                                            </span>
-                                            <div class="faq-content">
-                                                The Zanzibar National Blockchain
-                                                Network (NBN) is a pioneering
-                                                Blockchain initiative that
-                                                offers a secure, efficient, and
-                                                transparent platform for
-                                                government and business
-                                                operations across Africa. It
-                                                provides a unified digital
-                                                ecosystem that supports public
-                                                services, fosters collaboration,
-                                                and enhances data integrity.
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="faq-item"
-                                            onclick="toggleAccordion(this)"
-                                        >
-                                            <span class="faq-q">
-                                                2. What are the main features of
-                                                NBN?
-                                            </span>
-                                            <span class="material-icons">
-                                                expand_more
-                                            </span>
-                                            <div class="faq-content">
-                                                NBN includes several key
-                                                features: 1. Decentralized &
-                                                Secure: Data integrity and fraud
-                                                prevention through a
-                                                decentralized ledger. 2.
-                                                Immutability: Permanent,
-                                                tamper-proof record of all
-                                                transactions. 3. Smart
-                                                Contracts: Automated and
-                                                enforceable agreements. 4.
-                                                Interoperability: Seamless
-                                                integration with existing
-                                                systems. 5. Scalability:
-                                                Adaptable to large volumes as
-                                                services grow.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 mx-auto">
-                                        <div
-                                            class="faq-item"
-                                            onclick="toggleAccordion(this)"
-                                        >
-                                            <span class="faq-q">
-                                                3. How can NBN benefit African
-                                                governments and businesses?
-                                            </span>
-                                            <span class="material-icons">
-                                                expand_more
-                                            </span>
-                                            <div class="faq-content">
-                                                NBN can streamline operations,
-                                                reduce redundancy, and foster
-                                                trust and transparency within
-                                                public and private sectors. By
-                                                offering a unified, tamper-proof
-                                                system, NBN enhances service
-                                                delivery, security, and
-                                                operational efficiency
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="faq-item"
-                                            onclick="toggleAccordion(this)"
-                                        >
-                                            <span class="faq-q">
-                                                4. Is NBN only available in
-                                                Zanzibar?
-                                            </span>
-                                            <span class="material-icons">
-                                                expand_more
-                                            </span>
-                                            <div class="faq-content">
-                                                While NBN originated in
-                                                Zanzibar, it is designed to
-                                                support the entire African
-                                                region. Our vision is to lead
-                                                the continent in Blockchain
-                                                innovation, bringing secure,
-                                                efficient solutions across
-                                                borders.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- For Developers and Innovators -->
-                            <div class="faq-category text-left">
-                                <h4>
-                                    <strong
-                                        >For Developers and Innovators</strong
-                                    >
-                                </h4>
-                                <div class="row">
-                                    <div class="col-md-6 mx-auto">
-                                        <div
-                                            class="faq-item"
-                                            onclick="toggleAccordion(this)"
-                                        >
-                                            <span class="faq-q">
-                                                1. How can developers use NBN
-                                                for their products or ideas?
-                                            </span>
-                                            <span class="material-icons"
-                                                >expand_more</span
-                                            >
-                                            <div class="faq-content">
-                                                Developers can utilize
-                                                NBN&lsquo;s sandbox environment
-                                                to test and refine Blockchain
-                                                applications before deploying
-                                                them on the main network. This
-                                                allows for safe experimentation
-                                                and a smoother transition from
-                                                concept to full-scale
-                                                implementation.
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="faq-item"
-                                            onclick="toggleAccordion(this)"
-                                        >
-                                            <span class="faq-q">
-                                                2. Does NBN offer tools for
-                                                developers?
-                                            </span>
-                                            <span class="material-icons">
-                                                expand_more
-                                            </span>
-                                            <div class="faq-content">
-                                                Yes, NBN provides a suite of
-                                                developer tools, APIs, and
-                                                documentation to assist in
-                                                building, testing, and
-                                                integrating Blockchain
-                                                solutions. Resources include
-                                                access to a developer sandbox,
-                                                smart contract templates, and
-                                                support channels for
-                                                troubleshooting.
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="faq-item"
-                                            onclick="toggleAccordion(this)"
-                                        >
-                                            <span class="faq-q">
-                                                3. How can my product benefit
-                                                from NBN&lsquo;s features?
-                                            </span>
-                                            <span class="material-icons">
-                                                expand_more
-                                            </span>
-                                            <div class="faq-content">
-                                                NBN&lsquo;s secure,
-                                                decentralized, and immutable
-                                                environment can enhance any
-                                                product by ensuring data
-                                                authenticity, automating
-                                                agreements through smart
-                                                contracts, and providing
-                                                interoperability with other
-                                                systems. These features can
-                                                improve the reliability and
-                                                efficiency of your application.
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="faq-item"
-                                            onclick="toggleAccordion(this)"
-                                        >
-                                            <span class="faq-q">
-                                                4. What types of applications
-                                                can be built on NBN?
-                                            </span>
-                                            <span class="material-icons">
-                                                expand_more
-                                            </span>
-                                            <div class="faq-content">
-                                                Applications across various
-                                                industries, including finance,
-                                                healthcare, supply chain, and
-                                                public services, can be
-                                                developed on NBN. Examples
-                                                include document verification,
-                                                secure data sharing, identity
-                                                management, payment solutions,
-                                                and legal contracts.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 mx-auto">
-                                        <div
-                                            class="faq-item"
-                                            onclick="toggleAccordion(this)"
-                                        >
-                                            <span class="faq-q">
-                                                5. Can startups or small
-                                                businesses access NBN resources?
-                                            </span>
-                                            <span class="material-icons">
-                                                expand_more
-                                            </span>
-                                            <div class="faq-content">
-                                                Absolutely. NBN offers an
-                                                Innovation Center Program to
-                                                support startups and small
-                                                businesses with incubation,
-                                                mentorship, and funding. This
-                                                program is designed to help
-                                                early-stage companies bring
-                                                their Blockchain ideas to life.
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="faq-item"
-                                            onclick="toggleAccordion(this)"
-                                        >
-                                            <span class="faq-q">
-                                                6. Is there a cost associated
-                                                with using NBN&lsquo;s sandbox
-                                                and development tools?
-                                            </span>
-                                            <span class="material-icons">
-                                                expand_more
-                                            </span>
-                                            <div class="faq-content">
-                                                NBN&lsquo;s sandbox is generally
-                                                free for testing purposes, with
-                                                potential minimal fees for full
-                                                network deployment. Pricing
-                                                details can vary, so please
-                                                contact our support team for
-                                                specifics.
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="faq-item"
-                                            onclick="toggleAccordion(this)"
-                                        >
-                                            <span class="faq-q">
-                                                7. What support is available for
-                                                developers working on NBN?
-                                            </span>
-                                            <span class="material-icons">
-                                                expand_more
-                                            </span>
-                                            <div class="faq-content">
-                                                NBN&lsquo;s secure,
-                                                decentralized, and immutable
-                                                environment can enhance any
-                                                product by ensuring data
-                                                authenticity, automating
-                                                agreements through smart
-                                                contracts, and providing
-                                                interoperability with other
-                                                systems. These features can
-                                                improve the reliability and
-                                                efficiency of your application.
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="faq-item"
-                                            onclick="toggleAccordion(this)"
-                                        >
-                                            <span class="faq-q">
-                                                8. Is there funding support
-                                                available for projects built on
-                                                NBN?
-                                            </span>
-                                            <span class="material-icons">
-                                                expand_more
-                                            </span>
-                                            <div class="faq-content">
-                                                8. Is there funding support
-                                                available for projects built on
-                                                NBN? Yes, NBN provides funding
-                                                opportunities through the
-                                                Innovation Center Program, which
-                                                supports startups, small
-                                                businesses, and developers in
-                                                bringing their Blockchain ideas
-                                                to market. This program offers
-                                                access to grants, incubation,
-                                                and potential investment for
-                                                projects that align with
-                                                NBN&lsquo;s mission to drive
-                                                Blockchain innovation across
-                                                Africa.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Getting Started -->
-                            <div class="faq-category text-left">
-                                <h4><strong>Getting Started</strong></h4>
-                                <div class="row">
-                                    <div class="col-md-6 mx-auto">
-                                        <div
-                                            class="faq-item"
-                                            onclick="toggleAccordion(this)"
-                                        >
-                                            <span class="faq-q">
-                                                1. How do I start using NBN for
-                                                my project?
-                                            </span>
-                                            <span class="material-icons">
-                                                expand_more
-                                            </span>
-                                            <div class="faq-content">
-                                                To begin, register for access to
-                                                our developer sandbox and
-                                                provide details to your use case
-                                                <link />. You may also reach out
-                                                to us for a consultation or
-                                                guidance on utilizing the
-                                                network for your specific use
-                                                case.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 mx-auto">
-                                        <div
-                                            class="faq-item"
-                                            onclick="toggleAccordion(this)"
-                                        >
-                                            <span class="faq-q">
-                                                2. How can I join the NBN
-                                                developer community?
-                                            </span>
-                                            <span class="material-icons">
-                                                expand_more
-                                            </span>
-                                            <div class="faq-content">
-                                                By joining our telegram group
-                                                <link />, you can connect with
-                                                other developers, share
-                                                knowledge, and collaborate on
-                                                projects. Training program,
-                                                Hackathon, Networking events and
-                                                developer workshops are also
-                                                available periodically.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- media Carousel Section-->
-        <section id="media-section" class="media-carousel-section py-5">
-            <div class="media-container">
-                <div class="global-hub-image-background text-center">
-                    <h2
-                        class="title-design section-heading text-center position-relative"
-                    >
-                    <img
-                        src="assets/media/partners.png"
-                        alt="extra"
-                        class="title-design-img"
-                    />
-                        <span class="z-1">MEDIA</span>
-                    </h2>
-                    <h6 class="section-subheading text-white mb-4 z-1">
-                        Expanding Blockchain in Africa
-                    </h6>
-                </div>
-            </div>
-            <div id="mediaCarousel" class="container">
-                <div class="arrow" id="mediaPrev">
-                    <span
-                        class="carousel-control-prev-icon"
-                        aria-hidden="true"
-                    ></span>
-                </div>
-                <div class="arrow" id="mediaNext">
-                    <span
-                        class="carousel-control-next-icon"
-                        aria-hidden="true"
-                    ></span>
-                </div>
-
-                <div id="mediaCarousel-vp">
-                    <div id="mediaCarousel-inner">
-                        <article class="mediaCarousel-item">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <img src="./assets/media/1.jpg" alt="Media 1" class="carousel-img mx-3" />
-                            </div>
-                        </article>
-
-                        <article class="mediaCarousel-item">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <img src="./assets/media/2.jpg" alt="Media 2" class="carousel-img mx-3" />
-                            </div>
-                        </article>
-                        <article class="mediaCarousel-item">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <img src="./assets/media/3.jpg" alt="Media 1" class="carousel-img mx-3" />
-                            </div>
-                        </article>
-
-                        <article class="mediaCarousel-item">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <img src="./assets/media/4.jpg" alt="Media 2" class="carousel-img mx-3" />
-                            </div>
-                        </article>
-                        <article class="mediaCarousel-item">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <img src="./assets/media/5.jpg" alt="Media 1" class="carousel-img mx-3" />
-                            </div>
-                        </article>
-
-                        <article class="mediaCarousel-item">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <img src="./assets/media/6.jpg" alt="Media 2" class="carousel-img mx-3" />
-                            </div>
-                        </article>
-                        <article class="mediaCarousel-item">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <img src="./assets/media/7.jpg" alt="Media 1" class="carousel-img mx-3" />
-                            </div>
-                        </article>
-
-                        <article class="mediaCarousel-item">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <img src="./assets/media/8.jpg" alt="Media 2" class="carousel-img mx-3" />
-                            </div>
-                        </article>
-                        <article class="mediaCarousel-item">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <img src="./assets/media/9.jpg" alt="Media 1" class="carousel-img mx-3" />
-                            </div>
-                        </article>
-
-                        <article class="mediaCarousel-item">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <img src="./assets/media/10.jpg" alt="Media 2" class="carousel-img mx-3" />
-                            </div>
-                        </article>
-                        <article class="mediaCarousel-item">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <img src="./assets/media/11.jpg" alt="Media 1" class="carousel-img mx-3" />
-                            </div>
-                        </article>
-
-                        <article class="mediaCarousel-item">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <img src="./assets/media/12.jpg" alt="Media 2" class="carousel-img mx-3" />
-                            </div>
-                        </article>
-                        <article class="mediaCarousel-item">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <img src="./assets/media/13.jpg" alt="Media 1" class="carousel-img mx-3" />
-                            </div>
-                        </article>
-
-                        <article class="mediaCarousel-item">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <img src="./assets/media/14.jpg" alt="Media 2" class="carousel-img mx-3" />
-                            </div>
-                        </article>
-                        <article class="mediaCarousel-item">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <img src="./assets/media/15.jpg" alt="Media 1" class="carousel-img mx-3" />
-                            </div>
-                        </article>
-
-                        <article class="mediaCarousel-item">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <img src="./assets/media/16.jpg" alt="Media 2" class="carousel-img mx-3" />
-                            </div>
-                        </article>
-                        <article class="mediaCarousel-item">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <img src="./assets/media/17.jpg" alt="Media 1" class="carousel-img mx-3" />
-                            </div>
-                        </article>
-
-                        <article class="mediaCarousel-item">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <img src="./assets/media/18.jpg" alt="Media 2" class="carousel-img mx-3" />
-                            </div>
-                        </article>
-                        <article class="mediaCarousel-item">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <img src="./assets/media/19.jpg" alt="Media 1" class="carousel-img mx-3" />
-                            </div>
-                        </article>
-
-                        <article class="mediaCarousel-item">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <img src="./assets/media/20.jpg" alt="Media 2" class="carousel-img mx-3" />
-                            </div>
-                        </article>
-                        <article class="mediaCarousel-item">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <img src="./assets/media/21.jpg" alt="Media 1" class="carousel-img mx-3" />
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- <section class="media-carousel-section">
-            <div class="container text-center">
-                <div class="media-image-background">
-                    <h2
-                        class="title-design section-heading text-center position-relative"
-                    >
-                        <span class="z-1">
-                            <strong> MEDIA </strong>
-                        </span>
-                    </h2>
-                    <div class="underline"></div>
-                    <div class="subtitle-text">
-                        National Blockchain Network Media Coverage
-                    </div>
-                </div>
-            </div>
-            <div id="mediaCarousel" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="d-flex justify-content-center align-items-center">
-                            <img src="./assets/media/1.jpg" alt="Media 1" class="carousel-img mx-3" />
-                            <img src="path-to-image2.png" alt="Media 2" class="carousel-img mx-3" />
-                            <img src="path-to-image3.png" alt="Media 3" class="carousel-img mx-3" />
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="d-flex justify-content-center align-items-center">
-                            <img src="path-to-image4.png" alt="Media 4" class="carousel-img mx-3" />
-                            <img src="path-to-image5.png" alt="Media 5" class="carousel-img mx-3" />
-                            <img src="path-to-image6.png" alt="Media 6" class="carousel-img mx-3" />
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#mediaCarousel" role="button" data-slide="prev">
-                    <span class="material-icons text-primary">arrow_back</span>
-                </a>
-                <a class="carousel-control-next" href="#mediaCarousel" role="button" data-slide="next">
-                    <span class="material-icons text-primary">arrow_forward</span>
-                </a>
-            </div>
-            <div class="mt-4">
-                <a href="#" class="btn btn-success btn-lg">
-                    VIEW MORE
-                    <span class="material-icons">arrow_forward</span>
-                </a>
-            </div>
+              <span>Training</span>
+              <span class="circle-arrow">
+                <span class="material-icons">arrow_forward</span>
+              </span>
+            </a>
+          </div>
         </div>
-        </section> -->
+      </div>
+    </section>
 
-        <!-- Newsletter Section -->
-        <section id="contact-section" class="newsletter-section py-5">
-            <div class="container">
-                <div class="row">
-                    <div class="newsletter-text col-md-6">
-                        <h2>LETS START!</h2>
-                        <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
-                        <p class="text-justify">
-                            It is a long established fact that a reader will be
-                            distracted by the readable content of a page when
-                            looking at its layout.
-                        </p>
-                    </div>
+    <!-- </section> -->
 
-                    <div class="newsletter-form-container col-md-6">
-                        <form class="newsletter-form" id="newsletter-form">
-                            <input
-                                type="text"
-                                placeholder="Name"
-                                class="form-control mb-3"
-                                id="name"
-                            />
-                            <input
-                                type="email"
-                                placeholder="Email"
-                                class="form-control mb-3"
-                                id="email"
-                            />
-                            <p id="response-message" class="mt-3"></p>
-                            <button
-                                type="submit"
-                                class="btn"
-                                id="subscribe-button"
-                            >
-                                SUBSCRIBE
-                            </button>
-                        </form>
-                    </div>
+    <!-- Features Section with Multi-Item Carousel -->
+    <section class="features-carousel-section">
+      <div id="cCarousel" class="container">
+        <div class="arrow" id="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </div>
+        <div class="arrow" id="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </div>
+
+        <div id="carousel-vp">
+          <div id="cCarousel-inner">
+            <article class="cCarousel-item">
+              <!-- Feature Card 1 -->
+              <div class="feature-card p-4">
+                <div class="feature-icon card-header no-bg">
+                  <img
+                    src="assets/blockchain-icon.png"
+                    alt="blockchain-icon"
+                    style="
+                      width: 50px;
+                      height: auto;
+                      object-fit: contain;
+                      margin: -50px 10px;
+                    "
+                  />
                 </div>
+                <div class="card-title text-center">
+                  <h4 class="mt-3">BLOCKCHAIN</h4>
+                </div>
+                <div class="card-body">
+                  <p>
+                    The NBN offers a secure, decentralized foundation for
+                    building transparent and tamper-proof applications.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="cCarousel-item">
+              <!-- Feature Card 2 -->
+              <div class="feature-card white p-4">
+                <div class="feature-icon card-header no-bg">
+                  <img
+                    src="assets/web-3-browser-icon.png"
+                    alt="web3-icon"
+                    style="
+                      width: 50px;
+                      height: auto;
+                      object-fit: contain;
+                      margin: -50px 10px;
+                    "
+                  />
+                </div>
+                <div class="card-title text-center">
+                  <h4>WEB 3.0</h4>
+                </div>
+                <div class="card-body">
+                  <p class="white">
+                    Harness the power of Web 3.0 with NBN to build
+                    next-generation applications that prioritize user privacy,
+                    data ownership, and more.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="cCarousel-item">
+              <!-- Feature Card 3 -->
+              <div class="feature-card p-4">
+                <div class="feature-icon card-header no-bg">
+                  <img
+                    src="assets/nft-icon.png"
+                    alt="nft-icon"
+                    style="
+                      width: 50px;
+                      height: auto;
+                      object-fit: contain;
+                      margin: -50px 10px;
+                    "
+                  />
+                </div>
+
+                <div class="card-title text-center">
+                  <h4 class="mb-4">NFTS</h4>
+                </div>
+                <div class="card-body">
+                  <p>
+                    Explore the potential of NFTs on NBN to create digital
+                    assets with unique ownership and provenance.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="cCarousel-item">
+              <div class="feature-card white p-4">
+                <div class="feature-icon card-header no-bg">
+                  <img
+                    src="assets/Group 294.png"
+                    alt="nft-icon"
+                    style="
+                      width: 50px;
+                      height: auto;
+                      object-fit: contain;
+                      margin: -50px 10px;
+                    "
+                  />
+                </div>
+                <div class="card-title text-center">
+                  <h4>REAL WORLD ASSETS(RWA)</h4>
+                </div>
+                <div class="card-body">
+                  <p class="white">
+                    NBN enables the tokenization of real-world assets (RWA),
+                    allowing secure, fractional ownership, and streamlined
+                    transactions.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="cCarousel-item">
+              <!-- Feature Card 5 -->
+              <div class="feature-card p-4">
+                <div class="feature-icon card-header no-bg">
+                  <img
+                    src="assets/metaverse-virtual-reality-icon-1.png"
+                    alt="nft-icon"
+                    style="
+                      width: 50px;
+                      height: auto;
+                      object-fit: contain;
+                      margin: -50px 10px;
+                    "
+                  />
+                </div>
+                <div class="card-title text-center">
+                  <h4>METAVERSE</h4>
+                </div>
+                <div class="card-body">
+                  <p>
+                    With NBN's scalable and decentralized infrastructure,
+                    explore the possibilities of creating immersive digital
+                    environments.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section
+      id="about-section"
+      class="about-us-section py-5 text-center"
+      onmouseenter="trackSectionView('about-section')"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="about-text col-12 col-md-6 text-left">
+            <h2>About Us</h2>
+            <p class="text-justify">
+              The National Blockchain Network is at the forefront of
+              Africa&lsquo;s digital transformation, pioneering a secure,
+              efficient, and transparent ecosystem for government and business
+              operations across the continent. Designed to unify and streamline
+              public services, this Blockchain-powered network serves as an
+              integrated digital hub, connecting government departments,
+              industries, and citizens with advanced solutions that foster
+              trust, collaboration, and innovation.
+            </p>
+            <a
+              data-bs-toggle="modal"
+              data-bs-target="#about-read-more"
+              class="btn btn-success"
+            >
+              READ MORE
+              <span class="material-icons">arrow_forward</span>
+            </a>
+
+            <div
+              class="modal fade"
+              id="about-read-more"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="about-read-more-label"
+              aria-hidden="true"
+            >
+              <div
+                class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+              >
+                <div class="modal-content about-model">
+                  <div class="modal-body about-model-body text-justify">
+                    <button
+                      type="button"
+                      class="btn-close close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    Originating in Zanzibar, we are committed to serving and
+                    leading the entire African region. As it&lsquo;s an
+                    Africa&lsquo;s leading Blockchain initiative, we&lsquo;re
+                    empowering startups, entrepreneurs, and established
+                    businesses to transform ideas into reality. Through our
+                    unique Innovation Center Program and Sandbox Environment, we
+                    offer a dedicated space for experimenting, testing, and
+                    refining new Blockchain use cases. This
+                    sandbox-to-main-network model supports developers and
+                    organizations in deploying applications from pilot stages to
+                    full-scale implementations, accelerating the path from
+                    concept to market-ready solutions. Additionally, our
+                    resources, training, and collaborative support boost the
+                    region&lsquo;s startup community, positioning Africa as a
+                    global leader in Blockchain technology. Through incubation
+                    and acceleration opportunities, Blockchain education, and
+                    R&D initiatives, the National Blockchain Network is building
+                    a stronger, more inclusive digital economy for Africa.
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
+          <div class="about-image col-md-6 pc-only">
+            <img
+              src="assets/blockchain.png"
+              alt="About Us Image"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- Footer section -->
-        <footer id="footer-section" class="footer-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-6">
-                        <a>
-                            <img
-                                src="assets/logo.svg"
-                                alt="Logo"
-                                class="shared-logo mb-4"
-                            />
-                        </a>
-                        <p>
-                            eGovernment Authority Zanzibar (eGaz), <br />
-                            7th Floor, Sheria House Building, <br />
-                            Mazizini Zanzibar
-                        </p>
-                        <div
-                            class="social-icons d-flex justify-content-start"
-                        ></div>
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <h3>Quick Links</h3>
-                        <div class="row">
-                            <div class="col-6 mb-2">
-                                <a
-                                    class="footer-links"
-                                    id="footer-home"
-                                    onclick="scrollToElement('home-section')"
-                                >
-                                    <i class="fa-solid fa-house"></i>
-                                    HOME
-                                </a>
-                            </div>
-                            <div class="col-6 mb-2">
-                                <a
-                                    class="footer-links"
-                                    id="footer-about"
-                                    onclick="scrollToElement('about-section')"
-                                >
-                                    <i class="fa-solid fa-house"></i>
-                                    ABOUT
-                                </a>
-                            </div>
-                            <div class="col-6 mb-2">
-                                <a
-                                    class="footer-links"
-                                    id="footer-key-features"
-                                    onclick="scrollToElement('key-features-section')"
-                                >
-                                    KEY FEATURES
-                                </a>
-                            </div>
-                            <div class="col-6 mb-2">
-                                <a
-                                    class="footer-links"
-                                    id="footer-how-it-works"
-                                    onclick="scrollToElement('how-it-works-section')"
-                                >
-                                    HOW IT WORKS
-                                </a>
-                            </div>
-                            <div class="col-6 mb-2">
-                                <a
-                                    class="footer-links"
-                                    id="footer-use-cases"
-                                    onclick="scrollToElement('use-cases-section')"
-                                >
-                                    USE CASES
-                                </a>
-                            </div>
-                            <div class="col-6 mb-2">
-                                <a
-                                    class="footer-links"
-                                    id="footer-global-hub"
-                                    onclick="scrollToElement('global-hub-section')"
-                                >
-                                    GLOBAL HUB
-                                </a>
-                            </div>
-                            <div class="col-6 mb-2">
-                                <a
-                                    class="footer-links"
-                                    id="footer-get-involved"
-                                    onclick="scrollToElement('get-involved-section')"
-                                >
-                                    GET INVOLVED & APPLY
-                                </a>
-                            </div>
-                            <div class="col-6 mb-2">
-                                <a
-                                    class="footer-links"
-                                    id="footer-faq"
-                                    onclick="scrollToElement('faq-section')"
-                                >
-                                    FAQ
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+    <!-- features Section -->
+    <section id="key-features-section" class="features-section py-5">
+      <div class="container">
+        <div class="features-container mb-5">
+          <div class="feature-image-background">
+            <h2
+              class="title-design section-heading text-center position-relative"
+            >
+              <img
+                src="assets/FEATURES.png"
+                alt="extra"
+                class="title-design-img"
+              />
+              <span class="z-1">Key Features</span>
+            </h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 mb-4 d-flex justify-content-center">
+            <div class="card feature-card text-center">
+              <div class="d-flex flex-column">
+                <h5 class="card-title">
+                  <strong> DECENTRALIZED & SECURE </strong>
+                </h5>
+                <div class="card-body feature-image-container">
+                  <img
+                    src="assets/shield-icon.png"
+                    alt="DECENTRALIZED & SECURE"
+                    class="feature-image"
+                  />
                 </div>
+                <p class="card-footer">
+                  Ensures data integrity and security through a decentralized
+                  ledger, reducing risks of fraud and tampering.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4 d-flex justify-content-center">
+            <div class="card feature-card text-center">
+              <div class="d-flex flex-column">
+                <h5 class="card-title">
+                  <strong>SMART CONTRACTS </strong>
+                </h5>
+                <div class="card-body feature-image-container">
+                  <img
+                    src="assets/Icon ion-document-attach-sharp.png"
+                    alt="SMART CONTRACTS"
+                    class="feature-image"
+                  />
+                </div>
+                <p class="card-footer">
+                  Automates and enforces agreements, ensuring transparent and
+                  efficient operations
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4 d-flex justify-content-center">
+            <div class="card feature-card text-center">
+              <div class="d-flex flex-column">
+                <h5 class="card-title">
+                  <strong> IMMUTABILITY </strong>
+                </h5>
+                <div class="card-body feature-image-container">
+                  <img
+                    src="assets/quality-badge-checkmark-icon.png"
+                    alt="IMMUTABILITY"
+                    class="feature-image"
+                  />
+                </div>
+                <p class="card-footer">
+                  Provides a permanent, tamper-proof record of all transactions,
+                  fostering transparency and trust across all interactions
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-2 pc-only"></div>
+
+          <div class="col-md-4 mb-4 d-flex justify-content-center">
+            <div class="card feature-card text-center">
+              <div class="d-flex flex-column">
+                <h5 class="card-title">
+                  <strong>INTEROPERABILITY </strong>
+                </h5>
+                <div class="card-body feature-image-container">
+                  <img
+                    src="assets/managed-hosting-icon.png"
+                    alt="INTEROPERABILITY"
+                    class="feature-image"
+                  />
+                </div>
+                <p class="card-footer">
+                  Seamlessly connects with existing systems, allowing smooth
+                  data flow and collaboration across sectors.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4 d-flex justify-content-center">
+            <div class="card feature-card text-center">
+              <div class="d-flex flex-column">
+                <h5 class="card-title">
+                  <strong>SCALABILITY </strong>
+                </h5>
+                <div class="card-body feature-image-container">
+                  <img
+                    src="assets/expand-scale-arrow-icon.png"
+                    alt="SCALABILITY"
+                    class="feature-image"
+                  />
+                </div>
+                <p class="card-footer">
+                  Built to handle large volumes and adapt as services grow and
+                  expand.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- operate Section -->
+    <section
+      id="how-it-works-section"
+      class="operate-section py-5 text-center"
+      onmouseenter="trackSectionView('how-it-works-section')"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-12 text-left">
+            <div class="mb-4">
+              <p class="text-uppercase text-grey">
+                <strong>How</strong>
+              </p>
+              <h3 class="text-uppercase text-success">
+                <strong>NBN</strong>
+              </h3>
+              <h3 class="text-uppercase text-black">
+                <strong>Operates</strong>
+              </h3>
+            </div>
+            <p class="text-black text-justify">
+              <strong>Data Collection & Storage</strong> – Secure data entry and
+              storage on the Blockchain.
+            </p>
+            <p class="text-black text-justify">
+              <strong>Verification & Encryption</strong> – Encryption protects
+              sensitive data, while decentralized verification ensures trust.
+            </p>
+            <p class="text-black text-justify">
+              <strong>Smart Contract Execution</strong> – Contracts
+              automatically execute under predefined conditions, ensuring
+              seamless services.
+            </p>
+            <p class="text-black text-justify">
+              <strong>Transparency & Access</strong> – Stakeholders access
+              verified information, enabling transparency and accountability.
+            </p>
+          </div>
+          <div class="col-md-6 col-12">
+            <img
+              src="assets/STEPS.png"
+              alt="About Us Image"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Get Involved Section -->
+    <section
+      id="get-involved-section"
+      class="get-involved-section py-5 text-center"
+      onmouseenter="trackSectionView('get-involved-section')"
+    >
+      <div class="container d-flex align-items-center justify-content-between">
+        <div class="col-md-6 text-left">
+          <div class="mb-4">
+            <p class="text-uppercase text-white">
+              <strong>GET</strong>
+            </p>
+            <h3 class="text-uppercase text-success">
+              <strong>INVOLVED</strong>
+            </h3>
+            <h3 class="text-uppercase text-white">
+              <strong>& APPLY</strong>
+            </h3>
+          </div>
+          <p class="text-white text-justify">
+            <strong>For Startups or Entrepreneurs: </strong>
+            "Sign up to show your interest and share ideas you want to
+            experiment."
+          </p>
+          <p class="text-white text-justify">
+            <strong>For Businesses: </strong>"Partner with us to integrate
+            Blockchain solutions in document verification, finance, supply
+            chain, and other areas."
+          </p>
+          <p class="text-white text-justify">
+            <strong>For Blockchain Developers: </strong>
+            "Contribute to our Blockchain ecosystem and help drive innovation
+            across sectors."
+          </p>
+          <a
+            href="https://forms.gle/wM8CVMxHhVhz2VKW7"
+            target="_blank"
+            class="btn btn-success"
+          >
+            APPLY NOW
+            <span class="material-icons">arrow_forward</span>
+          </a>
+        </div>
+        <div class="col-md-6 pc-only">
+          <img
+            src="assets/application-form.png"
+            alt="About Us Image"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Use Cases Carousel Section-->
+    <section id="use-cases-section" class="use-cases-carousel-section py-5">
+      <div class="use-cases-container">
+        <div class="use-cases-image-background">
+          <h2
+            class="title-design section-heading text-center position-relative"
+          >
+            <span class="z-1">
+              <strong> USE CASES </strong>
+            </span>
+          </h2>
+          <div class="underline"></div>
+          <div class="subtitle-text">
+            Real World Applications of Our Blockchain network
+          </div>
+        </div>
+      </div>
+      <div id="useCaseCarousel" class="container">
+        <div class="arrow" id="useCasePrev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </div>
+        <div class="arrow" id="useCaseNext">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </div>
+
+        <div id="useCaseCarousel-vp">
+          <div id="useCaseCarousel-inner">
+            <article class="useCaseCarousel-item">
+              <!-- Feature Card 1 -->
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <img
+                    src="assets/use-case-1.png"
+                    alt="Document Verification"
+                  />
+                </div>
+                <div>
+                  <h4 class="">Document Verification</h4>
+                </div>
+                <div class="use-cases-text-field">
+                  <p>
+                    Reliable, tamper-proof verification of important documents
+                    such as identity proofs and licenses.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="useCaseCarousel-item">
+              <!-- Feature Card 2 -->
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <img src="assets/use-case-2.png" alt="Financial Sector" />
+                </div>
+                <div class="">
+                  <h4>Financial Sector</h4>
+                </div>
+                <div class="use-cases-text-field">
+                  <p>
+                    Secure, transparent, and efficient payment and transaction
+                    systems.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="useCaseCarousel-item">
+              <!-- Feature Card 3 -->
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <img src="assets/use-case-3.png" alt="healthcare records" />
+                </div>
+
+                <div class="">
+                  <h4 class="">Healthcare Records</h4>
+                </div>
+                <div class="use-cases-text-field">
+                  <p>
+                    Immutable, accessible health records for improved patient
+                    care
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="useCaseCarousel-item">
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <img
+                    src="assets/use-case-4.png"
+                    alt="Supply Chain Management"
+                  />
+                </div>
+                <div class="">
+                  <h4>Supply Chain Management</h4>
+                </div>
+                <div class="use-cases-text-field">
+                  <p class="">
+                    End-to-end tracking and verification of goods for trade and
+                    commerce.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="useCaseCarousel-item">
+              <!-- Feature Card 5 -->
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <img src="assets/use-case-5.png" alt="Legal Agreements" />
+                </div>
+                <div class="">
+                  <h4>Legal Agreements</h4>
+                </div>
+                <div class="use-cases-text-field">
+                  <p>
+                    Smart Contracts for transparent, enforceable public and
+                    private agreements
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- global hub Section -->
+    <section id="global-hub-section" class="global-hub-section py-5">
+      <div class="container">
+        <div class="global-hub-container">
+          <div class="global-hub-image-background text-center">
+            <h2
+              class="title-design section-heading text-center position-relative"
+            >
+              <span class="z-1">Global Hub</span>
+            </h2>
+            <h6 class="section-subheading text-white mb-4 z-1">
+              Expanding Blockchain in Africa
+            </h6>
+            <p class="section-subheading mb-5 text-white text-justify z-1">
+              As Africa&lsquo;s central blockchain hub, the National Blockchain
+              Network is dedicated to fostering growth, education, and
+              innovation across the continent. Our programs empower blockchain
+              businesses, nurture startups, and fuel advancements in blockchain
+              technology. We provide support and opportunities to individuals,
+              startups, and organizations to strengthen Africa&lsquo;s position
+              in the global blockchain ecosystem.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- First Row: 2 Cards -->
+          <div
+            class="col-md-6 mb-2 d-flex align-items-stretch justify-content-center"
+          >
+            <div class="card global-hub-card text-center">
+              <div class="d-flex flex-column">
+                <div class="card-title global-hub-image-container">
+                  <img
+                    src="assets/globe-network-icon.png"
+                    alt="BLOCKCHAIN COMPANIES"
+                    class="global-hub-image"
+                  />
+                </div>
+                <h5 class="card-body">
+                  <strong> GLOBAL HUB FOR BLOCKCHAIN COMPANIES </strong>
+                </h5>
+                <p class="card-footer">
+                  A thriving ecosystem for Blockchain businesses to collaborate,
+                  innovate, and scale within the African market and beyond.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 mb-2 d-flex align-items-stretch justify-content-center"
+          >
+            <div class="card global-hub-card text-center">
+              <div class="d-flex flex-column">
+                <div class="card-title global-hub-image-container">
+                  <img
+                    src="assets/online-education-icon.png"
+                    alt="BLOCKCHAIN EDUCATION AND TRAINING"
+                    class="global-hub-image"
+                  />
+                </div>
+                <h5 class="card-body">
+                  <strong> BLOCKCHAIN EDUCATION AND TRAINING </strong>
+                </h5>
+                <p class="card-footer">
+                  Offering courses, workshops, and certifications to educate
+                  citizens, developers, and businesses on Blockchain technology
+                  and its applications.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Second Row: 2 Cards -->
+          <div
+            class="col-md-6 mb-2 d-flex align-items-stretch justify-content-center"
+          >
+            <div class="card global-hub-card text-center">
+              <div class="d-flex flex-column">
+                <div class="card-title global-hub-image-container">
+                  <img
+                    src="assets/hand-money-income-note-icon.png"
+                    alt="INCUBATION AND ACCELERATION"
+                    class="global-hub-image"
+                  />
+                </div>
+                <h5 class="card-body">
+                  <strong> INCUBATION AND ACCELERATION PROGRAMS </strong>
+                </h5>
+                <p class="card-footer">
+                  Supporting early-stage startups with resources, mentorship,
+                  and funding to accelerate their growth and impact
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 mb-2 d-flex align-items-stretch justify-content-center"
+          >
+            <div class="card global-hub-card text-center">
+              <div class="card-title d-flex flex-column">
+                <div class="card-title global-hub-image-container">
+                  <img
+                    src="assets/research-and-development-icon.png"
+                    alt="RESEARCH AND DEVELOPMENT"
+                    class="global-hub-image"
+                  />
+                </div>
+                <h5 class="card-body">
+                  <strong> RESEARCH AND DEVELOPMENT SUPPORT </strong>
+                </h5>
+                <p class="card-footer">
+                  Facilitating research initiatives and partnerships that push
+                  the boundaries of Blockchain technology for real-world impact
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq-section" class="fqa-section py-5 text-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <!-- Left-aligned text block -->
+            <div class="text-left mb-4">
+              <h3 class="text-uppercase text-success">
+                Zanzibar <br />National Blockchain <br />Network
+              </h3>
+              <h1 class="faq-title"><strong>FAQ</strong></h1>
+              <h3 class="text-uppercase text-white">
+                <strong>& APPLY</strong>
+              </h3>
             </div>
 
-            <div class="text-center mt-5">
-                <p>&copy; Copyright 2024 - All rights reserved to eGAZ</p>
-                <div class="footer-info">
-                    <img
-                        src="assets/EGAZ-LOGO.png"
-                        alt="govt"
-                        class="footer-logo-image"
-                    />
-
-                    <span class="">
-                        eGAZ - Digital Transformation Office (DTO) | Office of
-                        The President
-                    </span>
+            <div>
+              <!-- General FAQs with Two Columns -->
+              <div class="faq-category text-left">
+                <h4><strong>General FAQs</strong></h4>
+                <div class="row">
+                  <div class="col-md-6 mx-auto">
+                    <div class="faq-item" onclick="toggleAccordion(this)">
+                      <span class="faq-q">
+                        1. What is the Zanzibar National Blockchain Network
+                        (NBN)?
+                      </span>
+                      <span class="material-icons"> expand_more </span>
+                      <div class="faq-content">
+                        The Zanzibar National Blockchain Network (NBN) is a
+                        pioneering Blockchain initiative that offers a secure,
+                        efficient, and transparent platform for government and
+                        business operations across Africa. It provides a unified
+                        digital ecosystem that supports public services, fosters
+                        collaboration, and enhances data integrity.
+                      </div>
+                    </div>
+                    <div class="faq-item" onclick="toggleAccordion(this)">
+                      <span class="faq-q">
+                        2. What are the main features of NBN?
+                      </span>
+                      <span class="material-icons"> expand_more </span>
+                      <div class="faq-content">
+                        NBN includes several key features: 1. Decentralized &
+                        Secure: Data integrity and fraud prevention through a
+                        decentralized ledger. 2. Immutability: Permanent,
+                        tamper-proof record of all transactions. 3. Smart
+                        Contracts: Automated and enforceable agreements. 4.
+                        Interoperability: Seamless integration with existing
+                        systems. 5. Scalability: Adaptable to large volumes as
+                        services grow.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mx-auto">
+                    <div class="faq-item" onclick="toggleAccordion(this)">
+                      <span class="faq-q">
+                        3. How can NBN benefit African governments and
+                        businesses?
+                      </span>
+                      <span class="material-icons"> expand_more </span>
+                      <div class="faq-content">
+                        NBN can streamline operations, reduce redundancy, and
+                        foster trust and transparency within public and private
+                        sectors. By offering a unified, tamper-proof system, NBN
+                        enhances service delivery, security, and operational
+                        efficiency
+                      </div>
+                    </div>
+                    <div class="faq-item" onclick="toggleAccordion(this)">
+                      <span class="faq-q">
+                        4. Is NBN only available in Zanzibar?
+                      </span>
+                      <span class="material-icons"> expand_more </span>
+                      <div class="faq-content">
+                        While NBN originated in Zanzibar, it is designed to
+                        support the entire African region. Our vision is to lead
+                        the continent in Blockchain innovation, bringing secure,
+                        efficient solutions across borders.
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div
-                    class="footer-text text-center text-md-end d-flex align-items-center justify-content-center"
+              </div>
+
+              <!-- For Developers and Innovators -->
+              <div class="faq-category text-left">
+                <h4>
+                  <strong>For Developers and Innovators</strong>
+                </h4>
+                <div class="row">
+                  <div class="col-md-6 mx-auto">
+                    <div class="faq-item" onclick="toggleAccordion(this)">
+                      <span class="faq-q">
+                        1. How can developers use NBN for their products or
+                        ideas?
+                      </span>
+                      <span class="material-icons">expand_more</span>
+                      <div class="faq-content">
+                        Developers can utilize NBN&lsquo;s sandbox environment
+                        to test and refine Blockchain applications before
+                        deploying them on the main network. This allows for safe
+                        experimentation and a smoother transition from concept
+                        to full-scale implementation.
+                      </div>
+                    </div>
+                    <div class="faq-item" onclick="toggleAccordion(this)">
+                      <span class="faq-q">
+                        2. Does NBN offer tools for developers?
+                      </span>
+                      <span class="material-icons"> expand_more </span>
+                      <div class="faq-content">
+                        Yes, NBN provides a suite of developer tools, APIs, and
+                        documentation to assist in building, testing, and
+                        integrating Blockchain solutions. Resources include
+                        access to a developer sandbox, smart contract templates,
+                        and support channels for troubleshooting.
+                      </div>
+                    </div>
+                    <div class="faq-item" onclick="toggleAccordion(this)">
+                      <span class="faq-q">
+                        3. How can my product benefit from NBN&lsquo;s features?
+                      </span>
+                      <span class="material-icons"> expand_more </span>
+                      <div class="faq-content">
+                        NBN&lsquo;s secure, decentralized, and immutable
+                        environment can enhance any product by ensuring data
+                        authenticity, automating agreements through smart
+                        contracts, and providing interoperability with other
+                        systems. These features can improve the reliability and
+                        efficiency of your application.
+                      </div>
+                    </div>
+                    <div class="faq-item" onclick="toggleAccordion(this)">
+                      <span class="faq-q">
+                        4. What types of applications can be built on NBN?
+                      </span>
+                      <span class="material-icons"> expand_more </span>
+                      <div class="faq-content">
+                        Applications across various industries, including
+                        finance, healthcare, supply chain, and public services,
+                        can be developed on NBN. Examples include document
+                        verification, secure data sharing, identity management,
+                        payment solutions, and legal contracts.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mx-auto">
+                    <div class="faq-item" onclick="toggleAccordion(this)">
+                      <span class="faq-q">
+                        5. Can startups or small businesses access NBN
+                        resources?
+                      </span>
+                      <span class="material-icons"> expand_more </span>
+                      <div class="faq-content">
+                        Absolutely. NBN offers an Innovation Center Program to
+                        support startups and small businesses with incubation,
+                        mentorship, and funding. This program is designed to
+                        help early-stage companies bring their Blockchain ideas
+                        to life.
+                      </div>
+                    </div>
+                    <div class="faq-item" onclick="toggleAccordion(this)">
+                      <span class="faq-q">
+                        6. Is there a cost associated with using NBN&lsquo;s
+                        sandbox and development tools?
+                      </span>
+                      <span class="material-icons"> expand_more </span>
+                      <div class="faq-content">
+                        NBN&lsquo;s sandbox is generally free for testing
+                        purposes, with potential minimal fees for full network
+                        deployment. Pricing details can vary, so please contact
+                        our support team for specifics.
+                      </div>
+                    </div>
+                    <div class="faq-item" onclick="toggleAccordion(this)">
+                      <span class="faq-q">
+                        7. What support is available for developers working on
+                        NBN?
+                      </span>
+                      <span class="material-icons"> expand_more </span>
+                      <div class="faq-content">
+                        NBN&lsquo;s secure, decentralized, and immutable
+                        environment can enhance any product by ensuring data
+                        authenticity, automating agreements through smart
+                        contracts, and providing interoperability with other
+                        systems. These features can improve the reliability and
+                        efficiency of your application.
+                      </div>
+                    </div>
+                    <div class="faq-item" onclick="toggleAccordion(this)">
+                      <span class="faq-q">
+                        8. Is there funding support available for projects built
+                        on NBN?
+                      </span>
+                      <span class="material-icons"> expand_more </span>
+                      <div class="faq-content">
+                        8. Is there funding support available for projects built
+                        on NBN? Yes, NBN provides funding opportunities through
+                        the Innovation Center Program, which supports startups,
+                        small businesses, and developers in bringing their
+                        Blockchain ideas to market. This program offers access
+                        to grants, incubation, and potential investment for
+                        projects that align with NBN&lsquo;s mission to drive
+                        Blockchain innovation across Africa.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Getting Started -->
+              <div class="faq-category text-left">
+                <h4><strong>Getting Started</strong></h4>
+                <div class="row">
+                  <div class="col-md-6 mx-auto">
+                    <div class="faq-item" onclick="toggleAccordion(this)">
+                      <span class="faq-q">
+                        1. How do I start using NBN for my project?
+                      </span>
+                      <span class="material-icons"> expand_more </span>
+                      <div class="faq-content">
+                        To begin, register for access to our developer sandbox
+                        and provide details to your use case
+                        <link />. You may also reach out to us for a
+                        consultation or guidance on utilizing the network for
+                        your specific use case.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mx-auto">
+                    <div class="faq-item" onclick="toggleAccordion(this)">
+                      <span class="faq-q">
+                        2. How can I join the NBN developer community?
+                      </span>
+                      <span class="material-icons"> expand_more </span>
+                      <div class="faq-content">
+                        By joining our telegram group
+                        <link />, you can connect with other developers, share
+                        knowledge, and collaborate on projects. Training
+                        program, Hackathon, Networking events and developer
+                        workshops are also available periodically.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- media Carousel Section-->
+    <section id="media-section" class="media-carousel-section py-5">
+      <div class="media-container">
+        <div class="global-hub-image-background text-center">
+          <h2
+            class="title-design section-heading text-center position-relative"
+          >
+            <img
+              src="assets/media/partners.png"
+              alt="extra"
+              class="title-design-img"
+            />
+            <span class="z-1">MEDIA</span>
+          </h2>
+          <h6 class="section-subheading text-white mb-4 z-1">
+            Expanding Blockchain in Africa
+          </h6>
+        </div>
+      </div>
+      <div id="mediaCarousel" class="container">
+        <div class="arrow" id="mediaPrev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </div>
+        <div class="arrow" id="mediaNext">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </div>
+
+        <div id="mediaCarousel-vp">
+          <div id="mediaCarousel-inner">
+            <article class="mediaCarousel-item">
+              <div class="d-flex justify-content-center align-items-center">
+                <img
+                  src="./assets/media/1.jpg"
+                  alt="Media 1"
+                  class="carousel-img mx-3"
+                />
+              </div>
+            </article>
+
+            <article class="mediaCarousel-item">
+              <div class="d-flex justify-content-center align-items-center">
+                <img
+                  src="./assets/media/2.jpg"
+                  alt="Media 2"
+                  class="carousel-img mx-3"
+                />
+              </div>
+            </article>
+            <article class="mediaCarousel-item">
+              <div class="d-flex justify-content-center align-items-center">
+                <img
+                  src="./assets/media/3.jpg"
+                  alt="Media 1"
+                  class="carousel-img mx-3"
+                />
+              </div>
+            </article>
+
+            <article class="mediaCarousel-item">
+              <div class="d-flex justify-content-center align-items-center">
+                <img
+                  src="./assets/media/4.jpg"
+                  alt="Media 2"
+                  class="carousel-img mx-3"
+                />
+              </div>
+            </article>
+            <article class="mediaCarousel-item">
+              <div class="d-flex justify-content-center align-items-center">
+                <img
+                  src="./assets/media/5.jpg"
+                  alt="Media 1"
+                  class="carousel-img mx-3"
+                />
+              </div>
+            </article>
+
+            <article class="mediaCarousel-item">
+              <div class="d-flex justify-content-center align-items-center">
+                <img
+                  src="./assets/media/6.jpg"
+                  alt="Media 2"
+                  class="carousel-img mx-3"
+                />
+              </div>
+            </article>
+            <article class="mediaCarousel-item">
+              <div class="d-flex justify-content-center align-items-center">
+                <img
+                  src="./assets/media/7.jpg"
+                  alt="Media 1"
+                  class="carousel-img mx-3"
+                />
+              </div>
+            </article>
+
+            <article class="mediaCarousel-item">
+              <div class="d-flex justify-content-center align-items-center">
+                <img
+                  src="./assets/media/8.jpg"
+                  alt="Media 2"
+                  class="carousel-img mx-3"
+                />
+              </div>
+            </article>
+            <article class="mediaCarousel-item">
+              <div class="d-flex justify-content-center align-items-center">
+                <img
+                  src="./assets/media/9.jpg"
+                  alt="Media 1"
+                  class="carousel-img mx-3"
+                />
+              </div>
+            </article>
+
+            <article class="mediaCarousel-item">
+              <div class="d-flex justify-content-center align-items-center">
+                <img
+                  src="./assets/media/10.jpg"
+                  alt="Media 2"
+                  class="carousel-img mx-3"
+                />
+              </div>
+            </article>
+            <article class="mediaCarousel-item">
+              <div class="d-flex justify-content-center align-items-center">
+                <img
+                  src="./assets/media/11.jpg"
+                  alt="Media 1"
+                  class="carousel-img mx-3"
+                />
+              </div>
+            </article>
+
+            <article class="mediaCarousel-item">
+              <div class="d-flex justify-content-center align-items-center">
+                <img
+                  src="./assets/media/12.jpg"
+                  alt="Media 2"
+                  class="carousel-img mx-3"
+                />
+              </div>
+            </article>
+            <article class="mediaCarousel-item">
+              <div class="d-flex justify-content-center align-items-center">
+                <img
+                  src="./assets/media/13.jpg"
+                  alt="Media 1"
+                  class="carousel-img mx-3"
+                />
+              </div>
+            </article>
+
+            <article class="mediaCarousel-item">
+              <div class="d-flex justify-content-center align-items-center">
+                <img
+                  src="./assets/media/14.jpg"
+                  alt="Media 2"
+                  class="carousel-img mx-3"
+                />
+              </div>
+            </article>
+            <article class="mediaCarousel-item">
+              <div class="d-flex justify-content-center align-items-center">
+                <img
+                  src="./assets/media/15.jpg"
+                  alt="Media 1"
+                  class="carousel-img mx-3"
+                />
+              </div>
+            </article>
+
+            <article class="mediaCarousel-item">
+              <div class="d-flex justify-content-center align-items-center">
+                <img
+                  src="./assets/media/16.jpg"
+                  alt="Media 2"
+                  class="carousel-img mx-3"
+                />
+              </div>
+            </article>
+            <article class="mediaCarousel-item">
+              <div class="d-flex justify-content-center align-items-center">
+                <img
+                  src="./assets/media/17.jpg"
+                  alt="Media 1"
+                  class="carousel-img mx-3"
+                />
+              </div>
+            </article>
+
+            <article class="mediaCarousel-item">
+              <div class="d-flex justify-content-center align-items-center">
+                <img
+                  src="./assets/media/18.jpg"
+                  alt="Media 2"
+                  class="carousel-img mx-3"
+                />
+              </div>
+            </article>
+            <article class="mediaCarousel-item">
+              <div class="d-flex justify-content-center align-items-center">
+                <img
+                  src="./assets/media/19.jpg"
+                  alt="Media 1"
+                  class="carousel-img mx-3"
+                />
+              </div>
+            </article>
+
+            <article class="mediaCarousel-item">
+              <div class="d-flex justify-content-center align-items-center">
+                <img
+                  src="./assets/media/20.jpg"
+                  alt="Media 2"
+                  class="carousel-img mx-3"
+                />
+              </div>
+            </article>
+            <article class="mediaCarousel-item">
+              <div class="d-flex justify-content-center align-items-center">
+                <img
+                  src="./assets/media/21.jpg"
+                  alt="Media 1"
+                  class="carousel-img mx-3"
+                />
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+      <div class="hero-buttons">
+        <a
+          href="./media/index.html"
+          class="btn-custom btn-training"
+        >
+          <span>view more</span>
+          <span class="circle-arrow">
+            <span class="material-icons">arrow_forward</span>
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="contact-section" class="newsletter-section py-5">
+      <div class="container">
+        <div class="row">
+          <div class="newsletter-text col-md-6">
+            <h2>LETS START!</h2>
+            <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
+            <p class="text-justify">
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout.
+            </p>
+          </div>
+
+          <div class="newsletter-form-container col-md-6">
+            <form class="newsletter-form" id="newsletter-form">
+              <input
+                type="text"
+                placeholder="Name"
+                class="form-control mb-3"
+                id="name"
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                class="form-control mb-3"
+                id="email"
+              />
+              <p id="response-message" class="mt-3"></p>
+              <button type="submit" class="btn" id="subscribe-button">
+                SUBSCRIBE
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer id="footer-section" class="footer-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <a>
+              <img src="assets/logo.svg" alt="Logo" class="shared-logo mb-4" />
+            </a>
+            <p>
+              eGovernment Authority Zanzibar (eGaz), <br />
+              7th Floor, Sheria House Building, <br />
+              Mazizini Zanzibar
+            </p>
+            <div class="social-icons d-flex justify-content-start"></div>
+          </div>
+          <div class="col-12 col-md-6">
+            <h3>Quick Links</h3>
+            <div class="row">
+              <div class="col-6 mb-2">
+                <a
+                  class="footer-links"
+                  id="footer-home"
+                  onclick="scrollToElement('home-section')"
                 >
-                    <span class="powered-by d-flex align-items-center">
-                        Powered by
-                        <img
-                            src="assets/ledgerfi-logo.png"
-                            alt="LedgerFi logo"
-                            title="LedgerFi"
-                            class="logo-image"
-                        />
-                        Built on
-                        <img
-                            src="assets/xdc-network-logo.png"
-                            alt="XDC network logo"
-                            title="XDC Network"
-                            class="logo-image"
-                        />
-                    </span>
-                </div>
+                  <i class="fa-solid fa-house"></i>
+                  HOME
+                </a>
+              </div>
+              <div class="col-6 mb-2">
+                <a
+                  class="footer-links"
+                  id="footer-about"
+                  onclick="scrollToElement('about-section')"
+                >
+                  <i class="fa-solid fa-house"></i>
+                  ABOUT
+                </a>
+              </div>
+              <div class="col-6 mb-2">
+                <a
+                  class="footer-links"
+                  id="footer-key-features"
+                  onclick="scrollToElement('key-features-section')"
+                >
+                  KEY FEATURES
+                </a>
+              </div>
+              <div class="col-6 mb-2">
+                <a
+                  class="footer-links"
+                  id="footer-how-it-works"
+                  onclick="scrollToElement('how-it-works-section')"
+                >
+                  HOW IT WORKS
+                </a>
+              </div>
+              <div class="col-6 mb-2">
+                <a
+                  class="footer-links"
+                  id="footer-use-cases"
+                  onclick="scrollToElement('use-cases-section')"
+                >
+                  USE CASES
+                </a>
+              </div>
+              <div class="col-6 mb-2">
+                <a
+                  class="footer-links"
+                  id="footer-global-hub"
+                  onclick="scrollToElement('global-hub-section')"
+                >
+                  GLOBAL HUB
+                </a>
+              </div>
+              <div class="col-6 mb-2">
+                <a
+                  class="footer-links"
+                  id="footer-get-involved"
+                  onclick="scrollToElement('get-involved-section')"
+                >
+                  GET INVOLVED & APPLY
+                </a>
+              </div>
+              <div class="col-6 mb-2">
+                <a
+                  class="footer-links"
+                  id="footer-faq"
+                  onclick="scrollToElement('faq-section')"
+                >
+                  FAQ
+                </a>
+              </div>
             </div>
-        </footer>
+          </div>
+        </div>
+      </div>
 
-        <!-- Bootstrap JS and Popper.js (for Bootstrap 5) -->
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-        <script src="quicklinkscript.js"></script>
-        <script src="fqascript.js"></script>
-        <script src="./hero-canvas.js"></script>
+      <div class="text-center mt-5">
+        <p>&copy; Copyright 2024 - All rights reserved to eGAZ</p>
+        <div class="footer-info">
+          <img
+            src="assets/EGAZ-LOGO.png"
+            alt="govt"
+            class="footer-logo-image"
+          />
 
-        <script src="caraualscript.js" defer></script>
-        <script src="subscribescript.js" defer></script>
-    </body>
+          <span class="">
+            eGAZ - Digital Transformation Office (DTO) | Office of The President
+          </span>
+        </div>
+        <div
+          class="footer-text text-center text-md-end d-flex align-items-center justify-content-center"
+        >
+          <span class="powered-by d-flex align-items-center">
+            Powered by
+            <img
+              src="assets/ledgerfi-logo.png"
+              alt="LedgerFi logo"
+              title="LedgerFi"
+              class="logo-image"
+            />
+            Built on
+            <img
+              src="assets/xdc-network-logo.png"
+              alt="XDC network logo"
+              title="XDC Network"
+              class="logo-image"
+            />
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js (for Bootstrap 5) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="quicklinkscript.js"></script>
+    <script src="fqascript.js"></script>
+    <script src="./hero-canvas.js"></script>
+
+    <script src="caraualscript.js" defer></script>
+    <script src="subscribescript.js" defer></script>
+  </body>
 </html>
