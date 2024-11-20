@@ -102,12 +102,10 @@ function generateMonthDates(month, year) {
                     `<div class="col">
                         <span class="date special" style="background-color: ${bgColor}">
                             <span class="date-number">${date.getDate()}</span>
-                            <span class="event-title link" data-link="${
-                                event.link
-                            }">${event.title}</span>
-                            <span class="event-sub-title link" data-link="${
-                                event.link
-                            }">${event.title2}</span>
+                            <span class="event-title link" data-link="${event.link
+                    }">${event.title}</span>
+                            <span class="event-sub-title link" data-link="${event.link
+                    }">${event.title2}</span>
                         </span>
                     </div>`
                 );
