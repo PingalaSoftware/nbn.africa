@@ -34,15 +34,31 @@
 
 .digital-media-coverage .media-links {
     font-size: 18px;
-    max-width: 100vw;
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
 }
 
 .digital-media-coverage .media-links .link {
     color: #35ba53;
     text-decoration: underline;
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+    white-space: normal; 
 }
 
 .digital-media-coverage .media-links .link-title {
     font-weight: bold;
 }
 
+/* General Responsive Adjustments for Media Sections */
+@media (max-width: 768px) {
+
+    .digital-media-coverage .media-links {
+        font-size: 16px; 
+    }
+
+    .digital-media-coverage .media-links .link {
+        font-size: 14px; 
+        line-height: 1.5;
+    }
+}
