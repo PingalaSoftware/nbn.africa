@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Upcoming Media</title>
@@ -11,478 +12,399 @@
     <link rel="stylesheet" href="../global.css" />
     <link rel="stylesheet" href="../css/general.css" />
     <link rel="stylesheet" href="./css/media.css" />
-    <link
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header
-      style="height: 110px"
-      class="d-flex sticky-header"
-      id="header-section"
-    >
-      <!-- Logo shared between top bar and navbar -->
-      <a href="/" class="logo-container">
-        <img src="../assets/logo.svg" alt="Logo" class="shared-logo" />
-      </a>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
 
-      <div class="nav-info w-100">
-        <!-- Top Bar Section -->
-        <div class="top-bar">
-          <div
-            class="d-flex justify-content-between align-items-center h-100 container-fluid"
-          >
-            <div class="contact-info pc-only">
-              <span> <a href="mailto:nbn@egaz.go.tz">nbn@egaz.go.tz </a></span>
+<body>
+    <header style="height: 110px" class="d-flex sticky-header" id="header-section">
+        <!-- Logo shared between top bar and navbar -->
+        <a href="/" class="logo-container">
+            <img src="../assets/logo.svg" alt="Logo" class="shared-logo" />
+        </a>
+
+        <div class="nav-info w-100">
+            <!-- Top Bar Section -->
+            <div class="top-bar">
+                <div class="d-flex justify-content-between align-items-center h-100 container-fluid">
+                    <div class="contact-info pc-only">
+                        <span> <a href="mailto:nbn@egaz.go.tz">nbn@egaz.go.tz </a></span>
+                    </div>
+                    <div class="social-icons">
+                        <a class="mobile-only mx-2" href="mailto:nbn@egaz.go.tz/" target="_blank">
+                            <img src="../assets/email.png" alt="linkedin" class="topbar-logo-image" />
+                        </a>
+
+                        <a class="mx-2" href="https://www.linkedin.com/company/zanzibar-national-blockchain-network/"
+                            target="_blank">
+                            <img src="../assets/linkedin-logo.png" alt="linkedin" class="topbar-logo-image" />
+                        </a>
+
+                        <a class="mx-2" href="https://x.com/ZanzibarNBN" target="_blank">
+                            <img src="../assets/twitter.png" alt="telegram" class="topbar-logo-image" />
+                        </a>
+
+                        <a class="mx-2" href="https://t.me/+2CGt_4mvIHk0NWJl" target="_blank">
+                            <img src="../assets/telegram.png" alt="telegram" class="topbar-logo-image" />
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="social-icons">
-              <a
-                class="mobile-only mx-2"
-                href="mailto:nbn@egaz.go.tz/"
-                target="_blank"
-              >
-                <img
-                  src="../assets/email.png"
-                  alt="linkedin"
-                  class="topbar-logo-image"
-                />
-              </a>
 
-              <a
-                class="mx-2"
-                href="https://www.linkedin.com/company/zanzibar-national-blockchain-network/"
-                target="_blank"
-              >
-                <img
-                  src="../assets/linkedin-logo.png"
-                  alt="linkedin"
-                  class="topbar-logo-image"
-                />
-              </a>
-
-              <a class="mx-2" href="https://x.com/ZanzibarNBN" target="_blank">
-                <img
-                  src="../assets/twitter.png"
-                  alt="telegram"
-                  class="topbar-logo-image"
-                />
-              </a>
-
-              <a
-                class="mx-2"
-                href="https://t.me/+2CGt_4mvIHk0NWJl"
-                target="_blank"
-              >
-                <img
-                  src="../assets/telegram.png"
-                  alt="telegram"
-                  class="topbar-logo-image"
-                />
-              </a>
-            </div>
-          </div>
+            <!-- Navbar Section -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white pc-only">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav-about" href="../index.html">
+                                <i class="fa-solid fa-house"></i>
+                                HOME
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav-about" href="../upcoming-training/index.html">
+                                <i class="fa-solid fa-house"></i>
+                                TRAINING
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-
-        <!-- Navbar Section -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white pc-only">
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" id="nav-about" href="../index.html">
-                  <i class="fa-solid fa-house"></i>
-                  HOME
-                </a>
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  id="nav-about"
-                  href="../upcoming-training/index.html"
-                >
-                  <i class="fa-solid fa-house"></i>
-                  TRAINING
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
     </header>
     <section class="upcoming-media-section py-5">
-      <div class="container upcoming-title">
-        <span class="upcoming-text">Upcoming</span>
-        <span class="media-text">Media</span>
-      </div>
+        <div class="container upcoming-title">
+            <span class="upcoming-text">Upcoming</span>
+            <span class="media-text">Media</span>
+        </div>
     </section>
     <section class="image-section py-5">
         <div class="container">
-            <div class="image-container">
-                <img
-                src="../assets/media/newspaper-img 1.png"
-                alt="BLOCKCHAIN COMPANIES"
-            />
+            <div class="image-container pc-only">
+                <img src="../assets/media/newspaper-img 1.png" alt="" />
+            </div>
+            <div class="image-container mobile-only">
+                <img src="../assets/media/newspaper-img 1.png" alt="" style="
+                      width: 91vw;
+                      height: auto;
+                      object-fit: contain;
+                    " />
             </div>
         </div>
     </section>
     <section class="digital-media-coverage py-5">
         <div class="container">
         </div>
-      <div class="container upcoming-title">
-        <span class="upcoming-text">Digital Media</span>
-        <span class="media-text">Coverage</span>
-        <div class="media-links mt-4">
-          <div>
-            <p class="link-title">November 14</p>
-            <a
-              href="https://kenyanwallstreet.com/zanzibar-launches-national-blockchain-network-sandbox-for-globalinnovators-corporates-and-governments/"
-            >
-              <p class="link">
-                https://kenyanwallstreet.com/zanzibar-launches-national-blockchain-network-sandbox-for-globalinnovators-corporates-and-governments/
-              </p>
-            </a>
-          </div>
-          <div>
-            <p class="link-title">November 6</p>
-            <a
-              href="https://www.biometricupdate.com/202411/zanzibar-prioritizes-financial-inclusion-idv-in-blockchainsandbox"
-            >
-              <p class="link">
-                https://www.biometricupdate.com/202411/zanzibar-prioritizes-financial-inclusion-idv-in-blockchainsandbox
-              </p>
-            </a>
-          </div>
-          <div>
-            <p class="link-title">November 5</p>
-            <a
-              href="https://dailynews.co.tz/new-platform-seeks-to-make-zanzibar-leader-in-digital-governance/"
-            >
-              <p class="link">
-                https://dailynews.co.tz/new-platform-seeks-to-make-zanzibar-leader-in-digital-governance/
-              </p>
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://fullshangweblog.co.tz/2024/11/05/xdc-network-na-ledgerfi-kuchangia-ubunifu-wa-blockchainkatika-maendeleo-ya-teknolojia-zanzibar/"
-            >
-              <p class="link">
-                https://fullshangweblog.co.tz/2024/11/05/xdc-network-na-ledgerfi-kuchangia-ubunifu-wa-blockchainkatika-maendeleo-ya-teknolojia-zanzibar/
-              </p>
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://saa24.co.tz/2024/11/05/xdc-network-na-ledgerfi-kuchangia-ubunifu-wa-blockchain-katikamaendeleo-ya-teknolojia-zanzibar/"
-            >
-              <p class="link">
-                https://saa24.co.tz/2024/11/05/xdc-network-na-ledgerfi-kuchangia-ubunifu-wa-blockchain-katikamaendeleo-ya-teknolojia-zanzibar/
-              </p>
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://www.femmehub.com/2024/11/05/xdc-network-ledgerfi-launch-zanzibar-blockchain-sandboxfor-tech-innovation/"
-            >
-              <p class="link">
-                https://www.femmehub.com/2024/11/05/xdc-network-ledgerfi-launch-zanzibar-blockchain-sandboxfor-tech-innovation/
-              </p>
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://coingeek.com/zanzibar-launches-blockchain-sandbox-for-startups/"
-            >
-              <p class="link">
-                https://coingeek.com/zanzibar-launches-blockchain-sandbox-for-startups/
-              </p>
-            </a>
-          </div>
-          <div>
-            <p class="link-title">November 4</p>
-            <a
-              href="https://www.eatv.tv/news/business/xdc-network-na-ledgerfi-kuchangia-ubunifu-nchini"
-            >
-              <p class="link">
-                https://www.eatv.tv/news/business/xdc-network-na-ledgerfi-kuchangia-ubunifu-nchini
-              </p>
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://www.mwananchi.co.tz/mw/habari/kitaifa/xdc-network-ledgerfi-kuchangia-ubunifu-wateknolojia-zanzibar--4811470"
-            >
-              <p class="link">
-                https://www.mwananchi.co.tz/mw/habari/kitaifa/xdc-network-ledgerfi-kuchangia-ubunifu-wateknolojia-zanzibar--4811470
-              </p>
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://socialpreneur.co.ke/2024/11/04/xdc-network-and-ledgerfi-drive-blockchaininnovation-inzanzibars-sandbox/"
-            >
-              <p class="link">
-                https://socialpreneur.co.ke/2024/11/04/xdc-network-and-ledgerfi-drive-blockchaininnovation-inzanzibars-sandbox/
-              </p>
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://aptantech.com/2024/11/04/zanzibars-national-blockchain-sandbox-to-provide-startups-withsecure-platform-to-test-their-solutions/"
-            >
-              <p class="link">
-                https://aptantech.com/2024/11/04/zanzibars-national-blockchain-sandbox-to-provide-startups-withsecure-platform-to-test-their-solutions/
-              </p>
-            </a>
-          </div>
-          <div>
-            <p class="link-title">November 1</p>
-            <a
-              href="https://www.ippmedia.com/the-guardian/business/read/zanzibar-seeks-to-become-regional-leader-inblockchain-technology-digital-governance-2024-11-01-134306"
-            >
-              <p class="link">
-                https://www.ippmedia.com/the-guardian/business/read/zanzibar-seeks-to-become-regional-leader-inblockchain-technology-digital-governance-2024-11-01-134306
-              </p>
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://www.thecitizen.co.tz/tanzania/zanzibar/zanzibar-launches-initiative-to-boost-digital-innovation- 4806612"
-            >
-              <p class="link">
-                https://www.thecitizen.co.tz/tanzania/zanzibar/zanzibar-launches-initiative-to-boost-digital-innovation-
-                4806612
-              </p>
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://sw.fatshimetrie.org/2024/11/01/mapinduzi-ya-blockchain-zanzibar-inakuwa-kitovu-chauvumbuzi-wa-kidijitali-barani-afrika/?amp=1"
-            >
-              <p class="link">
-                https://sw.fatshimetrie.org/2024/11/01/mapinduzi-ya-blockchain-zanzibar-inakuwa-kitovu-chauvumbuzi-wa-kidijitali-barani-afrika/?amp=1
-              </p>
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://deskeco.com/2024/10/31/le-reseau-xdc-et-ledgerfi-stimulent-linnovation-blockchain-dans-lesandbox-de-zanzibar"
-            >
-              <p class="link">
-                https://deskeco.com/2024/10/31/le-reseau-xdc-et-ledgerfi-stimulent-linnovation-blockchain-dans-lesandbox-de-zanzibar
-              </p>
-            </a>
-          </div>
-          <div>
-            <p class="link-title">October 31</p>
-            <a
-              href="https://tech-ish.com/2024/10/31/xdc-network-ledgerfi-blockchain-innovation-zanzibar/"
-            >
-              <p class="link">
-                https://tech-ish.com/2024/10/31/xdc-network-ledgerfi-blockchain-innovation-zanzibar/
-              </p>
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://eng.fatshimetrie.org/2024/10/31/zanzibar-national-blockchain-sandbox-a-catalyst-fortechnological-innovation/?amp=1"
-            >
-              <p class="link">
-                https://eng.fatshimetrie.org/2024/10/31/zanzibar-national-blockchain-sandbox-a-catalyst-fortechnological-innovation/?amp=1
-              </p>
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://actualite.cd/2024/10/31/le-reseau-xdc-et-ledgerfi-stimulent-linnovation-blockchain-dans-lesandbox-de-zanzibar-0"
-            >
-              <p class="link">
-                https://actualite.cd/2024/10/31/le-reseau-xdc-et-ledgerfi-stimulent-linnovation-blockchain-dans-lesandbox-de-zanzibar-0
-              </p>
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://infos.cd/economie/le-reseau-xdc-et-ledgerfi-stimulent-linnovation-blockchain-dans-le-sandboxde-zanzibar-communique/51630/"
-            >
-              <p class="link">
-                https://infos.cd/economie/le-reseau-xdc-et-ledgerfi-stimulent-linnovation-blockchain-dans-le-sandboxde-zanzibar-communique/51630/
-              </p>
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://zoom-eco.net/afrique/afrique-le-reseau-xdc-et-ledgerfi-stimulent-linnovation-blockchain-dansle-sandbox-de-zanzibar/"
-            >
-              <p class="link">
-                https://zoom-eco.net/afrique/afrique-le-reseau-xdc-et-ledgerfi-stimulent-linnovation-blockchain-dansle-sandbox-de-zanzibar/
-              </p>
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://7sur7.cd/2024/10/31/le-reseau-xdc-et-ledgerfi-stimulent-linnovation-blockchain-dans-lesandbox-de-zanzibar"
-            >
-              <p class="link">
-                https://7sur7.cd/2024/10/31/le-reseau-xdc-et-ledgerfi-stimulent-linnovation-blockchain-dans-lesandbox-de-zanzibar
-              </p>
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://eng.fatshimetrie.org/2024/10/31/zanzibar-national-blockchain-sandbox-a-catalyst-fortechnological-innovation/"
-            >
-              <p class="link">
-                https://eng.fatshimetrie.org/2024/10/31/zanzibar-national-blockchain-sandbox-a-catalyst-fortechnological-innovation/
-              </p>
-            </a>
-          </div>
-          <div>
-            <p class="link-title">October 30</p>
-            <a href="https://biznakenya.com/digital-governance/">
-              <p class="link">https://biznakenya.com/digital-governance/</p>
-            </a>
-          </div>
-          <div>
-            <p class="link-title">October 25</p>
-            <a
-              href="https://www.wearetech.africa/en/fils-uk/news/tech/zanzibar-launches-blockchain-sandbox-toaccelerate-tech-innovation"
-            >
-              <p class="link">
-                https://www.wearetech.africa/en/fils-uk/news/tech/zanzibar-launches-blockchain-sandbox-toaccelerate-tech-innovation
-              </p>
-            </a>
-          </div>
-          <div>
-            <a href="https://www.bitget.com/news/detail/12560604303056">
-              <p class="link">
-                https://www.bitget.com/news/detail/12560604303056
-              </p>
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://news.cryptos.com/2024/10/25/africa/zanzibar-has-officially-launched-its-national-blockchainsandbox-aiming-to-nurture-tech-innovation-and-position-the-semi-autonomous-region-as-a-key-playerin-the-global-blockchain-ecosystem-accordin/"
-            >
-              <p class="link">
-                https://news.cryptos.com/2024/10/25/africa/zanzibar-has-officially-launched-its-national-blockchainsandbox-aiming-to-nurture-tech-innovation-and-position-the-semi-autonomous-region-as-a-key-playerin-the-global-blockchain-ecosystem-accordin/
-              </p>
-            </a>
-          </div>
-          <div>
-            <p class="link-title">October 24</p>
-            <a
-              href="https://coinspaidmedia.com/news/zanzibar-launches-blockchain-sandbox-tech-startups/"
-            >
-              <p class="link">
-                https://coinspaidmedia.com/news/zanzibar-launches-blockchain-sandbox-tech-startups/
-              </p>
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://grafa.com/news/cryptocurrencies-zanzibar-launches-new-blockchain-sandbox-for-innovation- 291510"
-            >
-              <p class="link">
-                https://grafa.com/news/cryptocurrencies-zanzibar-launches-new-blockchain-sandbox-for-innovation-
-                291510
-              </p>
-            </a>
-          </div>
-          <div>
-            <a href="https://www.bitget.com/news/detail/12560604300725">
-              <p class="link">
-                https://www.bitget.com/news/detail/12560604300725
-              </p>
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://cryptorank.io/news/feed/2984a-zanzibars-new-blockchain-sandbox-aims-drive-tech"
-            >
-              <p class="link">
-                https://cryptorank.io/news/feed/2984a-zanzibars-new-blockchain-sandbox-aims-drive-tech
-              </p>
-            </a>
-          </div>
-          <div>
-            <p class="link-title">October 23</p>
-            <a
-              href="https://www.msn.com/en-us/money/other/zanzibar-s-new-blockchain-sandbox-aims-to-drive-techstartup-growth/ar-AA1sNFA5https://cointelegraph.com/news/zanzibar-blockchain-sandbox-tech-startups-xdc"
-            >
-              <p class="link">
-                https://www.msn.com/en-us/money/other/zanzibar-s-new-blockchain-sandbox-aims-to-drive-techstartup-growth/ar-AA1sNFA5https://cointelegraph.com/news/zanzibar-blockchain-sandbox-tech-startups-xdc
-              </p>
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://www.binance.com/en-KZ/square/post/2024-10-23-zanzibar-government-launches-blockchainsandbox-initiative-15252901134345"
-            >
-              <p class="link">
-                https://www.binance.com/en-KZ/square/post/2024-10-23-zanzibar-government-launches-blockchainsandbox-initiative-15252901134345
-              </p>
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://www.onesafe.io/blog/zanzibar-blockchain-sandbox-innovation"
-            >
-              <p class="link">
-                https://www.onesafe.io/blog/zanzibar-blockchain-sandbox-innovation
-              </p>
-            </a>
-          </div>
-          <div>
-            <p class="link-title">October 22</p>
-            <a
-              href="https://bitcoinke.io/2024/10/introducing-the-zanzibar-national-blockchain-sandbox/"
-            >
-              <p class="link">
-                https://bitcoinke.io/2024/10/introducing-the-zanzibar-national-blockchain-sandbox/
-              </p>
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://www.cointrust.com/market-news/zanzibar-launches-blockchain-sandbox-to-foster-startupinnovation"
-            >
-              <p class="link">
-                https://www.cointrust.com/market-news/zanzibar-launches-blockchain-sandbox-to-foster-startupinnovation
-              </p>
-            </a>
-          </div>
-          <div>
-            <a href="https://www.aicoin.com/en/article/425224">
-              <p class="link">https://www.aicoin.com/en/article/425224</p>
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://www.thehabarinetwork.com/zanzibar-launches-blockchain-sandbox-to-aid-tech-startup-growth"
-            >
-              <p class="link">
-                https://www.thehabarinetwork.com/zanzibar-launches-blockchain-sandbox-to-aid-tech-startup-growth
-              </p>
-            </a>
-          </div>
-          <div>
-            <p class="link-title">October 21</p>
-            <a
-              href="https://kenyanwallstreet.com/zanzibar-develops-blockchain-sandbox-to-support-tech-startups/"
-            >
-              <p class="link">
-                https://kenyanwallstreet.com/zanzibar-develops-blockchain-sandbox-to-support-tech-startups/
-              </p>
-            </a>
-          </div>
+        <div class="container upcoming-title">
+            <span class="upcoming-text">Digital Media</span>
+            <span class="media-text">Coverage</span>
+            <div class="media-links mt-4">
+                <div>
+                    <p class="link-title">November 14</p>
+                    <a
+                        href="https://kenyanwallstreet.com/zanzibar-launches-national-blockchain-network-sandbox-for-globalinnovators-corporates-and-governments/">
+                        <p class="link">
+                            https://kenyanwallstreet.com/zanzibar-launches-national-blockchain-network-sandbox-for-globalinnovators-corporates-and-governments/
+                        </p>
+                    </a>
+                </div>
+                <div>
+                    <p class="link-title">November 6</p>
+                    <a
+                        href="https://www.biometricupdate.com/202411/zanzibar-prioritizes-financial-inclusion-idv-in-blockchainsandbox">
+                        <p class="link">
+                            https://www.biometricupdate.com/202411/zanzibar-prioritizes-financial-inclusion-idv-in-blockchainsandbox
+                        </p>
+                    </a>
+                </div>
+                <div>
+                    <p class="link-title">November 5</p>
+                    <a href="https://dailynews.co.tz/new-platform-seeks-to-make-zanzibar-leader-in-digital-governance/">
+                        <p class="link">
+                            https://dailynews.co.tz/new-platform-seeks-to-make-zanzibar-leader-in-digital-governance/
+                        </p>
+                    </a>
+                </div>
+                <div>
+                    <a
+                        href="https://fullshangweblog.co.tz/2024/11/05/xdc-network-na-ledgerfi-kuchangia-ubunifu-wa-blockchainkatika-maendeleo-ya-teknolojia-zanzibar/">
+                        <p class="link">
+                            https://fullshangweblog.co.tz/2024/11/05/xdc-network-na-ledgerfi-kuchangia-ubunifu-wa-blockchainkatika-maendeleo-ya-teknolojia-zanzibar/
+                        </p>
+                    </a>
+                </div>
+                <div>
+                    <a
+                        href="https://saa24.co.tz/2024/11/05/xdc-network-na-ledgerfi-kuchangia-ubunifu-wa-blockchain-katikamaendeleo-ya-teknolojia-zanzibar/">
+                        <p class="link">
+                            https://saa24.co.tz/2024/11/05/xdc-network-na-ledgerfi-kuchangia-ubunifu-wa-blockchain-katikamaendeleo-ya-teknolojia-zanzibar/
+                        </p>
+                    </a>
+                </div>
+                <div>
+                    <a
+                        href="https://www.femmehub.com/2024/11/05/xdc-network-ledgerfi-launch-zanzibar-blockchain-sandboxfor-tech-innovation/">
+                        <p class="link">
+                            https://www.femmehub.com/2024/11/05/xdc-network-ledgerfi-launch-zanzibar-blockchain-sandboxfor-tech-innovation/
+                        </p>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://coingeek.com/zanzibar-launches-blockchain-sandbox-for-startups/">
+                        <p class="link">
+                            https://coingeek.com/zanzibar-launches-blockchain-sandbox-for-startups/
+                        </p>
+                    </a>
+                </div>
+                <div>
+                    <p class="link-title">November 4</p>
+                    <a href="https://www.eatv.tv/news/business/xdc-network-na-ledgerfi-kuchangia-ubunifu-nchini">
+                        <p class="link">
+                            https://www.eatv.tv/news/business/xdc-network-na-ledgerfi-kuchangia-ubunifu-nchini
+                        </p>
+                    </a>
+                </div>
+                <div>
+                    <a
+                        href="https://www.mwananchi.co.tz/mw/habari/kitaifa/xdc-network-ledgerfi-kuchangia-ubunifu-wateknolojia-zanzibar--4811470">
+                        <p class="link">
+                            https://www.mwananchi.co.tz/mw/habari/kitaifa/xdc-network-ledgerfi-kuchangia-ubunifu-wateknolojia-zanzibar--4811470
+                        </p>
+                    </a>
+                </div>
+                <div>
+                    <a
+                        href="https://socialpreneur.co.ke/2024/11/04/xdc-network-and-ledgerfi-drive-blockchaininnovation-inzanzibars-sandbox/">
+                        <p class="link">
+                            https://socialpreneur.co.ke/2024/11/04/xdc-network-and-ledgerfi-drive-blockchaininnovation-inzanzibars-sandbox/
+                        </p>
+                    </a>
+                </div>
+                <div>
+                    <a
+                        href="https://aptantech.com/2024/11/04/zanzibars-national-blockchain-sandbox-to-provide-startups-withsecure-platform-to-test-their-solutions/">
+                        <p class="link">
+                            https://aptantech.com/2024/11/04/zanzibars-national-blockchain-sandbox-to-provide-startups-withsecure-platform-to-test-their-solutions/
+                        </p>
+                    </a>
+                </div>
+                <div>
+                    <p class="link-title">November 1</p>
+                    <a
+                        href="https://www.ippmedia.com/the-guardian/business/read/zanzibar-seeks-to-become-regional-leader-inblockchain-technology-digital-governance-2024-11-01-134306">
+                        <p class="link">
+                            https://www.ippmedia.com/the-guardian/business/read/zanzibar-seeks-to-become-regional-leader-inblockchain-technology-digital-governance-2024-11-01-134306
+                        </p>
+                    </a>
+                </div>
+                <div>
+                    <a
+                        href="https://www.thecitizen.co.tz/tanzania/zanzibar/zanzibar-launches-initiative-to-boost-digital-innovation- 4806612">
+                        <p class="link">
+                            https://www.thecitizen.co.tz/tanzania/zanzibar/zanzibar-launches-initiative-to-boost-digital-innovation-
+                            4806612
+                        </p>
+                    </a>
+                </div>
+                <div>
+                    <a
+                        href="https://sw.fatshimetrie.org/2024/11/01/mapinduzi-ya-blockchain-zanzibar-inakuwa-kitovu-chauvumbuzi-wa-kidijitali-barani-afrika/?amp=1">
+                        <p class="link">
+                            https://sw.fatshimetrie.org/2024/11/01/mapinduzi-ya-blockchain-zanzibar-inakuwa-kitovu-chauvumbuzi-wa-kidijitali-barani-afrika/?amp=1
+                        </p>
+                    </a>
+                </div>
+                <div>
+                    <a
+                        href="https://deskeco.com/2024/10/31/le-reseau-xdc-et-ledgerfi-stimulent-linnovation-blockchain-dans-lesandbox-de-zanzibar">
+                        <p class="link">
+                            https://deskeco.com/2024/10/31/le-reseau-xdc-et-ledgerfi-stimulent-linnovation-blockchain-dans-lesandbox-de-zanzibar
+                        </p>
+                    </a>
+                </div>
+                <div>
+                    <p class="link-title">October 31</p>
+                    <a href="https://tech-ish.com/2024/10/31/xdc-network-ledgerfi-blockchain-innovation-zanzibar/">
+                        <p class="link">
+                            https://tech-ish.com/2024/10/31/xdc-network-ledgerfi-blockchain-innovation-zanzibar/
+                        </p>
+                    </a>
+                </div>
+                <div>
+                    <a
+                        href="https://eng.fatshimetrie.org/2024/10/31/zanzibar-national-blockchain-sandbox-a-catalyst-fortechnological-innovation/?amp=1">
+                        <p class="link">
+                            https://eng.fatshimetrie.org/2024/10/31/zanzibar-national-blockchain-sandbox-a-catalyst-fortechnological-innovation/?amp=1
+                        </p>
+                    </a>
+                </div>
+                <div>
+                    <a
+                        href="https://actualite.cd/2024/10/31/le-reseau-xdc-et-ledgerfi-stimulent-linnovation-blockchain-dans-lesandbox-de-zanzibar-0">
+                        <p class="link">
+                            https://actualite.cd/2024/10/31/le-reseau-xdc-et-ledgerfi-stimulent-linnovation-blockchain-dans-lesandbox-de-zanzibar-0
+                        </p>
+                    </a>
+                </div>
+                <div>
+                    <a
+                        href="https://infos.cd/economie/le-reseau-xdc-et-ledgerfi-stimulent-linnovation-blockchain-dans-le-sandboxde-zanzibar-communique/51630/">
+                        <p class="link">
+                            https://infos.cd/economie/le-reseau-xdc-et-ledgerfi-stimulent-linnovation-blockchain-dans-le-sandboxde-zanzibar-communique/51630/
+                        </p>
+                    </a>
+                </div>
+                <div>
+                    <a
+                        href="https://zoom-eco.net/afrique/afrique-le-reseau-xdc-et-ledgerfi-stimulent-linnovation-blockchain-dansle-sandbox-de-zanzibar/">
+                        <p class="link">
+                            https://zoom-eco.net/afrique/afrique-le-reseau-xdc-et-ledgerfi-stimulent-linnovation-blockchain-dansle-sandbox-de-zanzibar/
+                        </p>
+                    </a>
+                </div>
+                <div>
+                    <a
+                        href="https://7sur7.cd/2024/10/31/le-reseau-xdc-et-ledgerfi-stimulent-linnovation-blockchain-dans-lesandbox-de-zanzibar">
+                        <p class="link">
+                            https://7sur7.cd/2024/10/31/le-reseau-xdc-et-ledgerfi-stimulent-linnovation-blockchain-dans-lesandbox-de-zanzibar
+                        </p>
+                    </a>
+                </div>
+                <div>
+                    <a
+                        href="https://eng.fatshimetrie.org/2024/10/31/zanzibar-national-blockchain-sandbox-a-catalyst-fortechnological-innovation/">
+                        <p class="link">
+                            https://eng.fatshimetrie.org/2024/10/31/zanzibar-national-blockchain-sandbox-a-catalyst-fortechnological-innovation/
+                        </p>
+                    </a>
+                </div>
+                <div>
+                    <p class="link-title">October 30</p>
+                    <a href="https://biznakenya.com/digital-governance/">
+                        <p class="link">https://biznakenya.com/digital-governance/</p>
+                    </a>
+                </div>
+                <div>
+                    <p class="link-title">October 25</p>
+                    <a
+                        href="https://www.wearetech.africa/en/fils-uk/news/tech/zanzibar-launches-blockchain-sandbox-toaccelerate-tech-innovation">
+                        <p class="link">
+                            https://www.wearetech.africa/en/fils-uk/news/tech/zanzibar-launches-blockchain-sandbox-toaccelerate-tech-innovation
+                        </p>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.bitget.com/news/detail/12560604303056">
+                        <p class="link">
+                            https://www.bitget.com/news/detail/12560604303056
+                        </p>
+                    </a>
+                </div>
+                <div>
+                    <a
+                        href="https://news.cryptos.com/2024/10/25/africa/zanzibar-has-officially-launched-its-national-blockchainsandbox-aiming-to-nurture-tech-innovation-and-position-the-semi-autonomous-region-as-a-key-playerin-the-global-blockchain-ecosystem-accordin/">
+                        <p class="link">
+                            https://news.cryptos.com/2024/10/25/africa/zanzibar-has-officially-launched-its-national-blockchainsandbox-aiming-to-nurture-tech-innovation-and-position-the-semi-autonomous-region-as-a-key-playerin-the-global-blockchain-ecosystem-accordin/
+                        </p>
+                    </a>
+                </div>
+                <div>
+                    <p class="link-title">October 24</p>
+                    <a href="https://coinspaidmedia.com/news/zanzibar-launches-blockchain-sandbox-tech-startups/">
+                        <p class="link">
+                            https://coinspaidmedia.com/news/zanzibar-launches-blockchain-sandbox-tech-startups/
+                        </p>
+                    </a>
+                </div>
+                <div>
+                    <a
+                        href="https://grafa.com/news/cryptocurrencies-zanzibar-launches-new-blockchain-sandbox-for-innovation- 291510">
+                        <p class="link">
+                            https://grafa.com/news/cryptocurrencies-zanzibar-launches-new-blockchain-sandbox-for-innovation-
+                            291510
+                        </p>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.bitget.com/news/detail/12560604300725">
+                        <p class="link">
+                            https://www.bitget.com/news/detail/12560604300725
+                        </p>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://cryptorank.io/news/feed/2984a-zanzibars-new-blockchain-sandbox-aims-drive-tech">
+                        <p class="link">
+                            https://cryptorank.io/news/feed/2984a-zanzibars-new-blockchain-sandbox-aims-drive-tech
+                        </p>
+                    </a>
+                </div>
+                <div>
+                    <p class="link-title">October 23</p>
+                    <a
+                        href="https://www.msn.com/en-us/money/other/zanzibar-s-new-blockchain-sandbox-aims-to-drive-techstartup-growth/ar-AA1sNFA5https://cointelegraph.com/news/zanzibar-blockchain-sandbox-tech-startups-xdc">
+                        <p class="link">
+                            https://www.msn.com/en-us/money/other/zanzibar-s-new-blockchain-sandbox-aims-to-drive-techstartup-growth/ar-AA1sNFA5https://cointelegraph.com/news/zanzibar-blockchain-sandbox-tech-startups-xdc
+                        </p>
+                    </a>
+                </div>
+                <div>
+                    <a
+                        href="https://www.binance.com/en-KZ/square/post/2024-10-23-zanzibar-government-launches-blockchainsandbox-initiative-15252901134345">
+                        <p class="link">
+                            https://www.binance.com/en-KZ/square/post/2024-10-23-zanzibar-government-launches-blockchainsandbox-initiative-15252901134345
+                        </p>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.onesafe.io/blog/zanzibar-blockchain-sandbox-innovation">
+                        <p class="link">
+                            https://www.onesafe.io/blog/zanzibar-blockchain-sandbox-innovation
+                        </p>
+                    </a>
+                </div>
+                <div>
+                    <p class="link-title">October 22</p>
+                    <a href="https://bitcoinke.io/2024/10/introducing-the-zanzibar-national-blockchain-sandbox/">
+                        <p class="link">
+                            https://bitcoinke.io/2024/10/introducing-the-zanzibar-national-blockchain-sandbox/
+                        </p>
+                    </a>
+                </div>
+                <div>
+                    <a
+                        href="https://www.cointrust.com/market-news/zanzibar-launches-blockchain-sandbox-to-foster-startupinnovation">
+                        <p class="link">
+                            https://www.cointrust.com/market-news/zanzibar-launches-blockchain-sandbox-to-foster-startupinnovation
+                        </p>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.aicoin.com/en/article/425224">
+                        <p class="link">https://www.aicoin.com/en/article/425224</p>
+                    </a>
+                </div>
+                <div>
+                    <a
+                        href="https://www.thehabarinetwork.com/zanzibar-launches-blockchain-sandbox-to-aid-tech-startup-growth">
+                        <p class="link">
+                            https://www.thehabarinetwork.com/zanzibar-launches-blockchain-sandbox-to-aid-tech-startup-growth
+                        </p>
+                    </a>
+                </div>
+                <div>
+                    <p class="link-title">October 21</p>
+                    <a
+                        href="https://kenyanwallstreet.com/zanzibar-develops-blockchain-sandbox-to-support-tech-startups/">
+                        <p class="link">
+                            https://kenyanwallstreet.com/zanzibar-develops-blockchain-sandbox-to-support-tech-startups/
+                        </p>
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-  </body>
+</body>
+
 </html>
