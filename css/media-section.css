@@ -78,10 +78,6 @@
     object-fit: contain;
 }
 
-.media-links {
-    max-width: 100vw;
-}
-
 /* Utility Classes */
 .text-center {
     text-align: center;
