@@ -112,6 +112,14 @@ setupInfiniteCarousel({
     carouselVpId: '#useCaseCarousel-vp',
     carouselInnerId: '#useCaseCarousel-inner',
     itemClass: '.useCaseCarousel-item'
+});;
+
+setupInfiniteCarousel({
+    prevButtonId: '#mediaPrev',
+    nextButtonId: '#mediaNext',
+    carouselVpId: '#mediaCarousel-vp',
+    carouselInnerId: '#mediaCarousel-inner',
+    itemClass: '.mediaCarousel-item'
 });
 
 document.addEventListener('DOMContentLoaded', () => {
