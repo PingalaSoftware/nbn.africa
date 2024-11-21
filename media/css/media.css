@@ -45,6 +45,14 @@
     white-space: normal; 
 }
 
+  .digital-media-coverage .media-links .link:after {
+    content: 'launch';
+    font-family: 'Material Icons';
+    font-size: 12px;
+    margin-left: 2px;
+    color: #35ba53; 
+  }
+
 .digital-media-coverage .media-links .link-title {
     font-weight: bold;
 }

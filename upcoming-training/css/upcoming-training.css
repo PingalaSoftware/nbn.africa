@@ -108,6 +108,14 @@
     cursor: pointer;
 }
 
+.date .event-sub-title:after {
+    content: 'launch';
+    font-family: 'Material Icons';
+    font-size: 10px;
+    margin-left: 2px;
+    color: white;
+}
+
 /* Special Event Styling */
 .date.special {
     color: white;
@@ -165,6 +173,10 @@
         max-width: 100%;
     }
 
+    .date .event-sub-title:after {
+        display: none;
+    }
+
     .date.special .info-icon {
         position: absolute;
         top: 0;
@@ -201,5 +213,10 @@
 
     .date.special.expanded .info-icon {
         display: none;
+    }
+
+    .date.special.expanded .event-sub-title:after {
+        display: block;
+        font-size: 6px;
     }
 }
