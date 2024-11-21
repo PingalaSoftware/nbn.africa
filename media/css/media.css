@@ -1,4 +1,4 @@
-/* Styling for Upcoming media Section */
+/* Styling for  media  */
 .image-section,
 .digital-media-coverage,
 .upcoming-media-section {
@@ -11,7 +11,6 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin-bottom: 20px;
 }
 
 .upcoming-title .upcoming-text {
