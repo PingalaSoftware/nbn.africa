@@ -42,75 +42,7 @@
     font-size: 1.2em;
 }
 
-/* Custom Button Styles */
-.hero-buttons {
-    display: flex;
-    gap: 20px; /* Space between buttons */
-    margin-top: 20px;
-    justify-content: center;
-}
 
-.btn-custom {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-decoration: none;
-    background-color: black;
-    color: white;
-    font-size: 14px;
-    font-weight: 600;
-    width: 200px;
-    height: 50px;
-    border-radius: 30px;
-    border: 1px solid #00ff00;
-    text-transform: uppercase;
-    padding: 0 20px;
-    transition: all 0.3s ease-in-out;
-    gap: 10px;
-    overflow: hidden;
-    position: relative;
-}
-
-.btn-custom .circle-arrow {
-    width: 30px;
-    height: 30px;
-    background-color: #00ff00;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
-    transition: all 0.3s ease-in-out;
-}
-
-.btn-custom .circle-arrow .material-icons {
-    font-size: 20px;
-    color: black;
-    transition: transform 0.3s ease;
-}
-
-.btn-custom:hover {
-    background-color: #00ff00;
-    color: black;
-}
-
-.btn-custom:hover .circle-arrow {
-    background-color: black;
-    border: 2px solid #00ff00;
-}
-
-.btn-custom:hover .circle-arrow .material-icons {
-    color: #00ff00;
-    transform: translateX(5px);
-}
-
-.btn-events {
-    background-color: #1d1d1d;
-}
-
-.btn-training {
-    background-color: #1d1d1d;
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {
