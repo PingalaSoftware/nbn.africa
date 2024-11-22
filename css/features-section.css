@@ -1,5 +1,5 @@
 .features-section {
-    background-color: #000000; /* Dark background */
+    background-color: #000000; 
     padding: 60px 0;
 }
 
@@ -9,7 +9,7 @@
 }
 
 .features-section .feature-image-background {
-    margin-bottom: 0; /* Remove bottom margin from the feature image background */
+    margin-bottom: 0; 
 }
 
 .features-section .card-body {
@@ -34,31 +34,26 @@
     align-items: center;
     flex-direction: column;
 }
-
-/* .feature-card:hover {
-    transform: translateY(-5px);
-} */
-
 .features-section .feature-icon {
-    font-size: 32px; /* Icon size adjusted for consistency */
+    font-size: 32px;
     color: #ffffff;
 }
 
 .features-section .card-title {
-    font-size: 1rem; /* Title font size */
+    font-size: 1rem; 
     color: #ffffff;
     margin-top: 10px;
 }
 
 .features-section .card-footer {
-    font-size: 0.875rem; /* Content font size */
+    font-size: 0.875rem; 
     color: #cccccc;
 }
 
 .features-section .btn-outline-light {
     color: #ffffff;
     border-color: #ffffff;
-    font-size: 0.875rem; /* Button font size */
+    font-size: 0.875rem;
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -68,7 +63,7 @@
     padding: 15px;
     width: 90px;
     height: 90px;
-    margin: 0 auto; /* Center the image */
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,7 +74,6 @@
     max-height: 100%;
 }
 
-/* Center-align second row */
 .features-section .justify-content-center {
     justify-content: center;
 }

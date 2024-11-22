@@ -1,4 +1,3 @@
-/* Styling for  media  */
 .image-section,
 .digital-media-coverage,
 .upcoming-media-section {
@@ -32,7 +31,6 @@
     font-weight: bold;
 }
 
-/* General Responsive Adjustments for Media Sections */
 @media (max-width: 768px) {
 
     .digital-media-coverage .media-links {

@@ -148,7 +148,6 @@ section {
     color: #00ff00;
 }
 
-/* Responsive Adjustments */
 @media (max-width: 768px) {
     .title-design {
         font-size: 2rem;

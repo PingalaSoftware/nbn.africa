@@ -1,9 +1,8 @@
 document
   .getElementById("newsletter-form")
   .addEventListener("submit", async function (e) {
-    e.preventDefault(); // Prevent form from submitting normally
+    e.preventDefault();
 
-    //prod url
     const url = "https://edua-admin.ledgermail.io";
 
     // dev url
@@ -19,10 +18,8 @@ document
     const name = nameField.value;
     const email = emailField.value;
 
-    // Email validation regex pattern
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    // Input validation
     if (!name && !email) {
       responseMessage.textContent = "Please enter the details.";
       responseMessage.style.color = "red";
@@ -38,8 +35,7 @@ document
       return;
     }
 
-    // Show loading state
-    responseMessage.textContent = ""; // Clear any previous messages
+    responseMessage.textContent = "";
     subscribeButton.disabled = true;
     subscribeButton.textContent = "Subscribing...";
 
@@ -49,7 +45,7 @@ document
         headers: {
           "Content-Type": "application/json",
           Authorization: "edua-public",
-          Origin: originUrl, // Dynamically set the Origin header
+          Origin: originUrl,
         },
         body: JSON.stringify({ name, email }),
       });
@@ -57,20 +53,17 @@ document
       const result = await response.json();
 
       if (response.ok && result.error === false) {
-        // Success
         subscribeButton.textContent = "Subscribed";
 
-        // Clear name and email fields
         nameField.value = "";
         emailField.value = "";
       } else {
-        // Error from server
         throw new Error(result.message || "Failed to subscribe");
       }
     } catch (error) {
       responseMessage.textContent = error.message;
       responseMessage.style.color = "red";
-      subscribeButton.disabled = false; // Re-enable button on error
+      subscribeButton.disabled = false; 
       subscribeButton.textContent = "SUBSCRIBE";
     }
   });

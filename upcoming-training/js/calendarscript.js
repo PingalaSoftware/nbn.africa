@@ -164,3 +164,9 @@ function attachMobileViewToggle() {
         });
     });
 }
+
+setInterval(() => {
+    window.location.reload();
+}, 600000);
+
+document.addEventListener("DOMContentLoaded", fetchEventsAndRenderCalendars);

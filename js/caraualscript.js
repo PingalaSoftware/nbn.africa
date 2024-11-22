@@ -18,29 +18,25 @@ function setupInfiniteCarousel({
             10
         );
 
-    let currentIndex = items.length; // Start at the first original item (after prepended clones)
+    let currentIndex = items.length;
 
-    // Clone all items and append/prepend them for infinite looping
     items.forEach((item) => {
         const clone = item.cloneNode(true);
-        carouselInner.appendChild(clone); // Append clones to the end
+        carouselInner.appendChild(clone);
     });
 
     items.forEach((item) => {
         const clone = item.cloneNode(true);
-        carouselInner.insertBefore(clone, items[0]); // Prepend clones to the beginning
+        carouselInner.insertBefore(clone, items[0]);
     });
 
-    // Update items after cloning
     items = document.querySelectorAll(itemClass);
 
-    // Adjust the initial position to show the first original set
     carouselInner.style.transition = 'none';
     carouselInner.style.transform = `translateX(-${
         currentIndex * itemWidth
     }px)`;
 
-    // Handle next button click
     nextButton.addEventListener('click', () => {
         currentIndex++;
         carouselInner.style.transition = 'transform 0.5s ease-in-out';
@@ -48,7 +44,6 @@ function setupInfiniteCarousel({
             currentIndex * itemWidth
         }px)`;
 
-        // Loop back to the original items
         setTimeout(() => {
             if (currentIndex >= items.length - items.length / 3) {
                 currentIndex = items.length / 3;
@@ -60,7 +55,6 @@ function setupInfiniteCarousel({
         }, 500);
     });
 
-    // Handle prev button click
     prevButton.addEventListener('click', () => {
         currentIndex--;
         carouselInner.style.transition = 'transform 0.5s ease-in-out';
@@ -68,7 +62,6 @@ function setupInfiniteCarousel({
             currentIndex * itemWidth
         }px)`;
 
-        // Loop back to the original items
         setTimeout(() => {
             if (currentIndex < items.length / 3) {
                 currentIndex = items.length - items.length / 3 - 1;
@@ -80,7 +73,6 @@ function setupInfiniteCarousel({
         }, 500);
     });
 
-    // Handle window resize
     window.addEventListener('resize', () => {
         const newItemWidth =
             items[0].getBoundingClientRect().width +
@@ -97,7 +89,6 @@ function setupInfiniteCarousel({
     });
 }
 
-// Set up carousels
 setupInfiniteCarousel({
     prevButtonId: '#prev',
     nextButtonId: '#next',
@@ -123,22 +114,17 @@ setupInfiniteCarousel({
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Find all .date.special elements
     const specialDates = document.querySelectorAll('.date.special');
 
     specialDates.forEach((dateElement) => {
-        // Create and append the info icon
         const infoIcon = document.createElement('i');
         infoIcon.className = 'info-icon material-icons';
         infoIcon.textContent = 'info';
         dateElement.appendChild(infoIcon);
 
-        // Add click event to expand/collapse the date element
         dateElement.addEventListener('click', (event) => {
-            // Prevent toggle when clicking on the icon
             if (event.target.classList.contains('info-icon')) return;
 
-            // Toggle the expanded state
             dateElement.classList.toggle('expanded');
         });
     });

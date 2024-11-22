@@ -1,11 +1,9 @@
-/* Styling for Upcoming Trainings Section */
 .upcoming-trainings-section {
     padding: 20px;
     background-color: black;
     color: white;
 }
 
-/* Calendar Styles */
 .calendar {
     background-color: black;
     padding: 10px;
@@ -37,7 +35,6 @@
     font-size: 16px;
 }
 
-/* Regular Date */
 .date {
     display: flex;
     flex-direction: column;
@@ -90,7 +87,6 @@
     color: white;
 }
 
-/* Special Event Styling */
 .date.special {
     color: white;
     overflow: hidden;
@@ -113,7 +109,6 @@
 
 
 
-/* Mobile View Styling */
 @media (max-width: 768px) {
 
     .row .col {
@@ -136,7 +131,6 @@
         position: relative;
         cursor: pointer;
         overflow: hidden;
-        /* height: 70; */
         padding: 6px;
         border-radius: 5px;
         transition: all 0.3s ease-in-out;
@@ -167,7 +161,6 @@
         z-index: 1;
     }
 
-    /* Expanded State - Show all details */
     .date.special.expanded {
         overflow: visible;
         padding: 10px;
@@ -187,7 +180,6 @@
         max-width: 100%;
         overflow: hidden;
         line-height: 1;
-        /* text-decoration: underline; */
     }
 
     .date.special.expanded .info-icon {

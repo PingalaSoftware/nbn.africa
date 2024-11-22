@@ -1,4 +1,3 @@
-/* Hero Section Styles */
 .hero-main {
     height: calc(100vh - 110px);
 }
@@ -44,7 +43,6 @@
 
 
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .hero-content h1 {
         font-size: 1.8em;

@@ -5,7 +5,6 @@ body {
 }
 
 :root {
-    /* Fonts */
     --font-poppins: Poppins;
     --font-sf-pro-display: 'SF Pro Display';
     --font-futura: Futura;
@@ -13,7 +12,6 @@ body {
     --font-myriadpro-bold: MyriadPro-Bold;
     --font-futura-bold: Futura-Bold;
 
-    /* Font sizes */
     --font-size-sm: 14px;
     --font-size-mini: 15px;
     --font-size-mid: 17px;
@@ -29,7 +27,6 @@ body {
     --font-size-40xl: 59px;
     --font-size-77xl: 96px;
 
-    /* Colors */
     --color-black: #000;
     --color-white: #fff;
     --color-gray-100: #7e7e7e;
@@ -48,7 +45,6 @@ body {
     --color-darkorchid: #6535ba;
     --color-lightseagreen: #35b1ba;
 
-    /* Border radii */
     --br-xl: 20px;
     --br-11xl: 30px;
     --br-16xl: 35px;

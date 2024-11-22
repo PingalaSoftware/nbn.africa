@@ -1,4 +1,3 @@
-/* About Us Section Styles */
 .about-us-section {
     background-color: #fff;
 }
@@ -29,11 +28,6 @@
     background-color: #fff;
     color: #000;
 }
-
-/* .about-image img {
-    max-width: 100%;
-    border-radius: 10px;
-} */
 
 .about-model-body {
     padding: 20px 40px;

@@ -98,5 +98,4 @@ function draw() {
     }
 }
 
-// Start
 loop();

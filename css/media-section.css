@@ -1,4 +1,3 @@
-/* media Carousel Section Styling */
 .media-carousel-section {
     background-color: #ffffff !important;
     padding: 3rem 0;
@@ -15,7 +14,6 @@
     color: #727272 !important;
 }
 
-/* Carousel Container */
 #mediaCarousel {
     position: relative;
     max-width: 1200px;
@@ -23,7 +21,6 @@
     padding: 0 60px;
 }
 
-/* Carousel Navigation Arrows */
 #mediaCarousel .arrow {
     position: absolute;
     top: 50%;
@@ -48,7 +45,6 @@
     right: 0px;
 }
 
-/* Carousel Items */
 #mediaCarousel-vp {
     width: 100%;
     height: 150px;
@@ -68,7 +64,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 150px; /* Adjust based on image size */
+    width: 150px; 
     text-align: center;
 }
 
@@ -78,7 +74,6 @@
     object-fit: contain;
 }
 
-/* Utility Classes */
 .text-center {
     text-align: center;
 }
@@ -100,13 +95,12 @@
     justify-content: center;
 }
 
-/* Responsive Adjustments */
 @media (min-width: 768px) {
     #mediaCarousel {
         padding: 0 40px;
     }
     .mediaCarousel-item {
-        width: 180px; /* Adjust for larger screens */
+        width: 180px; 
     }
     .mediaCarousel-item img {
         height: 60px;

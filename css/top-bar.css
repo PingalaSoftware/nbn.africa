@@ -1,9 +1,7 @@
-/* Top Bar Styles */
 .top-bar {
     background-color: black;
     color: #ffffff;
     font-size: 14px;
-    /* left: 280px; */
     height: 30px;
 }
 
