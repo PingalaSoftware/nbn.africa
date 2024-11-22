@@ -115,9 +115,6 @@
 
 /* Mobile View Styling */
 @media (max-width: 768px) {
-    .info-icon.mobile-only {
-        display: block !important;
-    }
 
     .row .col {
         width: calc(100% / 7);
