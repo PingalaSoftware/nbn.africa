@@ -21,15 +21,11 @@ const specialColors = ["#35B1BA", "#BA8035", "#6535BA", "#BA3535", "#BA3580"];
 let events = {};
 
 function isWithin24Hours(dateString) {
-    console.log("dateString", dateString);
     const targetDate = new Date(dateString);
-    console.log("targetDate", targetDate);
     const currentDate = new Date();
     const twentyFourHoursBefore = new Date(
         targetDate.getTime() - 24 * 60 * 60 * 1000
     );
-    console.log("twentyFourHoursBefore", twentyFourHoursBefore);
-    console.log("currentDate", currentDate);
 
     return currentDate >= twentyFourHoursBefore;
 }
@@ -98,9 +94,7 @@ function generateMonthDates(month, year) {
             const event = events[dateKey];
 
             if (event) {
-                console.log("event", event);
                 const isRegStoped = isWithin24Hours(event.startTime);
-                console.log("isRegStoped", isRegStoped);
 
                 const bgColor = specialColors[colorIndex % specialColors.length];
                 colorIndex++;
