@@ -134,7 +134,6 @@
 .date.special.disabled {
     pointer-events: none;
     opacity: 0.5;
-    background-color: #d3d3d3 !important;
     color: #a9a9a9;
 }
 

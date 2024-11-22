@@ -1,50 +1,56 @@
 const months = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December'
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
 ];
 
 const year = new Date().getFullYear();
 const currentMonth = new Date().getMonth();
 const monthsToDisplay = [currentMonth, (currentMonth + 1) % 12];
 
-// Colors for special events
-const specialColors = ['#35B1BA', '#BA8035', '#6535BA', '#BA3535', '#BA3580'];
-
-// Fetch events from JSON
+const specialColors = ["#35B1BA", "#BA8035", "#6535BA", "#BA3535", "#BA3580"];
 let events = {};
-fetch('./events.json')
+
+function isWithin24Hours(dateString) {
+    console.log("dateString", dateString);
+    const targetDate = new Date(dateString);
+    console.log("targetDate", targetDate);
+    const currentDate = new Date();
+    const twentyFourHoursBefore = new Date(
+        targetDate.getTime() - 24 * 60 * 60 * 1000
+    );
+    console.log("twentyFourHoursBefore", twentyFourHoursBefore);
+    console.log("currentDate", currentDate);
+
+    return currentDate >= twentyFourHoursBefore;
+}
+
+fetch("./events.json")
     .then((response) => response.json())
     .then((data) => {
         events = data;
 
-        // Generate calendars after events are loaded
-        const calendarsContainer = document.getElementById(
-            'calendars-container'
-        );
+        const calendarsContainer = document.getElementById("calendars-container");
         monthsToDisplay.forEach((monthIndex) => {
-            const adjustedYear = monthIndex < currentMonth ? year + 1 : year; // Adjust year for next January
-            calendarsContainer.appendChild(
-                createCalendar(monthIndex, adjustedYear)
-            );
+            const adjustedYear = monthIndex < currentMonth ? year + 1 : year;
+            calendarsContainer.appendChild(createCalendar(monthIndex, adjustedYear));
         });
 
-        // Attach functionality for mobile view toggle
         attachMobileViewToggle();
     });
 
 function createCalendar(month, year) {
-    const calendar = document.createElement('div');
-    calendar.className = 'calendar';
+    const calendar = document.createElement("div");
+    calendar.className = "calendar";
 
     calendar.innerHTML = `
         <div class="container py-5">
@@ -70,42 +76,49 @@ function createCalendar(month, year) {
 
 function generateMonthDates(month, year) {
     const date = new Date(year, month, 1);
-    let html = '';
+    let html = "";
     let colorIndex = 0;
 
     while (date.getMonth() === month) {
         const week = [];
 
-        // Adjust Sunday (0) to 7 for Monday-start weeks
         const firstDayOfMonth = new Date(year, month, 1).getDay();
         const adjustedFirstDay = firstDayOfMonth === 0 ? 7 : firstDayOfMonth;
 
-        // Add empty cells before the first day of the month
         if (date.getDate() === 1 && adjustedFirstDay !== 1) {
             for (let i = 1; i < adjustedFirstDay; i++) {
                 week.push('<div class="col"></div>');
             }
         }
 
-        // Add day cells
         while (date.getMonth() === month && week.length < 7) {
             const dateKey = `${date.getFullYear()}-${String(
                 date.getMonth() + 1
-            ).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+            ).padStart(2, "0")}-${String(date.getDate()).padStart(2, "0")}`;
             const event = events[dateKey];
 
             if (event) {
-                const bgColor =
-                    specialColors[colorIndex % specialColors.length];
+                console.log("event", event);
+                const isRegStoped = isWithin24Hours(event.startTime);
+                console.log("isRegStoped", isRegStoped);
+
+                const bgColor = specialColors[colorIndex % specialColors.length];
                 colorIndex++;
                 week.push(
                     `<div class="col">
-                        <span class="date special" style="background-color: ${bgColor}">
+                        <span id="${dateKey}"  class="date special ${isRegStoped ? "disabled" : ""
+                    }" style="background-color: ${isRegStoped ? "#d3d3d3" : bgColor}">
                             <span class="date-number">${date.getDate()}</span>
-                            <span class="event-title link" data-link="${event.link
-                    }">${event.title}</span>
-                            <span class="event-sub-title link" data-link="${event.link
-                    }">${event.title2}</span>
+                            <span class="event-title link ${isRegStoped ? "even-reg-stoped" : ""
+                    }" ${isRegStoped ? "" : `data-link="${event.link}"`
+                    }>
+                                ${event.title}
+                            </span>
+                            <span class="event-sub-title link ${isRegStoped ? "even-reg-stoped" : ""
+                    }" ${isRegStoped ? "" : `data-link="${event.link}"`
+                    }>
+                                ${event.title2}
+                            </span>
                         </span>
                     </div>`
                 );
@@ -121,42 +134,37 @@ function generateMonthDates(month, year) {
             date.setDate(date.getDate() + 1);
         }
 
-        // Fill remaining cells
         while (week.length < 7) {
             week.push('<div class="col"></div>');
         }
 
-        html += `<div class="row">${week.join('')}</div>`;
+        html += `<div class="row">${week.join("")}</div>`;
     }
 
     return html;
 }
 
 function attachMobileViewToggle() {
-    const specialDates = document.querySelectorAll('.date.special');
+    const specialDates = document.querySelectorAll(".date.special");
 
     specialDates.forEach((dateElement) => {
-        // Create and append the info icon
-        const infoIcon = document.createElement('i');
-        infoIcon.className = 'info-icon material-icons mobile-only';
-        infoIcon.textContent = 'info';
+        const infoIcon = document.createElement("i");
+        infoIcon.className = "info-icon material-icons mobile-only";
+        infoIcon.textContent = "info";
         dateElement.appendChild(infoIcon);
 
-        // Add click event to expand/collapse the date element
-        dateElement.addEventListener('click', (event) => {
-            if (!event.target.classList.contains('link')) {
-                // Toggle the expanded state
-                dateElement.classList.toggle('expanded');
+        dateElement.addEventListener("click", (event) => {
+            if (!event.target.classList.contains("link")) {
+                dateElement.classList.toggle("expanded");
             }
         });
 
-        // Add click event to open link in a new tab
-        dateElement.querySelectorAll('.link').forEach((linkElement) => {
-            linkElement.addEventListener('click', (e) => {
-                e.stopPropagation(); // Prevent toggling the expanded state
+        dateElement.querySelectorAll(".link").forEach((linkElement) => {
+            linkElement.addEventListener("click", (e) => {
+                e.stopPropagation();
                 const link = linkElement.dataset.link;
                 if (link) {
-                    window.open(link, '_blank');
+                    window.open(link, "_blank");
                 }
             });
         });
